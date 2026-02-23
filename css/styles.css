@@ -417,8 +417,8 @@ a {
 .step-connector {
   position: absolute;
   top: 28px;
-  left: calc(50% + 40px);
-  width: calc(100% - 80px);
+  left: calc(16.67% + 28px);
+  width: calc(66.67% - 56px);
   height: 2px;
   border-top: 2px dashed var(--color-gray-300);
 }

@@ -22,8 +22,8 @@
   --color-gray-800: #1e293b;
   --color-gray-900: #0f172a;
 
-  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-display: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
 
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -80,6 +80,7 @@ a {
 /* --- Typography --- */
 .font-display {
   font-family: var(--font-display);
+  letter-spacing: -0.025em;
 }
 
 .font-mono {
@@ -227,7 +228,7 @@ a {
   left: 0;
   right: 0;
   height: 120px;
-  background: linear-gradient(to top, var(--color-white) 0%, transparent 100%);
+  background: linear-gradient(to top, var(--color-gray-50) 0%, transparent 100%);
   pointer-events: none;
 }
 
@@ -373,13 +374,15 @@ a {
   background: var(--color-white);
   border-radius: var(--radius-xl);
   padding: 2rem;
-  border: 1px solid var(--color-gray-100);
-  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  border: 1px solid var(--color-gray-200);
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+  cursor: pointer;
 }
 
 .feature-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-xl);
+  border-color: var(--color-gray-300);
 }
 
 .feature-icon {
@@ -430,7 +433,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-display);
+  font-family: var(--font-sans);
   font-size: 1.25rem;
   font-weight: 700;
   flex-shrink: 0;
@@ -508,13 +511,14 @@ a {
   background: var(--color-white);
   border-radius: var(--radius-xl);
   padding: 2rem;
-  border: 1px solid var(--color-gray-100);
-  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  border: 1px solid var(--color-gray-200);
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
 }
 
 .testimonial-card:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
+  border-color: var(--color-gray-300);
 }
 
 .testimonial-avatar {
@@ -533,19 +537,20 @@ a {
 .stat-badge {
   background: var(--color-white);
   border-radius: var(--radius-xl);
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 2.5rem;
   box-shadow: var(--shadow-md);
-  border: 1px solid var(--color-gray-100);
+  border: 1px solid var(--color-gray-200);
   text-align: center;
-  min-width: 160px;
+  min-width: 170px;
 }
 
 .stat-number {
-  font-family: var(--font-display);
+  font-family: var(--font-sans);
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--color-navy);
   line-height: 1;
+  letter-spacing: -0.03em;
 }
 
 /* --- CTA Section --- */

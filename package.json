@@ -1,0 +1,26 @@
+{
+  "name": "money-mate-landing",
+  "version": "1.0.0",
+  "description": "Landing page and privacy policy for the Money Mate personal finance app.",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "npx tailwindcss -i css/tailwind-input.css -o css/tailwind-compiled.css --minify",
+    "watch:css": "npx tailwindcss -i css/tailwind-input.css -o css/tailwind-compiled.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nguyen-ba-luan/money-mate-landing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nguyen-ba-luan/money-mate-landing/issues"
+  },
+  "homepage": "https://github.com/nguyen-ba-luan/money-mate-landing#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}

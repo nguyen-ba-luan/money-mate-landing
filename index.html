@@ -5,52 +5,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Moni - Personal Finance, Simplified</title>
   <meta name="description" content="Track expenses, manage budgets, split costs with friends, and earn cashback rewards. Moni makes personal finance simple and smart.">
-  <meta name="keywords" content="money mate, expense tracker, budget manager, finance app, split expenses, cashback rewards">
+  <meta name="keywords" content="moni, expense tracker, budget manager, finance app, split expenses, cashback rewards, personal finance, money management">
   <meta name="author" content="Code4change">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#1e3a5f">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://moni.live/">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Moni - Personal Finance, Simplified">
   <meta property="og:description" content="Track expenses, manage budgets, split costs with friends, and earn cashback rewards.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://code4change.github.io/money-mate-landing/">
-  <meta property="og:image" content="https://code4change.github.io/money-mate-landing/images/og-image.png">
+  <meta property="og:url" content="https://moni.live/">
+  <meta property="og:site_name" content="Moni">
+  <meta property="og:image" content="https://moni.live/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="vi_VN">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Moni - Personal Finance, Simplified">
   <meta name="twitter:description" content="Track expenses, manage budgets, split costs with friends, and earn cashback rewards.">
+  <meta name="twitter:image" content="https://moni.live/images/og-image.png">
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="en" href="https://moni.live/">
+  <link rel="alternate" hreflang="vi" href="https://moni.live/?lang=vi">
+  <link rel="alternate" hreflang="x-default" href="https://moni.live/">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.ico">
-  <link rel="apple-touch-icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/icon.png">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            navy: { DEFAULT: '#1e3a5f', dark: '#0c1726', light: '#2d5f9a' },
-            gold: { DEFAULT: '#f97316', light: '#fb923c', dark: '#ea580c' },
-          },
-          fontFamily: {
-            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
-            display: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
-            mono: ['JetBrains Mono', 'Fira Code', 'monospace'],
-          },
-        },
-      },
-    }
-  </script>
+  <!-- Tailwind CSS (compiled) -->
+  <link rel="stylesheet" href="css/tailwind-compiled.css">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Moni",
+    "operatingSystem": "iOS",
+    "applicationCategory": "FinanceApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "description": "Track expenses, manage budgets, split costs with friends, and earn cashback rewards. Moni makes personal finance simple and smart.",
+    "url": "https://moni.live/",
+    "downloadUrl": "https://apps.apple.com/vn/app/money-mate-plus/id6759211409",
+    "screenshot": "https://moni.live/images/ss-home.png",
+    "author": {
+      "@type": "Organization",
+      "name": "Code4change",
+      "url": "https://moni.live",
+      "email": "support@code4change.dev"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Moni",
+    "url": "https://moni.live/"
+  }
+  </script>
 </head>
 <body>
 
@@ -58,7 +93,7 @@
   <nav class="nav py-4" id="navbar">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
       <!-- Logo -->
-      <a href="#" class="flex items-center gap-3">
+      <a href="/" class="flex items-center gap-3">
         <img src="images/logo.png" alt="Moni" class="w-10 h-10 rounded-xl">
         <span class="text-white font-bold text-xl">Moni</span>
       </a>
@@ -114,13 +149,13 @@
                 <span class="badge-text-lg block" data-i18n="hero.badge.appstore.bottom">App Store</span>
               </div>
             </a>
-            <a href="#download" class="store-badge">
+            <span class="store-badge opacity-60 cursor-default" title="Coming Soon">
               <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 010 1.38l-2.302 2.302L15.396 12l2.302-3.492zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
               <div>
-                <span class="badge-text-sm block" data-i18n="hero.badge.google.top">GET IT ON</span>
+                <span class="badge-text-sm block" data-i18n="hero.badge.google.top">COMING SOON</span>
                 <span class="badge-text-lg block" data-i18n="hero.badge.google.bottom">Google Play</span>
               </div>
-            </a>
+            </span>
           </div>
 
           <!-- Trust Badges -->
@@ -390,7 +425,7 @@
         <!-- Center Phone (main): Home -->
         <div class="screenshot-phone screenshot-center fade-up">
           <div class="screenshot-phone-screen">
-            <img src="images/ss-new-transaction.png" alt="Moni Home Screen">
+            <img src="images/ss-new-transaction.png" alt="Moni New Transaction Screen">
           </div>
         </div>
 
@@ -508,13 +543,13 @@
               <span class="badge-text-lg block" data-i18n="hero.badge.appstore.bottom">App Store</span>
             </div>
           </a>
-          <a href="#" class="store-badge">
+          <span class="store-badge opacity-60 cursor-default" title="Coming Soon">
             <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 010 1.38l-2.302 2.302L15.396 12l2.302-3.492zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
             <div>
-              <span class="badge-text-sm block" data-i18n="hero.badge.google.top">GET IT ON</span>
+              <span class="badge-text-sm block" data-i18n="hero.badge.google.top">COMING SOON</span>
               <span class="badge-text-lg block" data-i18n="hero.badge.google.bottom">Google Play</span>
             </div>
-          </a>
+          </span>
         </div>
 
         <!-- QR Code -->
@@ -567,7 +602,7 @@
           <h4 class="text-white font-semibold text-sm mb-4" data-i18n="footer.legal">Legal</h4>
           <ul class="space-y-3 text-sm">
             <li><a href="privacy-policy.html" data-i18n="footer.privacy">Privacy Policy</a></li>
-            <li><a href="#" data-i18n="footer.terms">Terms of Service</a></li>
+            <li><a href="privacy-policy.html" data-i18n="footer.terms">Terms of Service</a></li>
           </ul>
         </div>
       </div>
@@ -576,7 +611,7 @@
       <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p class="text-sm" data-i18n-html="footer.copyright">&copy; 2026 Code4change. All rights reserved.</p>
         <div class="flex gap-4">
-          <a href="#" class="hover:text-white transition-colors" aria-label="GitHub">
+          <a href="https://github.com/code4change" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors" aria-label="GitHub">
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
           </a>
         </div>

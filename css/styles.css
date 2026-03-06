@@ -308,8 +308,8 @@ a {
 
 .phone-mockup-screen {
   position: absolute;
-  inset: 6px;
-  border-radius: 38px;
+  inset: 10px;
+  border-radius: 36px;
   overflow: hidden;
   background: #000;
 }
@@ -564,8 +564,8 @@ a {
 
 .screenshot-phone-screen {
   position: absolute;
-  inset: 5px;
-  border-radius: 31px;
+  inset: 8px;
+  border-radius: 28px;
   overflow: hidden;
   background: #000;
 }
@@ -735,8 +735,8 @@ a {
 
 .showcase-phone-screen {
   position: absolute;
-  inset: 6px;
-  border-radius: 34px;
+  inset: 9px;
+  border-radius: 32px;
   overflow: hidden;
   background: #000;
 }
@@ -1036,8 +1036,8 @@ a {
   }
 
   .phone-mockup-screen {
-    inset: 5px;
-    border-radius: 31px;
+    inset: 8px;
+    border-radius: 28px;
   }
 
   .screenshot-phone {

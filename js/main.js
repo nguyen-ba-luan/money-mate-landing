@@ -150,6 +150,62 @@
     });
   }
 
+  // --- FAQ Accordion ---
+  var faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(function (item) {
+    var btn = item.querySelector('.faq-question');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var isActive = item.classList.contains('active');
+      // Close all
+      faqItems.forEach(function (other) {
+        other.classList.remove('active');
+        var otherBtn = other.querySelector('.faq-question');
+        if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+      });
+      // Open clicked (if it was closed)
+      if (!isActive) {
+        item.classList.add('active');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  // --- Email Signup Form ---
+  var emailForm = document.getElementById('email-signup-form');
+  if (emailForm) {
+    emailForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var emailInput = document.getElementById('signup-email');
+      var successMsg = document.getElementById('email-success');
+      var errorMsg = document.getElementById('email-error');
+      var email = emailInput.value.trim();
+
+      // Hide previous messages
+      if (successMsg) successMsg.classList.add('hidden');
+      if (errorMsg) errorMsg.classList.add('hidden');
+
+      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        if (errorMsg) errorMsg.classList.remove('hidden');
+        return;
+      }
+
+      // Store locally (Mailchimp-ready placeholder)
+      try {
+        var subscribers = JSON.parse(localStorage.getItem('moni_subscribers') || '[]');
+        if (!subscribers.includes(email)) {
+          subscribers.push(email);
+          localStorage.setItem('moni_subscribers', JSON.stringify(subscribers));
+        }
+      } catch (err) {
+        // localStorage not available, ignore
+      }
+
+      emailInput.value = '';
+      if (successMsg) successMsg.classList.remove('hidden');
+    });
+  }
+
   // --- Active nav link highlighting ---
   var sections = document.querySelectorAll('section[id]');
   var navLinks = document.querySelectorAll('.nav-link');

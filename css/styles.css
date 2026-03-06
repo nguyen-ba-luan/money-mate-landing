@@ -677,6 +677,164 @@ a {
   color: var(--color-gold);
 }
 
+/* --- Feature Showcase --- */
+.showcase-phone {
+  width: 240px;
+  height: 519px; /* 240 × 2.163 */
+  background: #1c1c1e;
+  border-radius: 36px;
+  border: 4px solid #1c1c1e;
+  position: relative;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.08),
+    0 25px 50px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  flex-shrink: 0;
+  padding: 5px;
+}
+
+.showcase-phone-screen {
+  position: absolute;
+  inset: 2px;
+  border-radius: 30px;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+.showcase-phone-screen > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+/* --- Comparison Table --- */
+.comparison-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 0.875rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.comparison-table thead th {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--color-gray-700);
+  background: var(--color-gray-50);
+  border-bottom: 2px solid var(--color-gray-300);
+}
+
+.comparison-table thead th:first-child {
+  text-align: left;
+  border-top-left-radius: var(--radius-lg);
+}
+
+.comparison-table thead th:last-child {
+  border-top-right-radius: var(--radius-lg);
+}
+
+/* Highlight Moni column */
+.comparison-table th.moni-col,
+.comparison-table td.moni-col {
+  background: rgba(249, 115, 22, 0.06);
+  font-weight: 600;
+}
+
+.comparison-table thead th.moni-col {
+  color: var(--color-gold-dark);
+  background: rgba(249, 115, 22, 0.1);
+}
+
+.comparison-table tbody td:first-child {
+  text-align: left;
+  font-weight: 500;
+  color: var(--color-gray-700);
+}
+
+.comparison-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.comparison-table tbody tr:hover {
+  background: var(--color-gray-50);
+}
+
+/* --- FAQ Accordion --- */
+.faq-item {
+  transition: border-color var(--transition-base);
+}
+
+.faq-item.active {
+  border-color: var(--color-gold);
+}
+
+.faq-question {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-gray-800);
+  font-family: var(--font-sans);
+  line-height: 1.5;
+}
+
+.faq-question:hover {
+  color: var(--color-navy);
+}
+
+.faq-icon {
+  transition: transform var(--transition-base);
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+  padding-bottom: 1rem;
+}
+
+/* --- Email Signup --- */
+.email-signup-section {
+  background: linear-gradient(135deg, #0c1726 0%, #1e3a5f 50%, #0c1726 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.email-signup-section::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(
+    circle,
+    rgba(249, 115, 22, 0.1) 0%,
+    transparent 60%
+  );
+  border-radius: 50%;
+  pointer-events: none;
+}
+
 /* --- Privacy Policy Page --- */
 .policy-content h2 {
   font-size: 1.5rem;
@@ -817,7 +975,20 @@ a {
 }
 
 /* --- Responsive --- */
+@media (max-width: 1024px) {
+  .showcase-phone {
+    width: 200px;
+    height: 433px;
+  }
+}
+
 @media (max-width: 768px) {
+  .showcase-phone {
+    width: 220px;
+    height: 476px;
+    margin: 0 auto;
+  }
+
   .phone-mockup {
     width: 220px;
     height: 476px; /* 220 × 2.163 */

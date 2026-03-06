@@ -336,7 +336,7 @@
     },
   };
 
-  var currentLang = localStorage.getItem('mm-lang') || 'en';
+  var currentLang = localStorage.getItem('mm-lang') || 'vi';
 
   function setLanguage(lang) {
     currentLang = lang;
@@ -370,13 +370,12 @@
       });
     });
 
-    if (currentLang !== 'en') {
-      setLanguage(currentLang);
-    } else {
-      // Set initial toggle text
+    // Always apply language on init
+    setLanguage(currentLang);
+    if (currentLang === 'vi') {
       document.querySelectorAll('.lang-toggle').forEach(function (btn) {
-        btn.textContent = 'VI';
-        btn.setAttribute('aria-label', 'Chuyển sang Tiếng Việt');
+        btn.textContent = 'EN';
+        btn.setAttribute('aria-label', 'Switch to English');
       });
     }
   }

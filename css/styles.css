@@ -287,7 +287,7 @@ a {
 
 .phone-mockup-screen {
   position: absolute;
-  inset: 2px;
+  inset: 8px;
   border-radius: 32px;
   overflow: hidden;
   background: #f5f5f5;
@@ -536,8 +536,8 @@ a {
 
 .screenshot-phone-screen {
   position: absolute;
-  inset: 2px;
-  border-radius: 28px;
+  inset: 8px;
+  border-radius: 26px;
   overflow: hidden;
   background: #f5f5f5;
 }
@@ -695,8 +695,8 @@ a {
 
 .showcase-phone-screen {
   position: absolute;
-  inset: 2px;
-  border-radius: 30px;
+  inset: 8px;
+  border-radius: 28px;
   overflow: hidden;
   background: #f5f5f5;
 }

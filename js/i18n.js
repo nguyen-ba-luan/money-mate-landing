@@ -357,7 +357,7 @@
 
     // Update toggle buttons
     document.querySelectorAll('.lang-toggle').forEach(function (btn) {
-      btn.textContent = lang === 'en' ? 'VI' : 'EN';
+      btn.textContent = lang === 'en' ? '🇻🇳 VI' : '🇬🇧 EN';
       btn.setAttribute('aria-label', lang === 'en' ? 'Chuyển sang Tiếng Việt' : 'Switch to English');
     });
   }
@@ -374,7 +374,7 @@
     setLanguage(currentLang);
     if (currentLang === 'vi') {
       document.querySelectorAll('.lang-toggle').forEach(function (btn) {
-        btn.textContent = 'EN';
+        btn.textContent = '🇬🇧 EN';
         btn.setAttribute('aria-label', 'Switch to English');
       });
     }

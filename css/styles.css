@@ -312,7 +312,7 @@ a {
   border-radius: 40px;
   overflow: hidden;
   background: #f5f5f5;
-  padding: 6px;
+  padding: 3px;
 }
 
 /* Real screenshot fills the phone screen */
@@ -321,7 +321,7 @@ a {
   height: 100%;
   object-fit: cover;
   object-position: top;
-  border-radius: 34px;
+  border-radius: 37px;
   display: block;
 }
 
@@ -570,7 +570,7 @@ a {
   border-radius: 33px;
   overflow: hidden;
   background: #f5f5f5;
-  padding: 5px;
+  padding: 3px;
 }
 
 /* Real screenshot fills screenshot phone */
@@ -579,7 +579,7 @@ a {
   height: 100%;
   object-fit: cover;
   object-position: top;
-  border-radius: 28px;
+  border-radius: 30px;
   display: block;
 }
 
@@ -743,7 +743,7 @@ a {
   border-radius: 36px;
   overflow: hidden;
   background: #f5f5f5;
-  padding: 5px;
+  padding: 3px;
 }
 
 .showcase-phone-screen > img {
@@ -751,7 +751,7 @@ a {
   height: 100%;
   object-fit: cover;
   object-position: top;
-  border-radius: 31px;
+  border-radius: 33px;
   display: block;
 }
 
@@ -1044,7 +1044,7 @@ a {
   .phone-mockup-screen {
     inset: 3px;
     border-radius: 33px;
-    padding: 5px;
+    padding: 3px;
   }
 
   .screenshot-phone {

@@ -499,6 +499,33 @@ a {
   border-top: 2px dashed var(--color-gray-300);
 }
 
+/* --- Inline CTA --- */
+.btn-gold-lg {
+  background: linear-gradient(
+    135deg,
+    var(--color-gold) 0%,
+    var(--color-gold-dark) 100%
+  );
+  color: var(--color-navy-dark);
+  font-weight: 700;
+  padding: 1rem 2.5rem;
+  border-radius: var(--radius-xl);
+  transition:
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.125rem;
+}
+
+.btn-gold-lg:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(249, 115, 22, 0.35);
+}
+
 .step-number {
   width: 56px;
   height: 56px;
@@ -998,6 +1025,144 @@ a {
 
 .animate-pulse-glow {
   animation: pulse-glow 3s ease-in-out infinite;
+}
+
+/* --- Mobile Sticky CTA Bar --- */
+.sticky-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 998;
+  background: rgba(12, 23, 38, 0.97);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  padding: 0.75rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  transform: translateY(100%);
+  opacity: 0;
+  transition:
+    transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    opacity 0.3s ease;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.sticky-cta.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Hide sticky CTA on desktop — only show on mobile/tablet */
+@media (min-width: 769px) {
+  .sticky-cta {
+    display: none;
+  }
+}
+
+/* --- Enhanced Feature Card Hover --- */
+.feature-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.feature-card:hover::before {
+  transform: scaleX(1);
+}
+
+/* --- Showcase Phone Scroll Reveal --- */
+.showcase-phone {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.fade-up .showcase-phone {
+  transform: scale(0.95);
+}
+
+.fade-up.visible .showcase-phone {
+  transform: scale(1);
+}
+
+/* --- Button Press Effect --- */
+.btn-gold:active,
+.store-badge:active {
+  transform: translateY(0) scale(0.97);
+}
+
+/* --- Section Divider Gradient --- */
+.section-fade-in {
+  position: relative;
+}
+
+.section-fade-in::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+  border-radius: 2px;
+}
+
+/* --- Testimonial Card Quote Mark --- */
+.testimonial-card {
+  position: relative;
+}
+
+.testimonial-card::after {
+  content: "\201C";
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 4rem;
+  line-height: 1;
+  font-family: Georgia, serif;
+  color: var(--color-gray-100);
+  pointer-events: none;
+}
+
+/* --- Stat Number Enhancement --- */
+.stat-number {
+  background: linear-gradient(135deg, var(--color-navy), var(--color-navy-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* --- FAQ Item Active Glow --- */
+.faq-item.active {
+  box-shadow: 0 0 0 1px var(--color-gold), 0 4px 12px rgba(249, 115, 22, 0.1);
+}
+
+/* --- Problem Card Hover --- */
+.problem-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* --- Smooth Scroll Padding for Sticky CTA --- */
+@media (max-width: 768px) {
+  .cta-section {
+    padding-bottom: 6rem;
+  }
+
+  footer.footer {
+    padding-bottom: 5rem;
+  }
 }
 
 /* --- Reduced Motion --- */

@@ -171,39 +171,27 @@
     });
   });
 
-  // --- Email Signup Form ---
-  var emailForm = document.getElementById('email-signup-form');
-  if (emailForm) {
-    emailForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var emailInput = document.getElementById('signup-email');
-      var successMsg = document.getElementById('email-success');
-      var errorMsg = document.getElementById('email-error');
-      var email = emailInput.value.trim();
+  // --- Mobile Sticky CTA Bar ---
+  var stickyCta = document.getElementById('sticky-cta');
+  var heroSection = document.getElementById('hero');
+  var ctaSection = document.getElementById('download');
 
-      // Hide previous messages
-      if (successMsg) successMsg.classList.add('hidden');
-      if (errorMsg) errorMsg.classList.add('hidden');
+  if (stickyCta && heroSection) {
+    function handleStickyCta() {
+      var heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+      var ctaTop = ctaSection ? ctaSection.offsetTop - window.innerHeight : Infinity;
+      var scrollY = window.scrollY;
 
-      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        if (errorMsg) errorMsg.classList.remove('hidden');
-        return;
+      // Show after scrolling past hero, hide when reaching final CTA
+      if (scrollY > heroBottom && scrollY < ctaTop) {
+        stickyCta.classList.add('visible');
+      } else {
+        stickyCta.classList.remove('visible');
       }
+    }
 
-      // Store locally (Mailchimp-ready placeholder)
-      try {
-        var subscribers = JSON.parse(localStorage.getItem('moni_subscribers') || '[]');
-        if (!subscribers.includes(email)) {
-          subscribers.push(email);
-          localStorage.setItem('moni_subscribers', JSON.stringify(subscribers));
-        }
-      } catch (err) {
-        // localStorage not available, ignore
-      }
-
-      emailInput.value = '';
-      if (successMsg) successMsg.classList.remove('hidden');
-    });
+    window.addEventListener('scroll', handleStickyCta, { passive: true });
+    handleStickyCta();
   }
 
   // --- Active nav link highlighting ---

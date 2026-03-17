@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tham gia nhóm trên Moni</title>
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="description" content="Bạn được mời tham gia nhóm trên Moni - ứng dụng quản lý chi tiêu" />
+  <meta property="og:title" content="Tham gia nhóm trên Moni" />
+  <meta property="og:description" content="Bạn được mời tham gia nhóm chi tiêu trên Moni" />
+  <meta property="og:type" content="website" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #FFF7ED, #FFFFFF);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 24px;
+      padding: 40px 32px;
+      max-width: 380px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(249, 115, 22, 0.12);
+    }
+    .logo { font-size: 48px; margin-bottom: 16px; }
+    h1 { font-size: 22px; color: #09090B; margin-bottom: 8px; }
+    .subtitle { color: #71717A; font-size: 14px; margin-bottom: 24px; line-height: 1.5; }
+    .code-label { font-size: 12px; color: #A1A1AA; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 1px; }
+    .code {
+      background: #F4F4F5;
+      border-radius: 12px;
+      padding: 14px 16px;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 20px;
+      font-weight: 700;
+      color: #09090B;
+      letter-spacing: 2px;
+      margin-bottom: 24px;
+      word-break: break-all;
+      cursor: pointer;
+      position: relative;
+      transition: background 0.2s;
+    }
+    .code:hover { background: #E4E4E7; }
+    .code:active { background: #D4D4D8; }
+    .copied {
+      position: absolute;
+      top: -28px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #09090B;
+      color: white;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 500;
+      opacity: 0;
+      transition: opacity 0.2s;
+      pointer-events: none;
+    }
+    .copied.show { opacity: 1; }
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+      margin-bottom: 12px;
+      transition: opacity 0.2s;
+      border: none;
+      cursor: pointer;
+    }
+    .btn:hover { opacity: 0.9; }
+    .btn-primary {
+      background: linear-gradient(135deg, #F97316, #F59E0B);
+      color: white;
+    }
+    .divider { color: #A1A1AA; font-size: 12px; margin: 16px 0; }
+    .steps {
+      text-align: left;
+      background: #FAFAFA;
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 20px;
+    }
+    .steps ol { padding-left: 20px; }
+    .steps li { color: #52525B; font-size: 13px; line-height: 1.8; }
+    .steps li strong { color: #09090B; }
+    .store-links { display: flex; gap: 12px; justify-content: center; margin-top: 8px; }
+    .store-links a {
+      color: #F97316;
+      font-size: 13px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .store-links a:hover { text-decoration: underline; }
+    .error { color: #EF4444; font-size: 14px; padding: 40px 0; }
+  </style>
+</head>
+<body>
+  <div class="card" id="card"></div>
+
+  <script>
+    var APP_SCHEME = 'moneymate';
+    var IOS_STORE = 'https://apps.apple.com/app/id6759211409';
+    var ANDROID_STORE = 'https://play.google.com/store/apps/details?id=com.code4change.moneymate';
+
+    // Extract code from URL path: /invite/CODE or /invite/?code=CODE
+    var path = window.location.pathname;
+    var params = new URLSearchParams(window.location.search);
+    var code = params.get('code');
+
+    // Support /invite/CODE path format
+    if (!code) {
+      var match = path.match(/\/invite\/([A-Za-z0-9]+)/);
+      if (match) code = match[1];
+    }
+
+    var card = document.getElementById('card');
+
+    if (!code || code.length < 8) {
+      card.innerHTML = '<div class="logo">🐷</div><p class="error">Mã mời không hợp lệ</p>';
+    } else {
+      var deepLink = APP_SCHEME + '://invite/' + code;
+
+      card.innerHTML =
+        '<div class="logo">🐷</div>' +
+        '<h1>Bạn được mời tham gia nhóm</h1>' +
+        '<p class="subtitle">Mở ứng dụng Moni để tham gia nhóm.</p>' +
+        '<div class="code-label">Mã mời</div>' +
+        '<div class="code" id="codeBox" onclick="copyCode()">' +
+          '<span class="copied" id="copiedTip">Đã sao chép!</span>' +
+          code +
+        '</div>' +
+        '<a href="' + deepLink + '" class="btn btn-primary" id="openBtn">Mở Moni</a>' +
+        '<div class="steps">' +
+          '<ol>' +
+            '<li>Mở ứng dụng <strong>Moni</strong></li>' +
+            '<li>Vào tab <strong>Nhóm</strong> → bấm <strong>Nhập mã mời</strong></li>' +
+            '<li>Dán mã ở trên → bấm <strong>Tham gia</strong></li>' +
+          '</ol>' +
+        '</div>' +
+        '<p class="divider">Chưa có Moni?</p>' +
+        '<div class="store-links">' +
+          '<a href="' + IOS_STORE + '">📱 App Store</a>' +
+          '<a href="' + ANDROID_STORE + '">🤖 Google Play</a>' +
+        '</div>';
+
+      // Auto-attempt deep link
+      setTimeout(function() { window.location.href = deepLink; }, 500);
+    }
+
+    function copyCode() {
+      if (!code) return;
+      navigator.clipboard.writeText(code).then(function() {
+        var tip = document.getElementById('copiedTip');
+        tip.classList.add('show');
+        setTimeout(function() { tip.classList.remove('show'); }, 1500);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moni - Hướng Dẫn Hoàn Tiền Shopee</title>
+  <meta name="description" content="Hướng dẫn kiếm hoàn tiền Shopee qua Moni. 2 cách đơn giản để kiếm tiền mỗi đơn hàng Shopee.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#1e3a5f">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/icon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS (compiled) -->
+  <link rel="stylesheet" href="css/tailwind-compiled.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    .guide-step-number {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+    .guide-phone {
+      max-width: 280px;
+      border-radius: 32px;
+      overflow: hidden;
+      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+      border: 6px solid #1a1a2e;
+    }
+    .guide-phone img {
+      width: 100%;
+      display: block;
+    }
+    .method-card {
+      background: white;
+      border-radius: 1rem;
+      border: 1px solid #e5e7eb;
+      padding: 2rem;
+      transition: box-shadow 0.2s;
+    }
+    .method-card:hover {
+      box-shadow: 0 10px 40px -10px rgba(0,0,0,0.1);
+    }
+    .step-connector {
+      width: 2px;
+      height: 32px;
+      background: #d1d5db;
+      margin-left: 23px;
+    }
+    .badge-method {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav py-4" id="navbar" style="background: rgba(30,58,95,0.95);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3">
+        <img src="images/logo.png" alt="Moni" class="w-10 h-10 rounded-xl">
+        <span class="text-white font-bold text-xl">Moni</span>
+      </a>
+      <a href="/" class="text-white/80 hover:text-white text-sm font-medium">
+        <svg class="w-5 h-5 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"/></svg>
+        Trang chủ
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero-gradient pt-28 pb-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-1.5 mb-6 border border-white/10">
+        <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
+        <span class="text-white/70 text-sm font-medium">Hoàn tiền Shopee</span>
+      </div>
+      <h1 class="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-6">
+        Hướng Dẫn Kiếm <span class="text-gold">Hoàn Tiền Shopee</span>
+      </h1>
+      <p class="text-white/70 text-lg max-w-2xl mx-auto leading-relaxed">
+        Mua sắm trên Shopee qua Moni và kiếm hoàn tiền mỗi đơn hàng. Chỉ cần 2 bước đơn giản!
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== HOW IT WORKS OVERVIEW ========== -->
+  <section class="py-12 bg-white border-b border-gray-100">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-3 gap-6 text-center">
+        <div class="flex flex-col items-center gap-3">
+          <div class="w-14 h-14 bg-amber-50 rounded-2xl flex items-center justify-center">
+            <svg class="w-7 h-7 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/></svg>
+          </div>
+          <div>
+            <p class="font-bold text-navy text-lg">Mở link qua Moni</p>
+            <p class="text-gray-500 text-sm">Dán link hoặc chia sẻ sản phẩm</p>
+          </div>
+        </div>
+        <div class="flex flex-col items-center gap-3">
+          <div class="w-14 h-14 bg-emerald-50 rounded-2xl flex items-center justify-center">
+            <svg class="w-7 h-7 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"/></svg>
+          </div>
+          <div>
+            <p class="font-bold text-navy text-lg">Mua sắm bình thường</p>
+            <p class="text-gray-500 text-sm">Đặt hàng trên Shopee như bình thường</p>
+          </div>
+        </div>
+        <div class="flex flex-col items-center gap-3">
+          <div class="w-14 h-14 bg-orange-50 rounded-2xl flex items-center justify-center">
+            <svg class="w-7 h-7 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z"/></svg>
+          </div>
+          <div>
+            <p class="font-bold text-navy text-lg">Nhận hoàn tiền</p>
+            <p class="text-gray-500 text-sm">Hoàn tiền tự động vào Moni</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== METHOD 1: PASTE LINK ========== -->
+  <section class="py-16 lg:py-20 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-10">
+        <span class="badge-method bg-blue-50 text-blue-700 mb-4">Cách 1</span>
+        <h2 class="font-display text-2xl sm:text-3xl font-bold text-navy mt-3">Dán Link Sản Phẩm</h2>
+        <p class="text-gray-500 mt-2">Copy link sản phẩm Shopee và dán vào Moni để tự động tạo link hoàn tiền.</p>
+      </div>
+
+      <div class="flex flex-col lg:flex-row items-start gap-10 lg:gap-16">
+        <!-- Steps -->
+        <div class="flex-1 space-y-0">
+          <!-- Step 1 -->
+          <div class="flex items-start gap-4">
+            <div class="guide-step-number bg-navy text-white">1</div>
+            <div class="pt-2">
+              <h3 class="font-bold text-navy text-lg mb-1">Mở app Shopee</h3>
+              <p class="text-gray-500 text-sm leading-relaxed">Tìm sản phẩm bạn muốn mua trên Shopee. Bấm <strong>"Sao chép link"</strong> hoặc copy URL của sản phẩm.</p>
+            </div>
+          </div>
+
+          <div class="step-connector"></div>
+
+          <!-- Step 2 -->
+          <div class="flex items-start gap-4">
+            <div class="guide-step-number bg-gold text-navy-dark">2</div>
+            <div class="pt-2">
+              <h3 class="font-bold text-navy text-lg mb-1">Dán vào Moni</h3>
+              <p class="text-gray-500 text-sm leading-relaxed">Mở app Moni, tại mục <strong>"Hoàn tiền Shopee"</strong> trên trang chủ, dán link vào ô nhập và bấm <strong>"Dán & Kiếm tiền"</strong>.</p>
+            </div>
+          </div>
+
+          <div class="step-connector"></div>
+
+          <!-- Step 3 -->
+          <div class="flex items-start gap-4">
+            <div class="guide-step-number bg-emerald-500 text-white">3</div>
+            <div class="pt-2">
+              <h3 class="font-bold text-navy text-lg mb-1">Mua sắm & nhận hoàn tiền</h3>
+              <p class="text-gray-500 text-sm leading-relaxed">Moni sẽ mở Shopee với link hoàn tiền. Bạn mua sắm bình thường và hoàn tiền sẽ tự động được ghi nhận.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phone mockup -->
+        <div class="flex-shrink-0 mx-auto lg:mx-0">
+          <div class="guide-phone">
+            <img src="images/guide/step1-annotated.png" alt="Dán link Shopee vào Moni" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== METHOD 2: SHARE EXTENSION ========== -->
+  <section class="py-16 lg:py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-10">
+        <span class="badge-method bg-emerald-50 text-emerald-700 mb-4">Cách 2</span>
+        <h2 class="font-display text-2xl sm:text-3xl font-bold text-navy mt-3">Chia Sẻ Từ Shopee</h2>
+        <p class="text-gray-500 mt-2">Chia sẻ sản phẩm trực tiếp từ Shopee sang Moni chỉ với 2 bước.</p>
+      </div>
+
+      <div class="flex flex-col lg:flex-row-reverse items-start gap-10 lg:gap-16">
+        <!-- Steps -->
+        <div class="flex-1 space-y-0">
+          <!-- Step 1 -->
+          <div class="flex items-start gap-4">
+            <div class="guide-step-number bg-navy text-white">1</div>
+            <div class="pt-2">
+              <h3 class="font-bold text-navy text-lg mb-1">Bấm nút Chia sẻ trên Shopee</h3>
+              <p class="text-gray-500 text-sm leading-relaxed">Tại trang chi tiết sản phẩm Shopee, bấm vào <strong>biểu tượng chia sẻ</strong> (mũi tên) ở góc trên bên phải.</p>
+            </div>
+          </div>
+
+          <div class="step-connector"></div>
+
+          <!-- Step 2 -->
+          <div class="flex items-start gap-4">
+            <div class="guide-step-number bg-gold text-navy-dark">2</div>
+            <div class="pt-2">
+              <h3 class="font-bold text-navy text-lg mb-1">Chọn Moni</h3>
+              <p class="text-gray-500 text-sm leading-relaxed">Trong bảng chia sẻ, tìm và chọn <strong>app Moni</strong> (biểu tượng con heo). Nếu không thấy, vuốt sang phải hoặc bấm <strong>"Thêm"</strong> để tìm.</p>
+            </div>
+          </div>
+
+          <div class="step-connector"></div>
+
+          <!-- Step 3 -->
+          <div class="flex items-start gap-4">
+            <div class="guide-step-number bg-emerald-500 text-white">3</div>
+            <div class="pt-2">
+              <h3 class="font-bold text-navy text-lg mb-1">Mua sắm & nhận hoàn tiền</h3>
+              <p class="text-gray-500 text-sm leading-relaxed">Moni sẽ tự động tạo link hoàn tiền và mở Shopee. Tiếp tục mua sắm bình thường, hoàn tiền sẽ được ghi nhận!</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phone mockup -->
+        <div class="flex-shrink-0 mx-auto lg:mx-0">
+          <div class="guide-phone">
+            <img src="images/guide/step3-annotated.png" alt="Chia sẻ sản phẩm Shopee sang Moni" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TIPS ========== -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-display text-2xl font-bold text-navy mb-8 text-center">Lưu Ý Quan Trọng</h2>
+      <div class="space-y-4">
+        <div class="flex items-start gap-3 bg-white rounded-xl p-5 border border-gray-200">
+          <div class="w-8 h-8 bg-amber-50 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+            <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"/></svg>
+          </div>
+          <div>
+            <p class="font-semibold text-navy text-sm">Phải mở link qua Moni</p>
+            <p class="text-gray-500 text-sm mt-1">Hoàn tiền chỉ được ghi nhận khi bạn mở link sản phẩm qua Moni. Nếu bạn mở trực tiếp trên Shopee thì sẽ không có hoàn tiền.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 bg-white rounded-xl p-5 border border-gray-200">
+          <div class="w-8 h-8 bg-emerald-50 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+            <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <div>
+            <p class="font-semibold text-navy text-sm">Hoàn tiền mất 1-3 ngày</p>
+            <p class="text-gray-500 text-sm mt-1">Sau khi đơn hàng hoàn tất, hoàn tiền sẽ được xác nhận và cộng vào số dư Moni của bạn trong 1-3 ngày.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 bg-white rounded-xl p-5 border border-gray-200">
+          <div class="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+            <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z"/></svg>
+          </div>
+          <div>
+            <p class="font-semibold text-navy text-sm">Rút tiền bất cứ lúc nào</p>
+            <p class="text-gray-500 text-sm mt-1">Số dư hoàn tiền có thể rút về tài khoản ngân hàng của bạn bất cứ lúc nào không giới hạn.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta-section py-16">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <h2 class="font-display text-2xl sm:text-3xl font-extrabold text-white mb-4">Bắt Đầu Kiếm Hoàn Tiền Ngay!</h2>
+      <p class="text-white/60 text-lg mb-8">Tải Moni miễn phí và bắt đầu kiếm hoàn tiền từ mỗi đơn hàng Shopee.</p>
+      <a href="https://apps.apple.com/vn/app/money-mate-plus/id6759211409" target="_blank" rel="noopener noreferrer" class="btn-gold text-base px-8 py-3">Tải Moni Miễn Phí</a>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <img src="images/logo.png" alt="Moni" class="w-8 h-8 rounded-lg">
+          <span class="text-white font-bold">Moni</span>
+        </div>
+        <p class="text-sm text-white/50">&copy; 2026 Code4change. All rights reserved.</p>
+        <div class="flex gap-4 text-sm">
+          <a href="/" class="text-white/50 hover:text-white">Trang chủ</a>
+          <a href="privacy-policy.html" class="text-white/50 hover:text-white">Chính sách bảo mật</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

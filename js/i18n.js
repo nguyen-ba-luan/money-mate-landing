@@ -69,6 +69,7 @@
       'solution.f3.tag1': 'Streak Rewards',
       'solution.f3.tag2': 'Real Withdrawals',
       'solution.f3.tag3': 'via Shopee',
+      'solution.f3.guide': 'See Shopee cashback guide',
 
       // More features grid
       'more.tagline': 'And Much More',
@@ -240,6 +241,7 @@
       'solution.f3.tag1': 'Th\u01B0\u1EDFng Chu\u1ED7i Ng\u00E0y',
       'solution.f3.tag2': 'R\u00FAt Ti\u1EC1n Th\u1EADt',
       'solution.f3.tag3': 'qua Shopee',
+      'solution.f3.guide': 'Xem h\u01B0\u1EDBng d\u1EABn ki\u1EBFm ho\u00E0n ti\u1EC1n Shopee',
 
       // More features grid
       'more.tagline': 'V\u00E0 Nhi\u1EC1u H\u01A1n',

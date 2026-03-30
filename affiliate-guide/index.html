@@ -32,6 +32,14 @@
   [
     {
       "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://moni.live/"},
+        {"@type": "ListItem", "position": 2, "name": "Hướng dẫn hoàn tiền Shopee", "item": "https://moni.live/affiliate-guide/"}
+      ]
+    },
+    {
+      "@context": "https://schema.org",
       "@type": "HowTo",
       "name": "Cách kiếm hoàn tiền Shopee qua Moni",
       "description": "Hướng dẫn 2 cách để kiếm hoàn tiền khi mua hàng Shopee qua app Moni",
@@ -100,10 +108,11 @@
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="../images/icon.png">
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts (non-blocking) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet"></noscript>
 
   <!-- Tailwind CSS (compiled) -->
   <link rel="stylesheet" href="../css/tailwind-compiled.css">

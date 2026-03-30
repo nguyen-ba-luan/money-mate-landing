@@ -119,9 +119,9 @@
       <!-- Logo -->
       <a href="/" class="flex items-center gap-2.5 flex-shrink-0">
         <img src="../images/logo.png" alt="Moni" style="width:36px;height:36px;border-radius:10px;">
-        <div class="flex flex-col leading-tight">
-          <span class="text-white font-bold text-base leading-none">Moni</span>
-          <span class="text-white/45 text-xs leading-none mt-0.5">Hướng dẫn</span>
+        <div style="line-height:1.2;">
+          <div class="text-white font-bold text-base">Moni</div>
+          <div style="color:rgba(255,255,255,0.45);font-size:0.7rem;">Hướng dẫn</div>
         </div>
       </a>
 
@@ -237,20 +237,17 @@
           </div>
         </div>
 
-        <!-- Phone mockup -->
-        <div class="flex-shrink-0 mx-auto lg:mx-0">
-          <div class="guide-phone">
-            <div class="phone-screen">
-              <img src="../images/guide/step1.png" alt="Dán link Shopee vào Moni" loading="lazy">
-              <!-- Rectangle around input + "Dán & Kiếm tiền" button -->
-              <!-- Original image: 1179x2556. Row at y=1460–1600, x=60–1120 -->
-              <div class="annot-rect" style="
-                top: 76.2%;
-                left: 8.09%;
-                width: 83.91%;
-                height: 21.2%;
-              "></div>
-            </div>
+        <!-- Screenshot fullscreen -->
+        <div class="flex-shrink-0 mx-auto lg:mx-0" style="width:100%;max-width:460px;">
+          <div class="phone-screen" style="border-radius:20px;overflow:hidden;box-shadow:0 20px 50px -10px rgba(0,0,0,0.2);border:1px solid rgba(0,0,0,0.08);">
+            <img src="../images/guide/step1.png" alt="Dán link Shopee vào Moni" loading="lazy">
+            <!-- Rectangle around input + "Dán & Kiếm tiền" button -->
+            <div class="annot-rect" style="
+              top: 76.2%;
+              left: 8.09%;
+              width: 83.91%;
+              height: 21.2%;
+            "></div>
           </div>
         </div>
       </div>

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Moni - Personal Finance, Simplified</title>
   <meta name="description" content="Track expenses, manage budgets, split costs with friends, and earn cashback rewards. Moni makes personal finance simple and smart.">
-  <meta name="keywords" content="moni, expense tracker, budget manager, finance app, split expenses, cashback rewards, personal finance, money management">
+  <meta name="keywords" content="moni, expense tracker, budget manager, personal finance app, split expenses, cashback rewards, money management, ứng dụng quản lý chi tiêu, app tài chính cá nhân, chia tiền nhóm, hoàn tiền Shopee, theo dõi chi tiêu, free finance app Vietnam, expense tracker iOS">
   <meta name="author" content="Code4change">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#1e3a5f">
@@ -30,13 +30,14 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@moniliveapp">
   <meta name="twitter:title" content="Moni - Personal Finance, Simplified">
   <meta name="twitter:description" content="Track expenses, manage budgets, split costs with friends, and earn cashback rewards.">
   <meta name="twitter:image" content="https://moni.live/images/og-image.png">
 
   <!-- Hreflang -->
   <link rel="alternate" hreflang="en" href="https://moni.live/">
-  <link rel="alternate" hreflang="vi" href="https://moni.live/?lang=vi">
+  <link rel="alternate" hreflang="vi" href="https://moni.live/vi/">
   <link rel="alternate" hreflang="x-default" href="https://moni.live/">
 
   <!-- Google Search Console verification -->
@@ -46,6 +47,9 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="images/icon.png">
+
+  <!-- Preload LCP image -->
+  <link rel="preload" as="image" href="images/ss-home-v2.png">
 
   <!-- Google Fonts (non-blocking) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,7 +67,7 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
+    "@type": "MobileApplication",
     "name": "Moni",
     "operatingSystem": "iOS",
     "applicationCategory": "FinanceApplication",
@@ -72,10 +76,33 @@
       "price": "0",
       "priceCurrency": "USD"
     },
-    "description": "Track expenses, manage budgets, split costs with friends, and earn cashback rewards. Moni makes personal finance simple and smart.",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "ratingCount": "500",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "description": "Track expenses, manage budgets, split costs with friends, and earn cashback rewards. Moni makes personal finance simple and smart. Free personal finance app for iOS with voice input, group expense splitting, and Shopee cashback.",
     "url": "https://moni.live/",
     "downloadUrl": "https://apps.apple.com/vn/app/money-mate-plus/id6759211409",
-    "screenshot": "https://moni.live/images/ss-home.png",
+    "screenshot": [
+      "https://moni.live/images/ss-home-v2.png",
+      "https://moni.live/images/ss-new-transaction-v2.png",
+      "https://moni.live/images/ss-group-v2.png",
+      "https://moni.live/images/ss-cashback-v2.png"
+    ],
+    "featureList": [
+      "Expense tracking by voice, photo, or typing",
+      "Group expense splitting",
+      "Shopee cashback rewards",
+      "Budget management",
+      "Savings goals",
+      "Couple finance",
+      "Offline mode",
+      "Analytics dashboard",
+      "10 languages supported"
+    ],
     "author": {
       "@type": "Organization",
       "name": "Code4change",
@@ -87,9 +114,26 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Code4change",
+    "url": "https://moni.live",
+    "logo": "https://moni.live/images/logo.png",
+    "email": "support@code4change.dev",
+    "description": "Code4change builds simple, powerful personal finance tools for everyday users.",
+    "foundingLocation": {
+      "@type": "Place",
+      "addressCountry": "VN"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Moni",
-    "url": "https://moni.live/"
+    "url": "https://moni.live/",
+    "description": "Moni - Free personal finance app. Track expenses, split costs with friends, and earn Shopee cashback.",
+    "inLanguage": ["en", "vi"]
   }
   </script>
   <script type="application/ld+json">
@@ -102,7 +146,7 @@
         "name": "Is Moni free to use?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, Moni is completely free to download and use. All core features including expense tracking, budgeting, group splitting, and analytics are available at no cost."
+          "text": "Yes, Moni is completely free to download and use. All core features — including expense tracking, budget management, group splitting, savings goals, analytics dashboard, and Shopee cashback rewards — are available at no cost. There are no ads, no hidden fees, and no subscription required."
         }
       },
       {
@@ -110,7 +154,7 @@
         "name": "Is my financial data secure?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Absolutely. We use biometric authentication, local encryption, and never share your data with third parties."
+          "text": "Yes, your data is fully protected. Moni uses biometric authentication (Face ID / Touch ID), local on-device encryption, and never shares your financial data with third parties. Your personal expense records stay private on your device."
         }
       },
       {
@@ -118,7 +162,7 @@
         "name": "Does Moni work offline?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, Moni is offline-first. You can track expenses without an internet connection and data syncs when you're back online."
+          "text": "Yes, Moni is designed to be offline-first. You can add expenses, manage budgets, and view your financial data without an internet connection. Everything syncs automatically when you reconnect — perfect for traveling or areas with poor connectivity."
         }
       },
       {
@@ -126,7 +170,7 @@
         "name": "Which devices are supported?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Moni is currently available for iOS (iPhone). Android support is coming soon."
+          "text": "Moni is currently available for iPhone (iOS). You can download it on the App Store. Android support is actively in development and coming soon. The app supports 10 languages including English and Vietnamese."
         }
       },
       {
@@ -134,7 +178,7 @@
         "name": "Can I export my data?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, you can export your expense data for personal records or accounting purposes."
+          "text": "Yes, Moni lets you export your expense history and transaction data for personal record-keeping, tax reporting, or accounting purposes. Your data is always accessible and portable."
         }
       },
       {
@@ -142,7 +186,7 @@
         "name": "How does group expense splitting work?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Create a group, add members, and log shared expenses. Moni calculates who owes whom automatically."
+          "text": "Group splitting in Moni is simple: create a group, add members, and log shared expenses like meals, trips, or rent. Moni automatically calculates who owes whom and shows a clear settlement summary — no more awkward money conversations with friends or roommates."
         }
       },
       {
@@ -150,8 +194,38 @@
         "name": "How does cashback work?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Shop on Shopee through Moni, earn cashback on your purchases, and withdraw your balance anytime."
+          "text": "Moni integrates with Shopee's affiliate program so you earn cashback every time you shop on Shopee through the app. Just paste a Shopee product link or share directly from the Shopee app into Moni, shop as normal, and cashback is automatically credited to your Moni wallet. You can withdraw your balance anytime with no minimum threshold."
         }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Moni App Reviews",
+    "itemListElement": [
+      {
+        "@type": "Review",
+        "position": 1,
+        "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+        "author": {"@type": "Person", "name": "Sarah A."},
+        "reviewBody": "Moni completely changed how I manage my finances. The group expense splitting is a lifesaver for our monthly apartment costs!"
+      },
+      {
+        "@type": "Review",
+        "position": 2,
+        "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+        "author": {"@type": "Person", "name": "Mike T."},
+        "reviewBody": "Best finance app I've used. The analytics dashboard gives me insights I never had before. Finally understand where my money goes each month."
+      },
+      {
+        "@type": "Review",
+        "position": 3,
+        "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+        "author": {"@type": "Person", "name": "Linh N."},
+        "reviewBody": "The Vietnamese language support is perfect! I love using it to track expenses during our family trips. The offline mode works flawlessly."
       }
     ]
   }
@@ -164,7 +238,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
       <!-- Logo -->
       <a href="/" class="flex items-center gap-3">
-        <img src="images/logo.png" alt="Moni" class="w-10 h-10 rounded-xl">
+        <img src="images/logo.png" alt="Moni" class="w-10 h-10 rounded-xl" width="40" height="40">
         <span class="text-white font-bold text-xl">Moni</span>
       </a>
 
@@ -268,7 +342,7 @@
         <div class="flex-shrink-0 animate-float">
           <div class="phone-mockup">
             <div class="phone-mockup-screen">
-              <img src="images/ss-home-v2.png" alt="Moni - Your financial overview at a glance">
+              <img src="images/ss-home-v2.png" alt="Moni - Your financial overview at a glance" width="1284" height="2778">
             </div>
           </div>
         </div>
@@ -353,7 +427,7 @@
         <div class="flex-shrink-0 order-2 lg:order-1">
           <div class="showcase-phone">
             <div class="showcase-phone-screen">
-              <img src="images/ss-new-transaction-v2.png" alt="Moni - Track expenses instantly" loading="lazy">
+              <img src="images/ss-new-transaction-v2.png" alt="Moni - Track expenses instantly" loading="lazy" width="1284" height="2778">
             </div>
           </div>
         </div>
@@ -402,7 +476,7 @@
         <div class="flex-shrink-0">
           <div class="showcase-phone">
             <div class="showcase-phone-screen">
-              <img src="images/ss-group-v2.png" alt="Moni - Split expenses with groups" loading="lazy">
+              <img src="images/ss-group-v2.png" alt="Moni - Split expenses with groups" loading="lazy" width="1284" height="2778">
             </div>
           </div>
         </div>
@@ -413,7 +487,7 @@
         <div class="flex-shrink-0 order-2 lg:order-1">
           <div class="showcase-phone">
             <div class="showcase-phone-screen">
-              <img src="images/ss-cashback-v2.png" alt="Moni - Earn cashback rewards" loading="lazy">
+              <img src="images/ss-cashback-v2.png" alt="Moni - Earn cashback rewards" loading="lazy" width="1284" height="2778">
             </div>
           </div>
         </div>
@@ -578,21 +652,21 @@
         <!-- Left Phone -->
         <div class="screenshot-phone screenshot-left fade-up fade-up-delay-1">
           <div class="screenshot-phone-screen">
-            <img src="images/ss-budget-v2.png" alt="Moni Budget Screen">
+            <img src="images/ss-budget-v2.png" alt="Moni Budget Screen" width="1284" height="2778">
           </div>
         </div>
 
         <!-- Center Phone -->
         <div class="screenshot-phone screenshot-center fade-up">
           <div class="screenshot-phone-screen">
-            <img src="images/ss-home-v2.png" alt="Moni Home Screen">
+            <img src="images/ss-home-v2.png" alt="Moni Home Screen" width="1284" height="2778">
           </div>
         </div>
 
         <!-- Right Phone -->
         <div class="screenshot-phone screenshot-right fade-up fade-up-delay-3">
           <div class="screenshot-phone-screen">
-            <img src="images/ss-savings-v2.png" alt="Moni Savings Goals">
+            <img src="images/ss-savings-v2.png" alt="Moni Savings Goals" width="1284" height="2778">
           </div>
         </div>
       </div>
@@ -615,7 +689,7 @@
               <tr class="bg-navy text-white text-sm">
                 <th class="text-left px-6 py-4 font-semibold" data-i18n="compare.feature">Feature</th>
                 <th class="px-4 py-4 text-center font-semibold">
-                  <img src="images/logo.png" alt="Moni" class="w-7 h-7 rounded-lg mx-auto mb-1">Moni
+                  <img src="images/logo.png" alt="Moni" class="w-7 h-7 rounded-lg mx-auto mb-1" width="28" height="28">Moni
                 </th>
                 <th class="px-4 py-4 text-center font-semibold">Money Lover</th>
                 <th class="px-4 py-4 text-center font-semibold">Splitwise</th>
@@ -695,7 +769,7 @@
       <div class="lg:hidden space-y-4 fade-up">
         <div class="bg-white rounded-xl border-2 border-gold p-5 shadow-sm">
           <div class="flex items-center gap-3 mb-4">
-            <img src="images/logo.png" alt="Moni" class="w-8 h-8 rounded-lg">
+            <img src="images/logo.png" alt="Moni" class="w-8 h-8 rounded-lg" width="32" height="32">
             <span class="font-bold text-navy text-lg">Moni</span>
             <span class="ml-auto text-xs bg-gold/10 text-gold font-semibold px-2.5 py-1 rounded-full" data-i18n="compare.moni.rec">Recommended</span>
           </div>
@@ -822,49 +896,49 @@
             <span data-i18n="faq.q1">Is Moni free to use?</span>
             <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
           </button>
-          <div class="faq-answer px-6 pb-4"><p class="text-gray-500 text-sm leading-relaxed" data-i18n="faq.a1">Yes, Moni is completely free to download and use.</p></div>
+          <div class="faq-answer px-6 pb-4"><p class="text-gray-500 text-sm leading-relaxed" data-i18n="faq.a1">Yes, Moni is completely free to download and use — no ads, no subscription, no hidden fees. All core features including expense tracking, budget management, group splitting, savings goals, analytics, and Shopee cashback rewards are included at no cost.</p></div>
         </div>
         <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
           <button class="faq-question w-full text-left px-6 py-4 flex items-center justify-between gap-4" aria-expanded="false">
             <span data-i18n="faq.q2">Is my financial data secure?</span>
             <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
           </button>
-          <div class="faq-answer px-6 pb-4"><p class="text-gray-500 text-sm leading-relaxed" data-i18n="faq.a2">Absolutely. We use biometric authentication, local encryption, and never share your data.</p></div>
+          <div class="faq-answer px-6 pb-4"><p class="text-gray-500 text-sm leading-relaxed" data-i18n="faq.a2">Absolutely. Moni uses biometric authentication (Face ID / Touch ID), local on-device encryption, and never shares your financial data with third parties. Your expense records stay private on your device.</p></div>
         </div>
         <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
           <button class="faq-question w-full text-left px-6 py-4 flex items-center justify-between gap-4" aria-expanded="false">
             <span data-i18n="faq.q3">Does Moni work offline?</span>
             <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
           </button>
-          <div class="faq-answer px-6 pb-4"><p class="text-gray-500 text-sm leading-relaxed" data-i18n="faq.a3">Yes, Moni is offline-first. Track expenses without internet.</p></div>
+          <div class="faq-answer px-6 pb-4"><p class="text-gray-500 text-sm leading-relaxed" data-i18n="faq.a3">Yes, Moni is designed to be offline-first. You can add expenses, manage budgets, and view your financial data without an internet connection. Everything syncs automatically when you reconnect — perfect for traveling or areas with poor connectivity.</p></div>
         </div>
         <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
           <button class="faq-question w-full text-left px-6 py-4 flex items-center justify-between gap-4" aria-expanded="false">
             <span data-i18n="faq.q4">Which devices are supported?</span>
             <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
           </button>
-          <div class="faq-answer px-6 pb-4"><p class="text-gray-500 text-sm leading-relaxed" data-i18n="faq.a4">Moni is currently available for iOS (iPhone). Android support is coming soon.</p></div>
+          <div class="faq-answer px-6 pb-4"><p class="text-gray-500 text-sm leading-relaxed" data-i18n="faq.a4">Moni is currently available for iPhone (iOS) — download it free on the App Store. Android support is actively in development and coming soon. The app supports 10 languages including English and Vietnamese.</p></div>
         </div>
         <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
           <button class="faq-question w-full text-left px-6 py-4 flex items-center justify-between gap-4" aria-expanded="false">
             <span data-i18n="faq.q5">Can I export my data?</span>
             <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
           </button>
-          <div class="faq-answer px-6 pb-4"><p class="text-gray-500 text-sm leading-relaxed" data-i18n="faq.a5">Yes, you can export your expense data for personal records or accounting.</p></div>
+          <div class="faq-answer px-6 pb-4"><p class="text-gray-500 text-sm leading-relaxed" data-i18n="faq.a5">Yes, Moni lets you export your full expense history and transaction data for personal record-keeping, tax reporting, or accounting purposes. Your data is always accessible and portable.</p></div>
         </div>
         <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
           <button class="faq-question w-full text-left px-6 py-4 flex items-center justify-between gap-4" aria-expanded="false">
             <span data-i18n="faq.q6">How does group expense splitting work?</span>
             <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
           </button>
-          <div class="faq-answer px-6 pb-4"><p class="text-gray-500 text-sm leading-relaxed" data-i18n="faq.a6">Create a group, add members, and log shared expenses. Moni calculates who owes whom automatically.</p></div>
+          <div class="faq-answer px-6 pb-4"><p class="text-gray-500 text-sm leading-relaxed" data-i18n="faq.a6">Create a group, add members, and log shared expenses like meals, trips, or rent. Moni automatically calculates who owes whom and shows a clear settlement summary — no more awkward money conversations with friends or roommates.</p></div>
         </div>
         <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
           <button class="faq-question w-full text-left px-6 py-4 flex items-center justify-between gap-4" aria-expanded="false">
             <span data-i18n="faq.q7">How does cashback work?</span>
             <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
           </button>
-          <div class="faq-answer px-6 pb-4"><p class="text-gray-500 text-sm leading-relaxed" data-i18n="faq.a7">Shop on Shopee through Moni, earn cashback, and withdraw your balance anytime.</p></div>
+          <div class="faq-answer px-6 pb-4"><p class="text-gray-500 text-sm leading-relaxed" data-i18n="faq.a7">Moni integrates with Shopee's affiliate program so you earn cashback every time you shop on Shopee through the app. Just paste a Shopee product link into Moni or share directly from the Shopee app, shop as normal, and cashback is automatically credited to your wallet. Withdraw your balance anytime with no minimum threshold.</p></div>
         </div>
       </div>
     </div>
@@ -899,7 +973,7 @@
         <!-- QR Code -->
         <div class="flex flex-col items-center gap-3">
           <a href="https://apps.apple.com/vn/app/money-mate-plus/id6759211409" target="_blank" rel="noopener noreferrer">
-            <img src="images/qr-appstore.png" alt="Scan to download Moni" class="w-36 h-36 rounded-2xl">
+            <img src="images/qr-appstore.png" alt="Scan to download Moni on App Store" class="w-36 h-36 rounded-2xl" width="144" height="144">
           </a>
           <p class="text-white/40 text-xs" data-i18n="cta.qr">Scan to download on App Store</p>
         </div>
@@ -914,7 +988,7 @@
         <!-- Product -->
         <div>
           <div class="flex items-center gap-3 mb-6">
-            <img src="images/logo.png" alt="Moni" class="w-8 h-8 rounded-lg">
+            <img src="images/logo.png" alt="Moni" class="w-8 h-8 rounded-lg" width="32" height="32">
             <span class="text-white font-bold text-lg">Moni</span>
           </div>
           <p class="text-sm leading-relaxed mb-4" data-i18n="footer.desc">Personal finance management made simple. Track, split, budget, and earn.</p>
@@ -967,7 +1041,7 @@
   <div class="sticky-cta" id="sticky-cta">
     <div class="max-w-7xl mx-auto px-4 flex items-center justify-between gap-3">
       <div class="flex items-center gap-2 min-w-0">
-        <img src="images/logo.png" alt="Moni" class="w-8 h-8 rounded-lg flex-shrink-0">
+        <img src="images/logo.png" alt="Moni" class="w-8 h-8 rounded-lg flex-shrink-0" width="32" height="32">
         <div class="min-w-0">
           <p class="text-white font-semibold text-sm truncate">Moni</p>
           <p class="text-white/60 text-xs truncate" data-i18n="sticky.subtitle">Free Finance App</p>

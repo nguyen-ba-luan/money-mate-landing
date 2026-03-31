@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moni - Ứng Dụng Quản Lý Tài Chính Cá Nhân, Miễn Phí</title>
+  <meta name="description" content="Theo dõi chi tiêu, quản lý ngân sách, chia tiền nhóm và kiếm hoàn tiền Shopee. Moni là ứng dụng tài chính miễn phí, không quảng cáo, không phí ẩn dành cho người Việt.">
+  <meta name="keywords" content="ứng dụng quản lý chi tiêu, app tài chính cá nhân, chia tiền nhóm, hoàn tiền Shopee, quản lý ngân sách, theo dõi chi tiêu, app miễn phí, moni, moni app, ứng dụng tài chính iPhone">
+  <meta name="author" content="Code4change">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#1e3a5f">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://moni.live/vi/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Moni - Ứng Dụng Quản Lý Tài Chính Cá Nhân, Miễn Phí">
+  <meta property="og:description" content="Theo dõi chi tiêu, quản lý ngân sách, chia tiền nhóm và kiếm hoàn tiền Shopee. Miễn phí 100%.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://moni.live/vi/">
+  <meta property="og:site_name" content="Moni">
+  <meta property="og:image" content="https://moni.live/images/og-image.png?v=2">
+  <meta property="og:image:secure_url" content="https://moni.live/images/og-image.png?v=2">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="fb:app_id" content="864686222625685">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@moniliveapp">
+  <meta name="twitter:title" content="Moni - Ứng Dụng Quản Lý Tài Chính Cá Nhân, Miễn Phí">
+  <meta name="twitter:description" content="Theo dõi chi tiêu, quản lý ngân sách, chia tiền nhóm và kiếm hoàn tiền Shopee. Miễn phí 100%.">
+  <meta name="twitter:image" content="https://moni.live/images/og-image.png">
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="vi" href="https://moni.live/vi/">
+  <link rel="alternate" hreflang="en" href="https://moni.live/">
+  <link rel="alternate" hreflang="x-default" href="https://moni.live/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/icon.png">
+
+  <!-- Preload LCP image -->
+  <link rel="preload" as="image" href="../images/ss-home-v2.png">
+
+  <!-- Google Fonts (non-blocking) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
+
+  <!-- Tailwind CSS (compiled) -->
+  <link rel="stylesheet" href="../css/tailwind-compiled.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Moni",
+    "operatingSystem": "iOS",
+    "applicationCategory": "FinanceApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "VND"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "ratingCount": "500",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "description": "Ứng dụng quản lý tài chính cá nhân miễn phí. Theo dõi chi tiêu bằng giọng nói, chia tiền nhóm, quản lý ngân sách và kiếm hoàn tiền Shopee.",
+    "url": "https://moni.live/vi/",
+    "downloadUrl": "https://apps.apple.com/vn/app/money-mate-plus/id6759211409",
+    "screenshot": [
+      "https://moni.live/images/ss-home-v2.png",
+      "https://moni.live/images/ss-new-transaction-v2.png",
+      "https://moni.live/images/ss-group-v2.png",
+      "https://moni.live/images/ss-cashback-v2.png"
+    ],
+    "featureList": [
+      "Theo dõi chi tiêu bằng giọng nói, ảnh hoặc gõ phím",
+      "Chia tiền nhóm tự động",
+      "Hoàn tiền Shopee",
+      "Quản lý ngân sách theo danh mục",
+      "Mục tiêu tiết kiệm",
+      "Tài chính cặp đôi",
+      "Chế độ ngoại tuyến",
+      "Bảng phân tích chi tiêu",
+      "Hỗ trợ 10 ngôn ngữ"
+    ],
+    "author": {
+      "@type": "Organization",
+      "name": "Code4change",
+      "url": "https://moni.live",
+      "email": "support@code4change.dev"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Trang chủ (Tiếng Việt)", "item": "https://moni.live/vi/"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Moni có miễn phí không?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Có, Moni hoàn toàn miễn phí để tải và sử dụng — không quảng cáo, không phí ẩn, không cần đăng ký. Tất cả tính năng cốt lõi bao gồm theo dõi chi tiêu, quản lý ngân sách, chia tiền nhóm, mục tiêu tiết kiệm, bảng phân tích và hoàn tiền Shopee đều miễn phí."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Dữ liệu tài chính của tôi có an toàn không?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Hoàn toàn an toàn. Moni sử dụng xác thực sinh trắc học (Face ID / Touch ID), mã hóa cục bộ trên thiết bị và không bao giờ chia sẻ dữ liệu tài chính của bạn với bên thứ ba. Hồ sơ chi tiêu của bạn luôn được bảo mật riêng tư trên thiết bị."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Moni có hoạt động ngoại tuyến không?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Có, Moni được thiết kế ưu tiên ngoại tuyến. Bạn có thể thêm chi tiêu, quản lý ngân sách và xem dữ liệu tài chính mà không cần internet. Tất cả tự động đồng bộ khi bạn kết nối lại — hoàn hảo cho các chuyến đi hay vùng có kết nối kém."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ứng dụng hỗ trợ thiết bị nào?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Moni hiện có sẵn cho iPhone (iOS) — tải miễn phí trên App Store. Phiên bản Android đang được phát triển và sẽ ra mắt sớm. Ứng dụng hỗ trợ 10 ngôn ngữ bao gồm tiếng Việt và tiếng Anh."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Chia tiền nhóm hoạt động như thế nào?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tạo nhóm, thêm thành viên và ghi nhận chi phí chung như bữa ăn, chuyến đi hay tiền thuê nhà. Moni tự động tính ai nợ ai và hiển thị tóm tắt thanh toán rõ ràng — không còn cảnh ngại ngùng khi đòi tiền bạn bè hay người cùng phòng."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoàn tiền Shopee hoạt động như thế nào?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Moni tích hợp chương trình affiliate của Shopee để bạn kiếm hoàn tiền mỗi khi mua hàng trên Shopee qua app. Chỉ cần dán link sản phẩm Shopee vào Moni hoặc chia sẻ trực tiếp từ app Shopee, mua sắm bình thường và hoàn tiền tự động được ghi nhận vào ví. Rút số dư bất cứ lúc nào, không giới hạn tối thiểu."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav py-4" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <a href="../" class="flex items-center gap-3">
+        <img src="../images/logo.png" alt="Moni" class="w-10 h-10 rounded-xl" width="40" height="40">
+        <span class="text-white font-bold text-xl">Moni</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#tinh-nang" class="nav-link text-white/80 hover:text-white text-sm font-medium">Tính Năng</a>
+        <a href="#cach-hoat-dong" class="nav-link text-white/80 hover:text-white text-sm font-medium">Cách Hoạt Động</a>
+        <a href="#danh-gia" class="nav-link text-white/80 hover:text-white text-sm font-medium">Đánh Giá</a>
+        <a href="../" class="text-white/80 hover:text-white text-sm font-medium border border-white/20 rounded-lg px-3 py-1.5 hover:border-white/50 transition-all">🇬🇧 EN</a>
+        <a href="https://apps.apple.com/vn/app/money-mate-plus/id6759211409" target="_blank" rel="noopener noreferrer" class="btn-gold text-sm">Tải Miễn Phí</a>
+      </div>
+      <button class="hamburger md:hidden" id="hamburger-btn" aria-label="Mở menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#tinh-nang" class="mobile-menu-link">Tính Năng</a>
+    <a href="#cach-hoat-dong" class="mobile-menu-link">Cách Hoạt Động</a>
+    <a href="#danh-gia" class="mobile-menu-link">Đánh Giá</a>
+    <a href="../" class="text-white/80 hover:text-white text-lg font-medium border border-white/20 rounded-lg px-4 py-2">🇬🇧 English</a>
+    <a href="https://apps.apple.com/vn/app/money-mate-plus/id6759211409" target="_blank" rel="noopener noreferrer" class="btn-gold text-lg">Tải Miễn Phí</a>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero-gradient min-h-screen flex items-center pt-20 pb-32" id="hero">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+        <div class="flex-1 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-1.5 mb-6 border border-white/10">
+            <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
+            <span class="text-white/70 text-sm font-medium">Miễn phí 100% &middot; Không quảng cáo &middot; Không phí ẩn</span>
+          </div>
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
+            Hết Thắc Mắc<br>
+            <span class="text-gold">Tiền Đi Đâu</span>
+          </h1>
+          <p class="text-white/70 text-lg sm:text-xl max-w-lg mx-auto lg:mx-0 mb-8 leading-relaxed">
+            Theo dõi chi tiêu bằng giọng nói, chia chi phí với bạn bè, và kiếm hoàn tiền Shopee — ứng dụng tài chính miễn phí duy nhất bạn cần.
+          </p>
+
+          <div class="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-5 justify-center lg:justify-start mb-8 text-white/80 text-sm">
+            <div class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span>Ghi nhận bằng giọng nói, ảnh, hoặc gõ phím</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span>Chia tiền với bạn bè ngay lập tức</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span>Kiếm hoàn tiền thật trên Shopee</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-4 justify-center lg:justify-start mb-8">
+            <a href="https://apps.apple.com/vn/app/money-mate-plus/id6759211409" target="_blank" rel="noopener noreferrer" class="store-badge">
+              <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              <div>
+                <span class="badge-text-sm block">Tải về trên</span>
+                <span class="badge-text-lg block">App Store</span>
+              </div>
+            </a>
+            <span class="store-badge opacity-60 cursor-default" title="Sắp ra mắt">
+              <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 010 1.38l-2.302 2.302L15.396 12l2.302-3.492zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
+              <div>
+                <span class="badge-text-sm block">SẮP RA MẮT</span>
+                <span class="badge-text-lg block">Google Play</span>
+              </div>
+            </span>
+          </div>
+
+          <div class="flex flex-wrap gap-6 justify-center lg:justify-start text-white/50 text-sm">
+            <div class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <span>Đánh giá 4.8 App Store</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+              <span>Bảo Mật & Riêng Tư</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"/></svg>
+              <span>5.000+ Người Dùng</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-shrink-0 animate-float">
+          <div class="phone-mockup">
+            <div class="phone-mockup-screen">
+              <img src="../images/ss-home-v2.png" alt="Moni - Tổng quan tài chính của bạn" width="1284" height="2778">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATS BAR ========== -->
+  <section class="py-10 bg-white border-b border-gray-100">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap justify-center gap-8 lg:gap-16">
+        <div class="text-center">
+          <div class="stat-number text-2xl lg:text-3xl" data-count="5000">0</div>
+          <div class="text-gray-500 text-xs mt-1 font-medium uppercase tracking-wide">Lượt Tải</div>
+        </div>
+        <div class="text-center">
+          <div class="stat-number text-2xl lg:text-3xl" data-count="4.8" data-decimal="true">0</div>
+          <div class="text-gray-500 text-xs mt-1 font-medium uppercase tracking-wide">Đánh Giá App Store</div>
+        </div>
+        <div class="text-center">
+          <div class="stat-number text-2xl lg:text-3xl" data-count="10">0</div>
+          <div class="text-gray-500 text-xs mt-1 font-medium uppercase tracking-wide">Ngôn Ngữ</div>
+        </div>
+        <div class="text-center">
+          <div class="text-2xl lg:text-3xl font-extrabold text-navy leading-none">$0</div>
+          <div class="text-gray-500 text-xs mt-1 font-medium uppercase tracking-wide">Miễn Phí Mãi Mãi</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROBLEM ========== -->
+  <section class="py-20 lg:py-28 bg-gray-50" id="problem">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-up">
+        <p class="text-gold font-mono text-sm font-medium tracking-wider uppercase mb-3">Nghe Quen Không?</p>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-navy mb-4">Quản Lý Tiền Không Nên Khó Như Vậy</h2>
+      </div>
+      <div class="grid sm:grid-cols-3 gap-6 lg:gap-8">
+        <div class="bg-white rounded-2xl p-6 border border-gray-200 text-center fade-up fade-up-delay-1">
+          <div class="w-14 h-14 bg-rose-50 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-7 h-7 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827m0 0v.75m0-3.375c0-.621-.504-1.125-1.125-1.125M12 18.75h.008v.008H12v-.008z"/></svg>
+          </div>
+          <h3 class="font-bold text-navy mb-2 text-lg">Tiền đi đâu hết rồi?</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Bạn kiểm tra số dư và không hiểu nửa lương đã biến mất đi đâu trong tháng này.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 border border-gray-200 text-center fade-up fade-up-delay-2">
+          <div class="w-14 h-14 bg-amber-50 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-7 h-7 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V13.5zm0 2.25h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V18zm2.498-6.75h.007v.008h-.007v-.008zm0 2.25h.007v.008h-.007V13.5zm0 2.25h.007v.008h-.007v-.008zm0 2.25h.007v.008h-.007V18zm2.504-6.75h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V13.5zm0 2.25h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V18zm2.498-6.75h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V13.5zM8.25 6h7.5v2.25h-7.5V6zM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 002.25 2.25h10.5a2.25 2.25 0 002.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0012 2.25z"/></svg>
+          </div>
+          <h3 class="font-bold text-navy mb-2 text-lg">Chia tiền thật phiền</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Ăn nhóm hay đi chơi chung biến thành bài toán đau đầu. Ai đó luôn quên trả lại.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 border border-gray-200 text-center fade-up fade-up-delay-3">
+          <div class="w-14 h-14 bg-violet-50 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-7 h-7 text-violet-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z"/></svg>
+          </div>
+          <h3 class="font-bold text-navy mb-2 text-lg">Ứng dụng quá đắt</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Những app tài chính tốt nhất tính 250–350k/tháng. App miễn phí thì hạn chế hoặc nhiều quảng cáo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SOLUTION — 3 KEY FEATURES ========== -->
+  <section class="py-20 lg:py-28 bg-white" id="tinh-nang">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16 fade-up">
+        <p class="text-gold font-mono text-sm font-medium tracking-wider uppercase mb-3">Moni Giải Quyết Tất Cả</p>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-navy mb-4">Một Ứng Dụng Cho <span class="text-gold">Mọi Thứ</span></h2>
+        <p class="text-gray-500 text-lg">Theo dõi, chia tiền, ngân sách, phân tích và hoàn tiền — miễn phí hoàn toàn, mãi mãi.</p>
+      </div>
+
+      <!-- Feature 1: Expense Tracking -->
+      <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 mb-24 fade-up">
+        <div class="flex-shrink-0 order-2 lg:order-1">
+          <div class="showcase-phone">
+            <div class="showcase-phone-screen">
+              <img src="../images/ss-new-transaction-v2.png" alt="Moni - Theo dõi chi tiêu tức thì" loading="lazy" width="1284" height="2778">
+            </div>
+          </div>
+        </div>
+        <div class="flex-1 text-center lg:text-left order-1 lg:order-2">
+          <div class="inline-flex items-center gap-2 bg-blue-50 text-blue-700 rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide mb-4">Tính Năng Chính</div>
+          <h3 class="font-display text-2xl sm:text-3xl font-bold text-navy mb-4">Ghi Nhận Từng Đồng Trong Vài Giây</h3>
+          <p class="text-gray-500 text-base leading-relaxed mb-6">Thêm chi tiêu bằng gõ phím, giọng nói hoặc chụp ảnh hóa đơn. Moni tự động phân loại để bạn luôn biết tiền đi đâu.</p>
+          <div class="flex flex-wrap gap-3 justify-center lg:justify-start">
+            <span class="inline-flex items-center gap-1.5 bg-gray-100 rounded-full px-3 py-1.5 text-sm text-gray-600">
+              <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z"/></svg>
+              Nhập Giọng Nói
+            </span>
+            <span class="inline-flex items-center gap-1.5 bg-gray-100 rounded-full px-3 py-1.5 text-sm text-gray-600">
+              <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z"/><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0z"/></svg>
+              Chụp Hóa Đơn
+            </span>
+            <span class="inline-flex items-center gap-1.5 bg-gray-100 rounded-full px-3 py-1.5 text-sm text-gray-600">
+              <svg class="w-4 h-4 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z"/><path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6z"/></svg>
+              Tự Động Phân Loại
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 2: Group Splitting -->
+      <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 mb-24 fade-up">
+        <div class="flex-1 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 bg-emerald-50 text-emerald-700 rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide mb-4">Tính Năng Xã Hội</div>
+          <h3 class="font-display text-2xl sm:text-3xl font-bold text-navy mb-4">Chia Tiền Không Còn Ngại Ngùng</h3>
+          <p class="text-gray-500 text-base leading-relaxed mb-6">Tạo nhóm cho chuyến đi, phòng trọ chung hay tiệc tùng. Thêm chi phí và Moni tự động tính ai nợ ai. Không cần tính nhẩm, không còn nợ dai dẳng.</p>
+          <div class="flex flex-wrap gap-3 justify-center lg:justify-start">
+            <span class="inline-flex items-center gap-1.5 bg-gray-100 rounded-full px-3 py-1.5 text-sm text-gray-600">
+              <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"/></svg>
+              Nhóm Không Giới Hạn
+            </span>
+            <span class="inline-flex items-center gap-1.5 bg-gray-100 rounded-full px-3 py-1.5 text-sm text-gray-600">
+              <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V13.5zm0 2.25h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V18zm2.498-6.75h.007v.008h-.007v-.008zm0 2.25h.007v.008h-.007V13.5z"/></svg>
+              Tự Động Tính
+            </span>
+            <span class="inline-flex items-center gap-1.5 bg-gray-100 rounded-full px-3 py-1.5 text-sm text-gray-600">
+              <svg class="w-4 h-4 text-violet-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"/></svg>
+              Chia Sẻ Qua Link
+            </span>
+          </div>
+        </div>
+        <div class="flex-shrink-0">
+          <div class="showcase-phone">
+            <div class="showcase-phone-screen">
+              <img src="../images/ss-group-v2.png" alt="Moni - Chia tiền nhóm dễ dàng" loading="lazy" width="1284" height="2778">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 3: Cashback -->
+      <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 fade-up">
+        <div class="flex-shrink-0 order-2 lg:order-1">
+          <div class="showcase-phone">
+            <div class="showcase-phone-screen">
+              <img src="../images/ss-cashback-v2.png" alt="Moni - Kiếm hoàn tiền Shopee" loading="lazy" width="1284" height="2778">
+            </div>
+          </div>
+        </div>
+        <div class="flex-1 text-center lg:text-left order-1 lg:order-2">
+          <div class="inline-flex items-center gap-2 bg-amber-50 text-amber-700 rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide mb-4">Chỉ Có Ở Moni</div>
+          <h3 class="font-display text-2xl sm:text-3xl font-bold text-navy mb-4">Kiếm Hoàn Tiền Khi Mua Sắm</h3>
+          <p class="text-gray-500 text-base leading-relaxed mb-4">Mua sắm trên Shopee qua Moni và kiếm hoàn tiền mỗi đơn hàng. Theo dõi số dư, thưởng chuỗi ngày, rút tiền bất cứ lúc nào. Không ứng dụng tài chính nào khác làm được điều này.</p>
+          <a href="../affiliate-guide/" class="inline-flex items-center gap-1.5 text-sm font-semibold text-gold hover:underline mb-6">
+            <span>Xem hướng dẫn kiếm hoàn tiền Shopee</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+          </a>
+          <div class="flex flex-wrap gap-3 justify-center lg:justify-start">
+            <span class="inline-flex items-center gap-1.5 bg-gray-100 rounded-full px-3 py-1.5 text-sm text-gray-600">
+              <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              Thưởng Chuỗi Ngày
+            </span>
+            <span class="inline-flex items-center gap-1.5 bg-gray-100 rounded-full px-3 py-1.5 text-sm text-gray-600">
+              <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75"/></svg>
+              Rút Tiền Thật
+            </span>
+            <span class="inline-flex items-center gap-1.5 bg-gray-100 rounded-full px-3 py-1.5 text-sm text-gray-600">
+              <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007z"/></svg>
+              qua Shopee
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MORE FEATURES ========== -->
+  <section class="py-20 lg:py-28 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16 fade-up">
+        <p class="text-gold font-mono text-sm font-medium tracking-wider uppercase mb-3">Và Nhiều Hơn</p>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-navy mb-4">Mọi Thứ Khác Bạn Cần</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="feature-card fade-up fade-up-delay-1">
+          <div class="feature-icon bg-amber-50 text-amber-600">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z"/><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-navy mb-2">Quản Lý Ngân Sách</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Đặt ngân sách theo danh mục. Nhận cảnh báo khi sắp vượt mức.</p>
+        </div>
+        <div class="feature-card fade-up fade-up-delay-2">
+          <div class="feature-icon bg-violet-50 text-violet-600">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-navy mb-2">Bảng Phân Tích</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Biểu đồ đẹp và thông tin chi tiết về xu hướng chi tiêu.</p>
+        </div>
+        <div class="feature-card fade-up fade-up-delay-3">
+          <div class="feature-icon bg-lime-50 text-lime-600">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-navy mb-2">Mục Tiêu Tiết Kiệm</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Đặt mục tiêu, theo dõi tiến độ và biến ước mơ thành hiện thực.</p>
+        </div>
+        <div class="feature-card fade-up fade-up-delay-1">
+          <div class="feature-icon bg-pink-50 text-pink-600">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-navy mb-2">Tài Chính Cặp Đôi</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Quản lý tiền cùng người yêu. Xem chung, theo dõi chung.</p>
+        </div>
+        <div class="feature-card fade-up fade-up-delay-2">
+          <div class="feature-icon bg-sky-50 text-sky-600">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-navy mb-2">Giao Dịch Định Kỳ</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Tự động ghi nhận tiền nhà, gói dịch vụ, hóa đơn hàng tháng.</p>
+        </div>
+        <div class="feature-card fade-up fade-up-delay-3">
+          <div class="feature-icon bg-emerald-50 text-emerald-600">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 002.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 012.916.52 6.003 6.003 0 01-5.395 4.972m0 0a6.726 6.726 0 01-2.749 1.35m0 0a6.772 6.772 0 01-3.044 0"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-navy mb-2">Thách Thức Tiết Kiệm</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Thách thức vui để xây dựng thói quen tiết kiệm và đạt mục tiêu nhanh hơn.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== INLINE CTA ========== -->
+  <section class="py-16 bg-white">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-up">
+      <h3 class="font-display text-2xl sm:text-3xl font-bold text-navy mb-4">Sẵn sàng kiểm soát?</h3>
+      <p class="text-gray-500 mb-6">Tham gia cùng 5.000+ người dùng đã hiểu rõ tiền đi đâu.</p>
+      <a href="https://apps.apple.com/vn/app/money-mate-plus/id6759211409" target="_blank" rel="noopener noreferrer" class="btn-gold inline-block">Tải Miễn Phí Trên App Store</a>
+    </div>
+  </section>
+
+  <!-- ========== HOW IT WORKS ========== -->
+  <section class="py-20 lg:py-28 bg-gray-50" id="cach-hoat-dong">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16 fade-up">
+        <p class="text-gold font-mono text-sm font-medium tracking-wider uppercase mb-3">Bắt Đầu Trong Vài Phút</p>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-navy mb-4">Cách Hoạt Động</h2>
+        <p class="text-gray-500 text-lg">Ba bước đơn giản để quản lý tài chính rõ ràng.</p>
+      </div>
+      <div class="grid sm:grid-cols-3 gap-8 lg:gap-12 relative">
+        <div class="step-connector hidden lg:block"></div>
+        <div class="text-center fade-up fade-up-delay-1">
+          <div class="step-number bg-navy text-white mx-auto mb-6">1</div>
+          <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-navy mb-2">Tải Moni</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Miễn phí trên App Store. Thiết lập tài khoản trong 30 giây.</p>
+        </div>
+        <div class="text-center fade-up fade-up-delay-2">
+          <div class="step-number bg-gold text-navy-dark mx-auto mb-6">2</div>
+          <div class="w-16 h-16 bg-amber-50 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-navy mb-2">Theo Dõi & Chia Tiền</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Thêm chi tiêu bằng gõ phím, giọng nói hoặc ảnh. Chia tiền với bạn bè trong nhóm.</p>
+        </div>
+        <div class="text-center fade-up fade-up-delay-3">
+          <div class="step-number bg-emerald-500 text-white mx-auto mb-6">3</div>
+          <div class="w-16 h-16 bg-emerald-50 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-navy mb-2">Xem Thống Kê & Kiếm Tiền</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Xem phân tích, đặt ngân sách, đạt mục tiêu và kiếm hoàn tiền Shopee.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SCREENSHOTS ========== -->
+  <section class="screenshots-section py-20 lg:py-28" id="screenshots">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16 fade-up">
+        <p class="text-gold font-mono text-sm font-medium tracking-wider uppercase mb-3">Xem Thực Tế</p>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mb-4">Thiết Kế Đẹp & Trực Quan</h2>
+        <p class="text-white/60 text-lg">Được thiết kế để quản lý tiền trở nên dễ dàng.</p>
+      </div>
+      <div class="flex items-center justify-center gap-6 lg:gap-10">
+        <div class="screenshot-phone screenshot-left fade-up fade-up-delay-1">
+          <div class="screenshot-phone-screen">
+            <img src="../images/ss-budget-v2.png" alt="Moni - Màn hình ngân sách" width="1284" height="2778">
+          </div>
+        </div>
+        <div class="screenshot-phone screenshot-center fade-up">
+          <div class="screenshot-phone-screen">
+            <img src="../images/ss-home-v2.png" alt="Moni - Màn hình trang chủ" width="1284" height="2778">
+          </div>
+        </div>
+        <div class="screenshot-phone screenshot-right fade-up fade-up-delay-3">
+          <div class="screenshot-phone-screen">
+            <img src="../images/ss-savings-v2.png" alt="Moni - Mục tiêu tiết kiệm" width="1284" height="2778">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="py-20 lg:py-28 bg-gray-50" id="danh-gia">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16 fade-up">
+        <p class="text-gold font-mono text-sm font-medium tracking-wider uppercase mb-3">Người Dùng Nói Gì</p>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-navy mb-4">Được Yêu Thích Bởi Hàng Ngàn Người</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="testimonial-card fade-up fade-up-delay-1">
+          <div class="flex gap-1 mb-4">
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p class="text-gray-600 text-sm leading-relaxed mb-6">"Moni đã thay đổi hoàn toàn cách tôi quản lý tài chính. Tính năng chia chi phí nhóm rất hữu ích cho chi phí chung hàng tháng!"</p>
+          <div class="flex items-center gap-3">
+            <div class="testimonial-avatar bg-blue-100 text-blue-600">SA</div>
+            <div>
+              <p class="font-semibold text-sm text-navy">Sarah A.</p>
+              <p class="text-gray-400 text-xs">Nhà Thiết Kế Tự Do</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card fade-up fade-up-delay-2">
+          <div class="flex gap-1 mb-4">
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p class="text-gray-600 text-sm leading-relaxed mb-6">"Ứng dụng tài chính tốt nhất tôi từng dùng. Bảng phân tích cho tôi những thông tin chưa từng có. Cuối cùng cũng hiểu tiền đi đâu mỗi tháng."</p>
+          <div class="flex items-center gap-3">
+            <div class="testimonial-avatar bg-emerald-100 text-emerald-600">MT</div>
+            <div>
+              <p class="font-semibold text-sm text-navy">Mike T.</p>
+              <p class="text-gray-400 text-xs">Kỹ Sư Phần Mềm</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card fade-up fade-up-delay-3">
+          <div class="flex gap-1 mb-4">
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p class="text-gray-600 text-sm leading-relaxed mb-6">"Hỗ trợ tiếng Việt hoàn hảo! Tôi rất thích dùng để theo dõi chi tiêu trong các chuyến đi gia đình. Chế độ ngoại tuyến hoạt động rất tốt."</p>
+          <div class="flex items-center gap-3">
+            <div class="testimonial-avatar bg-amber-100 text-amber-600">LN</div>
+            <div>
+              <p class="font-semibold text-sm text-navy">Linh N.</p>
+              <p class="text-gray-400 text-xs">Blogger Du Lịch</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="py-20 lg:py-28 bg-white" id="faq">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-up">
+        <p class="text-gold font-mono text-sm font-medium tracking-wider uppercase mb-3">Câu Hỏi Thường Gặp?</p>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-navy mb-4">Câu Hỏi Thường Gặp</h2>
+      </div>
+      <div class="space-y-3 fade-up" id="faq-accordion">
+        <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
+          <button class="faq-question w-full text-left px-6 py-4 flex items-center justify-between gap-4" aria-expanded="false">
+            <span>Moni có miễn phí không?</span>
+            <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer px-6 pb-4"><p class="text-gray-500 text-sm leading-relaxed">Có, Moni hoàn toàn miễn phí để tải và sử dụng — không quảng cáo, không phí ẩn, không cần đăng ký. Tất cả tính năng cốt lõi bao gồm theo dõi chi tiêu, quản lý ngân sách, chia tiền nhóm, mục tiêu tiết kiệm, bảng phân tích và hoàn tiền Shopee đều miễn phí.</p></div>
+        </div>
+        <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
+          <button class="faq-question w-full text-left px-6 py-4 flex items-center justify-between gap-4" aria-expanded="false">
+            <span>Dữ liệu tài chính của tôi có an toàn không?</span>
+            <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer px-6 pb-4"><p class="text-gray-500 text-sm leading-relaxed">Hoàn toàn. Moni sử dụng xác thực sinh trắc học (Face ID / Touch ID), mã hóa cục bộ trên thiết bị và không bao giờ chia sẻ dữ liệu tài chính với bên thứ ba. Hồ sơ chi tiêu của bạn luôn được bảo mật riêng tư trên thiết bị.</p></div>
+        </div>
+        <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
+          <button class="faq-question w-full text-left px-6 py-4 flex items-center justify-between gap-4" aria-expanded="false">
+            <span>Moni có hoạt động ngoại tuyến không?</span>
+            <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer px-6 pb-4"><p class="text-gray-500 text-sm leading-relaxed">Có, Moni được thiết kế ưu tiên ngoại tuyến. Bạn có thể thêm chi tiêu, quản lý ngân sách và xem dữ liệu tài chính mà không cần internet. Tất cả tự động đồng bộ khi bạn kết nối lại — hoàn hảo cho các chuyến đi hay vùng có kết nối kém.</p></div>
+        </div>
+        <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
+          <button class="faq-question w-full text-left px-6 py-4 flex items-center justify-between gap-4" aria-expanded="false">
+            <span>Ứng dụng hỗ trợ thiết bị nào?</span>
+            <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer px-6 pb-4"><p class="text-gray-500 text-sm leading-relaxed">Moni hiện có sẵn cho iPhone (iOS) — tải miễn phí trên App Store. Phiên bản Android đang được phát triển và sẽ ra mắt sớm. Ứng dụng hỗ trợ 10 ngôn ngữ bao gồm tiếng Việt và tiếng Anh.</p></div>
+        </div>
+        <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
+          <button class="faq-question w-full text-left px-6 py-4 flex items-center justify-between gap-4" aria-expanded="false">
+            <span>Chia tiền nhóm hoạt động như thế nào?</span>
+            <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer px-6 pb-4"><p class="text-gray-500 text-sm leading-relaxed">Tạo nhóm, thêm thành viên và ghi nhận chi phí chung như bữa ăn, chuyến đi hay tiền thuê nhà. Moni tự động tính ai nợ ai và hiển thị tóm tắt thanh toán rõ ràng — không còn cảnh ngại ngùng khi đòi tiền bạn bè hay người cùng phòng.</p></div>
+        </div>
+        <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
+          <button class="faq-question w-full text-left px-6 py-4 flex items-center justify-between gap-4" aria-expanded="false">
+            <span>Hoàn tiền Shopee hoạt động như thế nào?</span>
+            <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer px-6 pb-4"><p class="text-gray-500 text-sm leading-relaxed">Moni tích hợp chương trình affiliate của Shopee để bạn kiếm hoàn tiền mỗi khi mua hàng qua app. Chỉ cần dán link sản phẩm Shopee vào Moni hoặc chia sẻ trực tiếp từ app Shopee, mua sắm bình thường và hoàn tiền tự động được ghi nhận. Rút số dư bất cứ lúc nào, không giới hạn tối thiểu. <a href="../affiliate-guide/" class="text-gold font-medium hover:underline">Xem hướng dẫn chi tiết →</a></p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== DOWNLOAD CTA ========== -->
+  <section class="cta-section py-20 lg:py-28" id="tai-ve">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <div class="fade-up">
+        <p class="text-gold font-mono text-sm font-medium tracking-wider uppercase mb-4">Sẵn Sàng Bắt Đầu?</p>
+        <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-6">Tiền Của Bạn Xứng Đáng<br>Được Quản Lý Tốt Hơn</h2>
+        <p class="text-white/60 text-lg max-w-lg mx-auto mb-10">Tải Moni miễn phí và thực hiện bước đầu tiên hướng tới sự rõ ràng tài chính.</p>
+        <div class="flex flex-wrap gap-4 justify-center mb-10">
+          <a href="https://apps.apple.com/vn/app/money-mate-plus/id6759211409" target="_blank" rel="noopener noreferrer" class="store-badge">
+            <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            <div>
+              <span class="badge-text-sm block">Tải về trên</span>
+              <span class="badge-text-lg block">App Store</span>
+            </div>
+          </a>
+          <span class="store-badge opacity-60 cursor-default" title="Sắp ra mắt">
+            <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 010 1.38l-2.302 2.302L15.396 12l2.302-3.492zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
+            <div>
+              <span class="badge-text-sm block">SẮP RA MẮT</span>
+              <span class="badge-text-lg block">Google Play</span>
+            </div>
+          </span>
+        </div>
+        <div class="flex flex-col items-center gap-3">
+          <a href="https://apps.apple.com/vn/app/money-mate-plus/id6759211409" target="_blank" rel="noopener noreferrer">
+            <img src="../images/qr-appstore.png" alt="Quét để tải Moni trên App Store" class="w-36 h-36 rounded-2xl" width="144" height="144">
+          </a>
+          <p class="text-white/40 text-xs">Quét để tải trên App Store</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="flex items-center gap-3 mb-6">
+            <img src="../images/logo.png" alt="Moni" class="w-8 h-8 rounded-lg" width="32" height="32">
+            <span class="text-white font-bold text-lg">Moni</span>
+          </div>
+          <p class="text-sm leading-relaxed mb-4">Quản lý tài chính cá nhân đơn giản. Theo dõi, chia sẻ, ngân sách và hoàn tiền.</p>
+          <a href="mailto:support@code4change.dev" class="text-sm text-gold hover:text-gold-light">support@code4change.dev</a>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-sm mb-4">Sản Phẩm</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="#tinh-nang">Tính Năng</a></li>
+            <li><a href="#cach-hoat-dong">Cách Hoạt Động</a></li>
+            <li><a href="#danh-gia">Đánh Giá</a></li>
+            <li><a href="#tai-ve">Tải Về</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-sm mb-4">Công Ty</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="mailto:support@code4change.dev">Liên Hệ</a></li>
+            <li><a href="mailto:support@code4change.dev">Hỗ Trợ</a></li>
+            <li><a href="../affiliate-guide/">Hướng Dẫn Hoàn Tiền</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-sm mb-4">Pháp Lý</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="../privacy-policy.html">Chính Sách Bảo Mật</a></li>
+            <li><a href="../privacy-policy.html">Điều Khoản Dịch Vụ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-sm">&copy; 2026 Code4change. Bảo lưu mọi quyền.</p>
+        <div class="flex gap-4 items-center">
+          <a href="../" class="text-sm text-white/60 hover:text-white transition-colors">🇬🇧 English</a>
+          <a href="https://github.com/code4change" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors" aria-label="GitHub">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky CTA -->
+  <div class="sticky-cta" id="sticky-cta">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-between gap-3">
+      <div class="flex items-center gap-2 min-w-0">
+        <img src="../images/logo.png" alt="Moni" class="w-8 h-8 rounded-lg flex-shrink-0" width="32" height="32">
+        <div class="min-w-0">
+          <p class="text-white font-semibold text-sm truncate">Moni</p>
+          <p class="text-white/60 text-xs truncate">App Tài Chính Miễn Phí</p>
+        </div>
+      </div>
+      <a href="https://apps.apple.com/vn/app/money-mate-plus/id6759211409" target="_blank" rel="noopener noreferrer" class="btn-gold text-sm whitespace-nowrap px-5 py-2.5">Tải Miễn Phí</a>
+    </div>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

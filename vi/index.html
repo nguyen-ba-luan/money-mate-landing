@@ -66,7 +66,7 @@
     "@context": "https://schema.org",
     "@type": "MobileApplication",
     "name": "Moni",
-    "operatingSystem": "iOS",
+    "operatingSystem": ["iOS", "Android"],
     "applicationCategory": "FinanceApplication",
     "offers": {
       "@type": "Offer",
@@ -82,7 +82,7 @@
     },
     "description": "Moni - ứng dụng theo dõi chi tiêu và quản lý tài chính cá nhân miễn phí cho iPhone. Ghi chép chi tiêu hàng ngày bằng giọng nói, chia tiền nhóm, quản lý ngân sách và kiếm hoàn tiền Shopee. Không quảng cáo, không phí ẩn.",
     "url": "https://moni.live/vi/",
-    "downloadUrl": "https://apps.apple.com/vn/app/money-mate-plus/id6759211409",
+    "downloadUrl": ["https://apps.apple.com/vn/app/money-mate-plus/id6759211409", "https://play.google.com/store/apps/details?id=com.code4change.moneymate"],
     "screenshot": [
       "https://moni.live/images/ss-home-v2.png",
       "https://moni.live/images/ss-new-transaction-v2.png",
@@ -151,7 +151,7 @@
         "name": "Ứng dụng hỗ trợ thiết bị nào?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Moni hiện có sẵn cho iPhone (iOS) — tải miễn phí trên App Store. Phiên bản Android đang được phát triển và sẽ ra mắt sớm. Ứng dụng hỗ trợ 10 ngôn ngữ bao gồm tiếng Việt và tiếng Anh."
+          "text": "Moni có sẵn cho cả iPhone (iOS) và Android. Tải miễn phí trên App Store hoặc Google Play. Ứng dụng hỗ trợ 10 ngôn ngữ bao gồm tiếng Việt và tiếng Anh."
         }
       },
       {
@@ -245,13 +245,13 @@
                 <span class="badge-text-lg block">App Store</span>
               </div>
             </a>
-            <span class="store-badge opacity-60 cursor-default" title="Sắp ra mắt">
+            <a href="https://play.google.com/store/apps/details?id=com.code4change.moneymate" target="_blank" rel="noopener noreferrer" class="store-badge">
               <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 010 1.38l-2.302 2.302L15.396 12l2.302-3.492zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
               <div>
-                <span class="badge-text-sm block">SẮP RA MẮT</span>
+                <span class="badge-text-sm block">Tải trên</span>
                 <span class="badge-text-lg block">Google Play</span>
               </div>
-            </span>
+            </a>
           </div>
 
           <div class="flex flex-wrap gap-6 justify-center lg:justify-start text-white/50 text-sm">
@@ -669,7 +669,7 @@
             <span>Ứng dụng hỗ trợ thiết bị nào?</span>
             <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
           </button>
-          <div class="faq-answer px-6 pb-4"><p class="text-gray-500 text-sm leading-relaxed">Moni hiện có sẵn cho iPhone (iOS) — tải miễn phí trên App Store. Phiên bản Android đang được phát triển và sẽ ra mắt sớm. Ứng dụng hỗ trợ 10 ngôn ngữ bao gồm tiếng Việt và tiếng Anh.</p></div>
+          <div class="faq-answer px-6 pb-4"><p class="text-gray-500 text-sm leading-relaxed">Moni có sẵn cho cả iPhone (iOS) và Android. Tải miễn phí trên App Store hoặc Google Play. Ứng dụng hỗ trợ 10 ngôn ngữ bao gồm tiếng Việt và tiếng Anh.</p></div>
         </div>
         <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
           <button class="faq-question w-full text-left px-6 py-4 flex items-center justify-between gap-4" aria-expanded="false">
@@ -704,13 +704,13 @@
               <span class="badge-text-lg block">App Store</span>
             </div>
           </a>
-          <span class="store-badge opacity-60 cursor-default" title="Sắp ra mắt">
+          <a href="https://play.google.com/store/apps/details?id=com.code4change.moneymate" target="_blank" rel="noopener noreferrer" class="store-badge">
             <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 010 1.38l-2.302 2.302L15.396 12l2.302-3.492zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
             <div>
-              <span class="badge-text-sm block">SẮP RA MẮT</span>
+              <span class="badge-text-sm block">Tải trên</span>
               <span class="badge-text-lg block">Google Play</span>
             </div>
-          </span>
+          </a>
         </div>
         <div class="flex flex-col items-center gap-3">
           <a href="https://apps.apple.com/vn/app/money-mate-plus/id6759211409" target="_blank" rel="noopener noreferrer">

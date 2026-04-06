@@ -69,7 +69,7 @@
     "@context": "https://schema.org",
     "@type": "MobileApplication",
     "name": "Moni",
-    "operatingSystem": "iOS",
+    "operatingSystem": ["iOS", "Android"],
     "applicationCategory": "FinanceApplication",
     "offers": {
       "@type": "Offer",
@@ -85,7 +85,7 @@
     },
     "description": "Track expenses, manage budgets, split costs with friends, and earn cashback rewards. Moni makes personal finance simple and smart. Free personal finance app for iOS with voice input, group expense splitting, and Shopee cashback.",
     "url": "https://moni.live/",
-    "downloadUrl": "https://apps.apple.com/vn/app/money-mate-plus/id6759211409",
+    "downloadUrl": ["https://apps.apple.com/vn/app/money-mate-plus/id6759211409", "https://play.google.com/store/apps/details?id=com.code4change.moneymate"],
     "screenshot": [
       "https://moni.live/images/ss-home-v2.png",
       "https://moni.live/images/ss-new-transaction-v2.png",
@@ -170,7 +170,7 @@
         "name": "Which devices are supported?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Moni is currently available for iPhone (iOS). You can download it on the App Store. Android support is actively in development and coming soon. The app supports 10 languages including English and Vietnamese."
+          "text": "Moni is available for both iPhone (iOS) and Android. Download free on the App Store or Google Play. The app supports 10 languages including English and Vietnamese."
         }
       },
       {
@@ -312,13 +312,13 @@
                 <span class="badge-text-lg block" data-i18n="hero.badge.appstore.bottom">App Store</span>
               </div>
             </a>
-            <span class="store-badge opacity-60 cursor-default" title="Coming Soon">
+            <a href="https://play.google.com/store/apps/details?id=com.code4change.moneymate" target="_blank" rel="noopener noreferrer" class="store-badge">
               <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 010 1.38l-2.302 2.302L15.396 12l2.302-3.492zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
               <div>
-                <span class="badge-text-sm block" data-i18n="hero.badge.google.top">COMING SOON</span>
+                <span class="badge-text-sm block" data-i18n="hero.badge.google.top">Get it on</span>
                 <span class="badge-text-lg block" data-i18n="hero.badge.google.bottom">Google Play</span>
               </div>
-            </span>
+            </a>
           </div>
 
           <!-- Trust Badges -->
@@ -917,7 +917,7 @@
             <span data-i18n="faq.q4">Which devices are supported?</span>
             <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
           </button>
-          <div class="faq-answer px-6 pb-4"><p class="text-gray-500 text-sm leading-relaxed" data-i18n="faq.a4">Moni is currently available for iPhone (iOS) — download it free on the App Store. Android support is actively in development and coming soon. The app supports 10 languages including English and Vietnamese.</p></div>
+          <div class="faq-answer px-6 pb-4"><p class="text-gray-500 text-sm leading-relaxed" data-i18n="faq.a4">Moni is available for both iPhone (iOS) and Android. Download free on the App Store or Google Play. The app supports 10 languages including English and Vietnamese.</p></div>
         </div>
         <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
           <button class="faq-question w-full text-left px-6 py-4 flex items-center justify-between gap-4" aria-expanded="false">
@@ -961,13 +961,13 @@
               <span class="badge-text-lg block" data-i18n="hero.badge.appstore.bottom">App Store</span>
             </div>
           </a>
-          <span class="store-badge opacity-60 cursor-default" title="Coming Soon">
+          <a href="https://play.google.com/store/apps/details?id=com.code4change.moneymate" target="_blank" rel="noopener noreferrer" class="store-badge">
             <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 010 1.38l-2.302 2.302L15.396 12l2.302-3.492zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
             <div>
-              <span class="badge-text-sm block" data-i18n="hero.badge.google.top">COMING SOON</span>
+              <span class="badge-text-sm block" data-i18n="hero.badge.google.top">Get it on</span>
               <span class="badge-text-lg block" data-i18n="hero.badge.google.bottom">Google Play</span>
             </div>
-          </span>
+          </a>
         </div>
 
         <!-- QR Code -->

@@ -1069,6 +1069,44 @@ a {
   }
 }
 
+/* --- Floating Social Buttons --- */
+.float-social {
+  position: fixed;
+  bottom: 24px;
+  left: 20px;
+  z-index: 997;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.float-social a {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.float-social a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+.float-social .fb-btn { background: #1877F2; }
+.float-social .zalo-btn { background: #0068FF; }
+
+/* On mobile, move float buttons up above sticky CTA */
+@media (max-width: 768px) {
+  .float-social {
+    bottom: 76px;
+  }
+}
+
 /* --- Enhanced Feature Card Hover --- */
 .feature-card {
   position: relative;

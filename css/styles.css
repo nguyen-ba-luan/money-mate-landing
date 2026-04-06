@@ -625,6 +625,16 @@ a {
   opacity: 0.85;
 }
 
+.screenshot-far-left {
+  transform: perspective(1000px) rotateY(12deg) scale(0.78);
+  opacity: 0.6;
+}
+
+.screenshot-far-right {
+  transform: perspective(1000px) rotateY(-12deg) scale(0.78);
+  opacity: 0.6;
+}
+
 /* --- Testimonials --- */
 .testimonial-card {
   background: var(--color-white);
@@ -1218,7 +1228,9 @@ a {
   }
 
   .screenshot-left,
-  .screenshot-right {
+  .screenshot-right,
+  .screenshot-far-left,
+  .screenshot-far-right {
     display: none;
   }
 

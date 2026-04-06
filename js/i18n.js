@@ -161,7 +161,7 @@
       'cta.tagline': 'Ready to Get Started?',
       'cta.title': 'Your Money Deserves<br>Better Than Guesswork',
       'cta.desc': 'Download Moni for free and take the first step toward financial clarity.',
-      'cta.qr': 'Scan to download on App Store',
+      'cta.qr': 'Scan to download · iOS & Android',
 
       // Footer
       'footer.desc': 'Personal finance management made simple. Track, split, budget, and earn.',
@@ -333,7 +333,7 @@
       'cta.tagline': 'S\u1EB5n S\u00E0ng B\u1EAFt \u0110\u1EA7u?',
       'cta.title': 'Ti\u1EC1n C\u1EE7a B\u1EA1n X\u1EE9ng \u0110\u00E1ng<br>\u0110\u01B0\u1EE3c Qu\u1EA3n L\u00FD T\u1ED1t H\u01A1n',
       'cta.desc': 'T\u1EA3i Moni mi\u1EC5n ph\u00ED v\u00E0 th\u1EF1c hi\u1EC7n b\u01B0\u1EDBc \u0111\u1EA7u ti\u00EAn h\u01B0\u1EDBng t\u1EDBi s\u1EF1 r\u00F5 r\u00E0ng t\u00E0i ch\u00EDnh.',
-      'cta.qr': 'Qu\u00E9t \u0111\u1EC3 t\u1EA3i tr\u00EAn App Store',
+      'cta.qr': 'Quét để tải · iOS & Android',
 
       // Footer
       'footer.desc': 'Qu\u1EA3n l\u00FD t\u00E0i ch\u00EDnh c\u00E1 nh\u00E2n \u0111\u01A1n gi\u1EA3n. Theo d\u00F5i, chia s\u1EBB, ng\u00E2n s\u00E1ch v\u00E0 ho\u00E0n ti\u1EC1n.',

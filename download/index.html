@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download Moni</title>
+  <meta name="robots" content="noindex, follow">
+  <style>
+    body { margin: 0; background: #1e3a5f; display: flex; align-items: center; justify-content: center; min-height: 100vh; font-family: sans-serif; color: white; text-align: center; }
+    p { opacity: 0.6; font-size: 14px; margin-top: 12px; }
+  </style>
+</head>
+<body>
+  <div>
+    <p>Đang chuyển hướng...</p>
+  </div>
+  <script>
+    var ua = navigator.userAgent || navigator.vendor || window.opera;
+    var ANDROID = 'https://play.google.com/store/apps/details?id=com.code4change.moneymate';
+    var IOS = 'https://apps.apple.com/vn/app/money-mate-plus/id6759211409';
+    if (/android/i.test(ua)) {
+      window.location.replace(ANDROID);
+    } else {
+      window.location.replace(IOS);
+    }
+  </script>
+</body>
+</html>

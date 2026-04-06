@@ -1073,7 +1073,7 @@ a {
 .float-social {
   position: fixed;
   bottom: 24px;
-  left: 20px;
+  right: 20px;
   z-index: 997;
   display: flex;
   flex-direction: column;

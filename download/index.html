@@ -12,17 +12,19 @@
 </head>
 <body>
   <div>
-    <p>Đang chuyển hướng...</p>
+    <p id="msg">Đang chuyển hướng...</p>
   </div>
   <script>
     var ua = navigator.userAgent || navigator.vendor || window.opera;
     var ANDROID = 'https://play.google.com/store/apps/details?id=com.code4change.moneymate';
     var IOS = 'https://apps.apple.com/vn/app/money-mate-plus/id6759211409';
-    if (/android/i.test(ua)) {
-      window.location.replace(ANDROID);
-    } else {
-      window.location.replace(IOS);
-    }
+    var storeUrl = /android/i.test(ua) ? ANDROID : IOS;
+    window.open(storeUrl, '_blank');
+    window.close();
+    // Fallback: if window.close() was blocked, go back to homepage
+    setTimeout(function() {
+      window.location.replace('/');
+    }, 300);
   </script>
 </body>
 </html>

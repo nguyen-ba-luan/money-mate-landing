@@ -19,12 +19,7 @@
     var ANDROID = 'https://play.google.com/store/apps/details?id=com.code4change.moneymate';
     var IOS = 'https://apps.apple.com/vn/app/money-mate-plus/id6759211409';
     var storeUrl = /android/i.test(ua) ? ANDROID : IOS;
-    window.open(storeUrl, '_blank');
-    window.close();
-    // Fallback: if window.close() was blocked, go back to homepage
-    setTimeout(function() {
-      window.location.replace('/');
-    }, 300);
+    window.location.replace(storeUrl);
   </script>
 </body>
 </html>

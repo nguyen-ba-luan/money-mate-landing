@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /download/
+Disallow: /invite/
 
 Sitemap: https://moni.live/sitemap.xml

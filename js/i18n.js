@@ -71,6 +71,23 @@
       'solution.f3.tag3': 'via Shopee',
       'solution.f3.guide': 'See Shopee cashback guide',
 
+      // Feature 4: AI Gold Advisor
+      'solution.f4.badge': 'AI Feature',
+      'solution.f4.title': 'AI Gold Advisor — Buy, Hold, or Sell?',
+      'solution.f4.desc': "Moni's built-in AI analyzes gold price trends using ARIMA forecasting and technical indicators (RSI, MACD, Bollinger Bands) to give clear Buy/Sell/Hold signals daily. Track your gold assets, set price alerts, and get push notifications when the market moves.",
+      'solution.f4.tag1': 'AI Signals',
+      'solution.f4.tag2': 'Price Alerts',
+      'solution.f4.tag3': 'ARIMA Forecast',
+      'solution.f4.card.title': 'Market Analysis',
+      'solution.f4.card.signal': 'BUY',
+      'solution.f4.card.price_label': 'SJC Gold Price',
+      'solution.f4.card.change': '+1.2% vs yesterday',
+      'solution.f4.card.macd': 'Bullish',
+      'solution.f4.card.trend_label': 'Forecast',
+      'solution.f4.card.trend': 'Up',
+      'solution.f4.card.notif_title': 'Gold Price Alert',
+      'solution.f4.card.notif_body': 'SJC reached 92.5M ₫/tael ↑',
+
       // More features grid
       'more.tagline': 'And Much More',
       'more.title': 'Everything Else You Need',
@@ -86,6 +103,12 @@
       'features.recurring.desc': 'Auto-track rent, subscriptions, and bills. Never miss a recurring expense.',
       'features.challenges.title': 'Savings Challenges',
       'features.challenges.desc': 'Fun challenges to build better saving habits and reach goals faster.',
+      'features.debt.title': 'Debt Tracker',
+      'features.debt.desc': 'Track money you lend or borrow. Clear records, timely reminders, no more forgotten debts.',
+      'features.groupsavings.title': 'Group Savings',
+      'features.groupsavings.desc': 'Save collectively with friends or family toward a shared goal — trip fund, gift, or emergency pool.',
+      'features.guests.title': 'Guest Participants',
+      'features.guests.desc': 'Add anyone to a group split — no account needed. Perfect for one-time trips with non-app users.',
 
       // Inline CTA
       'inline-cta.title': 'Ready to take control?',
@@ -124,6 +147,7 @@
       'compare.free': 'Free',
       'compare.yes': 'Yes',
       'compare.no': 'No',
+      'compare.gold': 'AI Gold Advisor',
       'compare.moni.rec': 'Recommended',
 
       // Testimonials
@@ -156,6 +180,9 @@
       'faq.a6': 'Create a group, add members, and log shared expenses. Moni automatically calculates who owes whom. Settlement is just one tap away.',
       'faq.q7': 'How does cashback work?',
       'faq.a7': 'Shop on Shopee through Moni\'s affiliate links, earn cashback on purchases, and withdraw your balance anytime.',
+      'faq.q8': 'How does the AI Gold Advisor work?',
+      'faq.a8': "Moni's AI Gold Advisor fetches live gold prices every 15 minutes, then runs ARIMA forecasting and technical indicator analysis (RSI, MACD, Bollinger Bands) to generate a daily Buy/Hold/Sell signal. You can track your gold assets, set custom price alert thresholds, and receive push notifications when prices hit your targets.",
+      'faq.a4': 'Moni is available for both iPhone (iOS) and Android. Download free on the App Store or Google Play. The app supports 10 languages including English and Vietnamese, and works fully offline on both platforms.',
 
       // CTA
       'cta.tagline': 'Ready to Get Started?',
@@ -243,6 +270,23 @@
       'solution.f3.tag3': 'qua Shopee',
       'solution.f3.guide': 'Xem h\u01B0\u1EDBng d\u1EABn ki\u1EBFm ho\u00E0n ti\u1EC1n Shopee',
 
+      // Feature 4: AI Gold Advisor (VI)
+      'solution.f4.badge': 'T\u00EDnh N\u0103ng AI',
+      'solution.f4.title': 'AI T\u01B0 V\u1EA5n V\u00E0ng \u2014 Mua, Gi\u1EEF hay B\u00E1n?',
+      'solution.f4.desc': 'AI t\u00EDch h\u1EE3p trong Moni ph\u00E2n t\u00EDch xu h\u01B0\u1EDBng gi\u00E1 v\u00E0ng b\u1EB1ng m\u00F4 h\u00ECnh ARIMA v\u00E0 c\u00E1c ch\u1EC9 b\u00E1o k\u1EF9 thu\u1EADt (RSI, MACD, Bollinger Bands) \u0111\u1EC3 \u0111\u01B0a ra t\u00EDn hi\u1EC7u Mua/Gi\u1EEF/B\u00E1n m\u1ED7i ng\u00E0y. Theo d\u00F5i t\u00E0i s\u1EA3n v\u00E0ng, \u0111\u1EB7t c\u1EA3nh b\u00E1o gi\u00E1 v\u00E0 nh\u1EADn push notification khi th\u1ECB tr\u01B0\u1EDDng bi\u1EBFn \u0111\u1ED9ng.',
+      'solution.f4.tag1': 'T\u00EDn Hi\u1EC7u AI',
+      'solution.f4.tag2': 'C\u1EA3nh B\u00E1o Gi\u00E1',
+      'solution.f4.tag3': 'D\u1EF1 B\u00E1o ARIMA',
+      'solution.f4.card.title': 'Ph\u00E2n T\u00EDch Th\u1ECB Tr\u01B0\u1EDDng',
+      'solution.f4.card.signal': 'MUA',
+      'solution.f4.card.price_label': 'Gi\u00E1 v\u00E0ng SJC h\u00F4m nay',
+      'solution.f4.card.change': '+1,2% so v\u1EDBi h\u00F4m qua',
+      'solution.f4.card.macd': 'T\u0103ng',
+      'solution.f4.card.trend_label': 'D\u1EF1 B\u00E1o',
+      'solution.f4.card.trend': 'L\u00EAn',
+      'solution.f4.card.notif_title': 'C\u1EA3nh B\u00E1o Gi\u00E1 V\u00E0ng',
+      'solution.f4.card.notif_body': 'V\u00E0ng SJC \u0111\u1EA1t m\u1ED1c 92,5 tri\u1EC7u/l\u01B0\u1EE3ng \u2191',
+
       // More features grid
       'more.tagline': 'V\u00E0 Nhi\u1EC1u H\u01A1n',
       'more.title': 'M\u1ECDi Th\u1EE9 Kh\u00E1c B\u1EA1n C\u1EA7n',
@@ -258,6 +302,12 @@
       'features.recurring.desc': 'T\u1EF1 \u0111\u1ED9ng ghi nh\u1EADn ti\u1EC1n nh\u00E0, g\u00F3i d\u1ECBch v\u1EE5, h\u00F3a \u0111\u01A1n h\u00E0ng th\u00E1ng.',
       'features.challenges.title': 'Th\u00E1ch Th\u1EE9c Ti\u1EBFt Ki\u1EC7m',
       'features.challenges.desc': 'Th\u00E1ch th\u1EE9c vui \u0111\u1EC3 x\u00E2y d\u1EF1ng th\u00F3i quen ti\u1EBFt ki\u1EC7m v\u00E0 \u0111\u1EA1t m\u1EE5c ti\u00EAu nhanh h\u01A1n.',
+      'features.debt.title': 'Theo D\u00F5i N\u1EE3',
+      'features.debt.desc': 'Ghi l\u1EA1i ti\u1EC1n cho vay v\u00E0 ti\u1EC1n m\u01B0\u1EE3n. Nh\u1EAFc nh\u1EDF \u0111\u00FAng l\u00FAc, kh\u00F4ng bao gi\u1EDD qu\u00EAn n\u1EE3 n\u1EEFa.',
+      'features.groupsavings.title': 'Ti\u1EBFt Ki\u1EC7m Nh\u00F3m',
+      'features.groupsavings.desc': 'C\u00F9ng ti\u1EBFt ki\u1EC7m v\u1EDBi b\u1EA1n b\u00E8 ho\u1EB7c gia \u0111\u00ECnh h\u01B0\u1EDBng t\u1EDBi m\u1ED9t m\u1EE5c ti\u00EAu chung \u2014 qu\u1EF9 du l\u1ECBch, qu\u00E0 t\u1EB7ng, hay qu\u1EF9 d\u1EF1 ph\u00F2ng.',
+      'features.guests.title': 'Th\u00EAm Kh\u00E1ch V\u00E0o Nh\u00F3m',
+      'features.guests.desc': 'Th\u00EAm b\u1EA5t k\u1EF3 ai v\u00E0o nh\u00F3m chia ti\u1EC1n m\u00E0 kh\u00F4ng c\u1EA7n t\u00E0i kho\u1EA3n. Ho\u00E0n h\u1EA3o cho nh\u1EEFng chuy\u1EBFn \u0111i m\u1ED9t l\u1EA7n v\u1EDBi ng\u01B0\u1EDDi ch\u01B0a d\u00F9ng app.',
 
       // Inline CTA
       'inline-cta.title': 'S\u1EB5n s\u00E0ng ki\u1EC3m so\u00E1t?',
@@ -296,6 +346,7 @@
       'compare.free': 'Mi\u1EC5n Ph\u00ED',
       'compare.yes': 'C\u00F3',
       'compare.no': 'Kh\u00F4ng',
+      'compare.gold': 'AI T\u01B0 V\u1EA5n V\u00E0ng',
       'compare.moni.rec': 'Khuy\u00EAn D\u00F9ng',
 
       // Testimonials
@@ -328,6 +379,9 @@
       'faq.a6': 'T\u1EA1o nh\u00F3m, th\u00EAm th\u00E0nh vi\u00EAn v\u00E0 ghi nh\u1EADn chi ph\u00ED chung. Moni t\u1EF1 \u0111\u1ED9ng t\u00EDnh ai n\u1EE3 ai. Thanh to\u00E1n ch\u1EC9 v\u1EDBi m\u1ED9t ch\u1EA1m.',
       'faq.q7': 'Ho\u00E0n ti\u1EC1n ho\u1EA1t \u0111\u1ED9ng nh\u01B0 th\u1EBF n\u00E0o?',
       'faq.a7': 'Mua s\u1EAFm Shopee qua li\u00EAn k\u1EBFt c\u1EE7a Moni, ki\u1EBFm ho\u00E0n ti\u1EC1n cho m\u1ED7i \u0111\u01A1n h\u00E0ng v\u00E0 r\u00FAt s\u1ED1 d\u01B0 b\u1EA5t c\u1EE9 l\u00FAc n\u00E0o.',
+      'faq.q8': 'AI T\u01B0 V\u1EA5n V\u00E0ng ho\u1EA1t \u0111\u1ED9ng nh\u01B0 th\u1EBF n\u00E0o?',
+      'faq.a8': 'AI T\u01B0 V\u1EA5n V\u00E0ng c\u1EE7a Moni c\u1EADp nh\u1EADt gi\u00E1 v\u00E0ng th\u1EF1c t\u1EBF m\u1ED7i 15 ph\u00FAt, sau \u0111\u00F3 ch\u1EA1y m\u00F4 h\u00ECnh d\u1EF1 b\u00E1o ARIMA v\u00E0 ph\u00E2n t\u00EDch ch\u1EC9 b\u00E1o k\u1EF9 thu\u1EADt (RSI, MACD, Bollinger Bands) \u0111\u1EC3 t\u1EA1o ra t\u00EDn hi\u1EC7u Mua/Gi\u1EEF/B\u00E1n m\u1ED7i ng\u00E0y. B\u1EA1n c\u00F3 th\u1EC3 theo d\u00F5i t\u00E0i s\u1EA3n v\u00E0ng, \u0111\u1EB7t ng\u01B0\u1EE1ng c\u1EA3nh b\u00E1o gi\u00E1 t\u00F9y ch\u1EC9nh v\u00E0 nh\u1EADn push notification khi gi\u00E1 \u0111\u1EA1t m\u1EE9c m\u1EE5c ti\u00EAu.',
+      'faq.a4': 'Moni hi\u1EC7n c\u00F3 s\u1EB5n cho c\u1EA3 iOS (iPhone) v\u00E0 Android. T\u1EA3i mi\u1EC5n ph\u00ED tr\u00EAn App Store ho\u1EB7c Google Play. \u1EE8ng d\u1EE5ng h\u1ED7 tr\u1EE3 10 ng\u00F4n ng\u1EEF bao g\u1ED3m ti\u1EBFng Vi\u1EC7t v\u00E0 ti\u1EBFng Anh, v\u00E0 ho\u1EA1t \u0111\u1ED9ng ho\u00E0n to\u00E0n ngo\u1EA1i tuy\u1EBFn tr\u00EAn c\u1EA3 hai n\u1EC1n t\u1EA3ng.',
 
       // CTA
       'cta.tagline': 'S\u1EB5n S\u00E0ng B\u1EAFt \u0110\u1EA7u?',

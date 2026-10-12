@@ -1354,3 +1354,16 @@ body.menu-open .nav.scrolled {
     font-size: 0.875rem;
   }
 }
+
+/* Stretched link: the whole feature card opens the link, not just the small text */
+.card-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+
+.card-link:focus-visible::after {
+  outline: 2px solid var(--color-gold);
+  outline-offset: -2px;
+}

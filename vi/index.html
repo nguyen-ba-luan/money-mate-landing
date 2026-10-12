@@ -554,63 +554,10 @@
           </div>
         </div>
 
-        <!-- Gold Advisor UI Card Visual -->
         <div class="flex-shrink-0">
-          <div class="w-72 sm:w-80 rounded-3xl p-5 shadow-2xl border border-yellow-900" style="background: linear-gradient(135deg, #1a1a2e 0%, #1e2d4a 100%);">
-            <!-- Header -->
-            <div class="flex items-center justify-between mb-4">
-              <div>
-                <p class="text-xs font-mono uppercase tracking-wider" style="color:#f59e0b;">AI Gold Advisor</p>
-                <p class="text-white font-bold text-sm mt-0.5">Phân Tích Thị Trường</p>
-              </div>
-              <span class="text-white text-xs font-bold px-2.5 py-1 rounded-lg" style="background:#10b981;">MUA</span>
-            </div>
-            <!-- Price -->
-            <div class="mb-4">
-              <p class="text-xs mb-1" style="color:#9ca3af;">Giá vàng SJC hôm nay</p>
-              <p class="text-white text-xl font-extrabold">92,500,000 ₫</p>
-              <div class="flex items-center gap-1.5 mt-1">
-                <svg class="w-3.5 h-3.5" style="color:#34d399;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
-                <p class="text-xs font-medium" style="color:#34d399;">+1,2% so với hôm qua</p>
-              </div>
-            </div>
-            <!-- Sparkline chart -->
-            <div class="mb-4 rounded-xl p-3" style="background:rgba(255,255,255,0.05);">
-              <svg viewBox="0 0 180 50" class="w-full" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <linearGradient id="gf" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.35"/>
-                    <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
-                  </linearGradient>
-                </defs>
-                <polygon points="0,42 25,40 50,34 75,36 100,26 130,18 160,12 180,8 180,50 0,50" fill="url(#gf)"/>
-                <polyline points="0,42 25,40 50,34 75,36 100,26 130,18 160,12 180,8" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <circle cx="100" cy="26" r="3.5" fill="#10b981"/>
-                <circle cx="180" cy="8" r="3" fill="#f59e0b"/>
-              </svg>
-            </div>
-            <!-- Indicators -->
-            <div class="grid grid-cols-3 gap-2 mb-3">
-              <div class="rounded-xl p-2 text-center" style="background:rgba(255,255,255,0.07);">
-                <p class="text-xs" style="color:#6b7280;">RSI</p>
-                <p class="text-white text-sm font-bold">52.4</p>
-              </div>
-              <div class="rounded-xl p-2 text-center" style="background:rgba(255,255,255,0.07);">
-                <p class="text-xs" style="color:#6b7280;">MACD</p>
-                <p class="text-sm font-bold" style="color:#34d399;">Tăng</p>
-              </div>
-              <div class="rounded-xl p-2 text-center" style="background:rgba(255,255,255,0.07);">
-                <p class="text-xs" style="color:#6b7280;">Dự Báo</p>
-                <p class="text-white text-sm font-bold">↑ <span>Lên</span></p>
-              </div>
-            </div>
-            <!-- Push notification preview -->
-            <div class="rounded-xl p-3 flex items-start gap-2.5" style="background:rgba(245,158,11,0.1);border:1px solid rgba(245,158,11,0.2);">
-              <svg class="w-4 h-4 mt-0.5 flex-shrink-0" style="color:#f59e0b;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>
-              <div>
-                <p class="text-white text-xs font-semibold">Cảnh Báo Giá Vàng</p>
-                <p class="text-xs mt-0.5" style="color:#9ca3af;">Vàng SJC đạt mốc 92,5 triệu/lượng ↑</p>
-              </div>
+          <div class="showcase-phone">
+            <div class="showcase-phone-screen">
+              <img src="../images/gold/gold-signal.webp" alt="Moni - Tín hiệu vàng AI: Mua, Giữ hay Bán kèm độ tin cậy và các yếu tố" loading="lazy" width="600" height="1304">
             </div>
           </div>
         </div>
@@ -644,6 +591,7 @@
           </div>
           <h3 class="text-lg font-bold text-navy mb-2">Bảng Phân Tích</h3>
           <p class="text-gray-500 text-sm leading-relaxed">Biểu đồ đẹp và thông tin chi tiết về xu hướng chi tiêu.</p>
+          <a href="/analytics/" class="card-link text-gold text-sm font-semibold mt-3 inline-block hover:text-gold-light">Xem chi tiết →</a>
         </div>
 
         <!-- Savings Goals -->
@@ -673,6 +621,7 @@
           </div>
           <h3 class="text-lg font-bold text-navy mb-2">Giao Dịch Định Kỳ</h3>
           <p class="text-gray-500 text-sm leading-relaxed">Tự động ghi nhận tiền nhà, gói dịch vụ, hóa đơn hàng tháng.</p>
+          <a href="/recurring/" class="card-link text-gold text-sm font-semibold mt-3 inline-block hover:text-gold-light">Xem chi tiết →</a>
         </div>
 
         <!-- Challenges -->
@@ -690,7 +639,8 @@
             <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
           </div>
           <h3 class="text-lg font-bold text-navy mb-2">Theo Dõi Nợ</h3>
-          <p class="text-gray-500 text-sm leading-relaxed">Ghi lại tiền cho vay và tiền mượn. Nhắc nhở đúng lúc, không bao giờ quên nợ nữa.</p>
+          <p class="text-gray-500 text-sm leading-relaxed">Ghi lại tiền cho vay và tiền mượn, rõ ràng từng khoản để không quên nợ.</p>
+          <span class="inline-block mt-3 text-xs font-semibold text-gray-500 bg-gray-100 rounded-full px-2.5 py-1">Sắp ra mắt</span>
         </div>
 
         <!-- Group Savings -->
@@ -700,6 +650,7 @@
           </div>
           <h3 class="text-lg font-bold text-navy mb-2">Tiết Kiệm Nhóm</h3>
           <p class="text-gray-500 text-sm leading-relaxed">Cùng tiết kiệm với bạn bè hoặc gia đình hướng tới một mục tiêu chung — quỹ du lịch, quà tặng, hay quỹ dự phòng.</p>
+          <span class="inline-block mt-3 text-xs font-semibold text-gray-500 bg-gray-100 rounded-full px-2.5 py-1">Sắp ra mắt</span>
         </div>
 
         <!-- Guest Participants -->
@@ -709,6 +660,7 @@
           </div>
           <h3 class="text-lg font-bold text-navy mb-2">Thêm Khách Vào Nhóm</h3>
           <p class="text-gray-500 text-sm leading-relaxed">Thêm bất kỳ ai vào nhóm chia tiền mà không cần tài khoản. Hoàn hảo cho những chuyến đi một lần với người chưa dùng app.</p>
+          <a href="/groups/guide/#khach" class="card-link text-gold text-sm font-semibold mt-3 inline-block hover:text-gold-light">Xem chi tiết →</a>
         </div>
         <!-- formula -->
         <div class="feature-card fade-up fade-up-delay-1">
@@ -717,6 +669,7 @@
           </div>
           <h3 class="text-lg font-bold text-navy mb-2">Công Thức Tài Chính</h3>
           <p class="text-gray-500 text-sm leading-relaxed">Chọn 50/30/20, 80/20 hoặc 70/20/10 và áp dụng vào thu nhập thành kế hoạch ngân sách có sẵn.</p>
+          <a href="/budget/guide/#cong-thuc" class="card-link text-gold text-sm font-semibold mt-3 inline-block hover:text-gold-light">Xem chi tiết →</a>
         </div>
         <!-- fuel -->
         <div class="feature-card fade-up fade-up-delay-2">
@@ -1193,6 +1146,10 @@
             <li><a href="#features">Tính Năng</a></li>
             <li><a href="/couple/">Tài Chính Cặp Đôi</a></li>
             <li><a href="/couple/guide/">Hướng Dẫn Cặp Đôi</a></li>
+            <li><a href="/analytics/">Phân Tích Chi Tiêu</a></li>
+            <li><a href="/analytics/guide/">Hướng Dẫn Phân Tích</a></li>
+            <li><a href="/recurring/">Giao Dịch Định Kỳ</a></li>
+            <li><a href="/recurring/guide/">Hướng Dẫn Giao Dịch Định Kỳ</a></li>
             <li><a href="/gold/">Giá Vàng & Tín Hiệu AI</a></li>
             <li><a href="/gold/guide/">Hướng Dẫn Giá Vàng</a></li>
             <li><a href="/savings/">Tiết Kiệm</a></li>

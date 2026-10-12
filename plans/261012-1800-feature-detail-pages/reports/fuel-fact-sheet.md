@@ -1,0 +1,2 @@
+# Fuel notification fact sheet (2026-10-12) — NO PAGE BUILT
+- Only a Settings toggle "Thông báo giá xăng dầu" (VN timezone only, opt-in) + daily 15:30 VN Petrolimex crawl + push "Giá xăng dầu thay đổi" when a price changes (E5 RON92, RON95-III, Diesel; Vùng 1). Commit e1e57e5 on main; production deploy/migration 0022 unverified. No in-app price screen, tap does not navigate, text hardcoded Vietnamese. Too thin for its own page; consider FAQ mention after deploy verified.

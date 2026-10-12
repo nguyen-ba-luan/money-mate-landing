@@ -17,6 +17,10 @@ Mẫu: `couple/` + `couple/guide/` (vi baked, en qua `js/page-i18n.js` + `js/<sl
 
 | 5 | Giá vàng + tín hiệu AI + cảnh báo + tài sản vàng | `/gold/`, `/gold/guide/` | XONG local, chưa commit (10 ảnh `images/gold/`, 2 OG, wire showcase `solution.f4`). KHÔNG quảng cáo: Bollinger, "Gần tôi", chọn tỉnh thành, chatbot. Xem reports/gold-fact-sheet.md |
 
+| 6 | Giao dịch định kỳ | `/recurring/`, `/recurring/guide/` | XONG local, chưa commit (4 ảnh, 2 OG, card trang chủ). KHÔNG quảng cáo: nhắc trước hạn (notifyBefore không chạy), nhắc khoản cố định, tạo nền khi app đóng. Xem reports/recurring-fact-sheet.md |
+| 7 | Phân tích chi tiêu + báo cáo tháng | `/analytics/`, `/analytics/guide/` | XONG local, chưa commit (4 ảnh, 2 OG, card "Bảng Phân Tích"). KHÔNG quảng cáo: biểu đồ tròn/đường, nhiều tháng, AI insight, phân tích ví chung. Xem reports/analytics-fact-sheet.md |
+| 8 | Giá xăng dầu | — | KHÔNG làm trang: chỉ là công tắc + push, deploy chưa xác minh. Xem reports/fuel-fact-sheet.md |
+
 Mỗi tính năng: fact sheet đối chiếu code → seed API/DB local + chụp simulator (xem memory `reference_local_api_simulator_screenshots`) → 2 trang vi/en → sitemap, footer, thẻ trang chủ clickable, OG riêng → nút "?" trong app (+ 10 locale nếu thêm chuỗi) → test Chrome desktop/mobile.
 
 Ràng buộc: không quảng cáo tính năng không có trong code; không dùng dữ liệu production; không commit/push/OTA khi chưa có lệnh.

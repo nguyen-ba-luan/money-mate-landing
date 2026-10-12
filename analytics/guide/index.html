@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hướng dẫn xem phân tích chi tiêu và báo cáo tháng trên Moni</title>
+  <meta name="description" content="Từng bước chọn kỳ, đọc các biểu đồ, so sánh tháng trước, xem báo cáo tháng và xuất dữ liệu CSV hoặc PDF.">
+  <meta name="author" content="Code4change">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#1e3a5f">
+  <link rel="canonical" href="https://moni.live/analytics/guide/">
+  <link rel="alternate" hreflang="vi" href="https://moni.live/analytics/guide/">
+  <link rel="alternate" hreflang="x-default" href="https://moni.live/analytics/guide/">
+  <meta property="og:title" content="Hướng dẫn xem phân tích chi tiêu và báo cáo tháng trên Moni">
+  <meta property="og:description" content="Từng bước chọn kỳ, đọc các biểu đồ, so sánh tháng trước, xem báo cáo tháng và xuất dữ liệu CSV hoặc PDF.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://moni.live/analytics/guide/">
+  <meta property="og:site_name" content="Moni">
+  <meta property="og:image" content="https://moni.live/images/og-image-analytics-guide.jpg?v=1">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:alt" content="Moni - Phân tích chi tiêu: thu chi, so sánh tháng trước, danh mục hàng đầu và báo cáo tháng">
+  <meta property="og:locale" content="vi_VN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hướng dẫn xem phân tích chi tiêu và báo cáo tháng trên Moni">
+  <meta name="twitter:description" content="Từng bước chọn kỳ, đọc các biểu đồ, so sánh tháng trước, xem báo cáo tháng và xuất dữ liệu CSV hoặc PDF.">
+  <meta name="twitter:image" content="https://moni.live/images/og-image-analytics-guide.jpg?v=1">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
+  <link rel="stylesheet" href="/css/tailwind-compiled.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/couple.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Hướng dẫn phân tích chi tiêu",
+  "description": "Từ mở màn hình đến xuất dữ liệu, từng bước một.",
+  "inLanguage": "vi",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Mở màn Phân Tích Chi Tiêu",
+      "url": "https://moni.live/analytics/guide/#mo-phan-tich",
+      "text": "Mở tab \"Khám Phá\", mục \"Báo Cáo\" rồi chọn \"Phân Tích Chi Tiêu\". Hoặc bấm biểu tượng biểu đồ ở thẻ số dư đầu trang chủ. Cần có giao dịch đã ghi thì biểu đồ mới có số liệu. Kéo xuống để làm mới dữ liệu."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Chọn kỳ muốn xem",
+      "url": "https://moni.live/analytics/guide/#chon-ky",
+      "text": "Ở đầu màn hình bấm \"Hôm nay\", \"Tuần\", \"Tháng\", \"Năm\" hoặc \"Tùy chỉnh\". Mặc định là \"Tháng\". Với \"Tùy chỉnh\", chọn nhanh 7, 30 hoặc 90 ngày, hoặc nhập \"Bắt đầu\" và \"Kết thúc\" theo dạng DD/MM/YYYY rồi bấm \"Áp dụng\"."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Đọc các chỉ số và biểu đồ",
+      "url": "https://moni.live/analytics/guide/#doc-bieu-do",
+      "text": "Bốn thẻ đầu: \"Thu nhập\", \"Chi tiêu\", \"Số dư\" và \"TB Ngày\". \"Chi tiêu dự báo\" cho số ước tính cả tháng, kèm thanh tiến độ và nhãn \"Đúng kế hoạch\" hoặc \"Vượt ngân sách\". Cần ít nhất 3 ngày có chi tiêu, nếu không bạn thấy \"Chưa đủ dữ liệu\". \"Tháng này vs Tháng trước\" đặt thanh cặp cho tối đa 6 danh mục: cam là tháng này, xám là tháng trước. \"Danh mục hàng đầu\" liệt kê top 5 danh mục chi nhiều nhất kèm phần trăm. \"Phân loại chi tiêu\" cho thấy thanh màu theo danh mục. \"Xu hướng chi tiêu hàng ngày\" là biểu đồ cột 14 ngày gần nhất, kèm mức trung bình."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Xem báo cáo tháng",
+      "url": "https://moni.live/analytics/guide/#bao-cao-thang",
+      "text": "Cuối màn Phân Tích bấm banner \"Báo cáo tháng\", hoặc vào \"Khám Phá\", mục \"Báo Cáo\", chọn \"Báo Cáo Chi Tiết\". Dùng mũi tên ở đầu để chọn tháng. Đọc lần lượt: tổng kết thu, chi, tiết kiệm và tỷ lệ; \"Danh mục hàng đầu\"; \"Tuân thủ ngân sách\" với nhãn OK hoặc Vượt; \"Chi tiêu lớn nhất\"; \"Nhận xét\"."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Xuất CSV hoặc PDF",
+      "url": "https://moni.live/analytics/guide/#xuat-du-lieu",
+      "text": "Ở màn Phân Tích Chi Tiêu, chọn kỳ rồi bấm \"Xuất CSV\" hoặc \"Xuất PDF\". Hai nút bị tắt khi kỳ đó chưa có giao dịch. Tệp CSV có các cột Date, Title, Amount, Category, Type, Notes. Số tiền đã được định dạng sẵn chứ không phải số thô. Ở báo cáo tháng bấm \"Xuất\" để tạo PDF của báo cáo rồi chia sẻ."
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Moni",
+      "item": "https://moni.live/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Phân tích chi tiêu & báo cáo tháng",
+      "item": "https://moni.live/analytics/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Hướng dẫn",
+      "item": "https://moni.live/analytics/guide/"
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <nav class="nav py-4" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3">
+        <img src="/images/logo.png" alt="Moni" class="w-10 h-10 rounded-xl" width="40" height="40">
+        <span class="text-white font-bold text-xl">Moni</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a class="nav-link text-white/80 hover:text-white text-sm font-medium" data-i18n="nav.home" href="/">Trang chủ</a><a class="nav-link text-white/80 hover:text-white text-sm font-medium" data-i18n="nav.intro" href="/analytics/">Giới thiệu</a><a class="nav-link text-white/80 hover:text-white text-sm font-medium" data-i18n="nav.guide" href="/analytics/guide/">Hướng dẫn</a>
+        <button class="lang-toggle text-white/80 hover:text-white text-sm font-medium cursor-pointer bg-transparent border border-white/20 rounded-lg px-3 py-1.5 hover:border-white/50 transition-all" aria-label="Switch to English">🇬🇧 EN</button>
+        <a class="btn-gold text-sm" data-i18n="nav.download" href="https://moni.live/download" target="_blank" rel="noopener noreferrer">Tải miễn phí</a>
+      </div>
+      <button class="hamburger md:hidden" id="hamburger-btn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <a class="mobile-menu-link" data-i18n="nav.home.m" href="/">Trang chủ</a><a class="mobile-menu-link" data-i18n="nav.intro.m" href="/analytics/">Giới thiệu</a><a class="mobile-menu-link" data-i18n="nav.guide.m" href="/analytics/guide/">Hướng dẫn</a>
+    <button class="lang-toggle text-white/80 hover:text-white text-lg font-medium cursor-pointer bg-transparent border border-white/20 rounded-lg px-4 py-2 hover:border-white/50 transition-all" aria-label="Switch to English">🇬🇧 EN</button>
+    <a class="btn-gold text-lg" data-i18n="nav.download.m" href="https://moni.live/download" target="_blank" rel="noopener noreferrer">Tải miễn phí</a>
+  </div>
+  <section class="hero-gradient cp-hero cp-hero-sm pt-28 pb-24" id="hero">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <nav aria-label="breadcrumb" class="cp-crumbs"><a href="/">Moni</a><span>/</span><a href="/analytics/"><span data-i18n="crumb.feature">Phân tích chi tiêu &amp; báo cáo tháng</span></a><span>/</span><span data-i18n="crumb.guide">Hướng dẫn</span></nav>
+      <h1 class="font-display text-4xl sm:text-5xl font-extrabold text-white leading-tight mb-5" data-i18n="ghero.title">Hướng dẫn phân tích chi tiêu</h1>
+      <p class="text-white/70 text-lg max-w-2xl mx-auto" data-i18n="ghero.desc">Từ mở màn hình đến xuất dữ liệu, từng bước một.</p>
+    </div>
+  </section>
+  <div class="cp-guide-wrap max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <aside class="cp-toc" aria-label="Mục lục"><nav><a data-i18n="toc.mo-phan-tich" href="#mo-phan-tich">Mở Phân Tích</a><a data-i18n="toc.chon-ky" href="#chon-ky">Chọn kỳ</a><a data-i18n="toc.doc-bieu-do" href="#doc-bieu-do">Đọc các biểu đồ</a><a data-i18n="toc.bao-cao-thang" href="#bao-cao-thang">Báo cáo tháng</a><a data-i18n="toc.xuat-du-lieu" href="#xuat-du-lieu">Xuất dữ liệu</a><a data-i18n="toc.cau-hoi-thuong-gap" href="#cau-hoi-thuong-gap">Câu hỏi thường gặp</a></nav></aside>
+    <main class="cp-guide-main">
+<section class="cp-guide-sec" id="mo-phan-tich"><div class="cp-guide-body"><h2 class="cp-h3" data-i18n="g.mo-phan-tich.h">Mở màn Phân Tích Chi Tiêu</h2><ol class="cp-ol"><li><span data-i18n="g.mo-phan-tich.o1.1">Mở tab "Khám Phá", mục "Báo Cáo" rồi chọn "Phân Tích Chi Tiêu".</span></li><li><span data-i18n="g.mo-phan-tich.o1.2">Hoặc bấm biểu tượng biểu đồ ở thẻ số dư đầu trang chủ.</span></li><li><span data-i18n="g.mo-phan-tich.o1.3">Cần có giao dịch đã ghi thì biểu đồ mới có số liệu. Kéo xuống để làm mới dữ liệu.</span></li></ol><p class="cp-callout cp-callout-info"><span data-i18n="g.mo-phan-tich.n1">Màn này chỉ tính giao dịch ví cá nhân.</span></p></div></section>
+<section class="cp-guide-sec" id="chon-ky"><div class="cp-guide-body"><h2 class="cp-h3" data-i18n="g.chon-ky.h">Chọn kỳ muốn xem</h2><ol class="cp-ol"><li><span data-i18n="g.chon-ky.o1.1">Ở đầu màn hình bấm "Hôm nay", "Tuần", "Tháng", "Năm" hoặc "Tùy chỉnh". Mặc định là "Tháng".</span></li><li><span data-i18n="g.chon-ky.o1.2">Với "Tùy chỉnh", chọn nhanh 7, 30 hoặc 90 ngày, hoặc nhập "Bắt đầu" và "Kết thúc" theo dạng DD/MM/YYYY rồi bấm "Áp dụng".</span></li></ol><div class="cp-table-wrap"><table class="cp-table"><thead><tr><th><span data-i18n="g.chon-ky.t1.h1">Kỳ</span></th><th><span data-i18n="g.chon-ky.t1.h2">Tính từ</span></th></tr></thead><tbody><tr><td><span data-i18n="g.chon-ky.t1.r1c1">Hôm nay</span></td><td><span data-i18n="g.chon-ky.t1.r1c2">0 giờ hôm nay đến hiện tại.</span></td></tr><tr><td><span data-i18n="g.chon-ky.t1.r2c1">Tuần</span></td><td><span data-i18n="g.chon-ky.t1.r2c2">7 ngày gần nhất (không phải tuần lịch).</span></td></tr><tr><td><span data-i18n="g.chon-ky.t1.r3c1">Tháng</span></td><td><span data-i18n="g.chon-ky.t1.r3c2">Từ đầu tháng tài chính của bạn đến hiện tại.</span></td></tr><tr><td><span data-i18n="g.chon-ky.t1.r4c1">Năm</span></td><td><span data-i18n="g.chon-ky.t1.r4c2">Từ ngày 1/1 đến hiện tại.</span></td></tr></tbody></table></div><p class="cp-callout cp-callout-info"><span data-i18n="g.chon-ky.n1">"TB Ngày" chia theo số ngày cố định của kỳ (ví dụ tháng là 30 ngày) nên chỉ là ước lượng.</span></p></div></section>
+<section class="cp-guide-sec" id="doc-bieu-do"><div class="cp-guide-body"><h2 class="cp-h3" data-i18n="g.doc-bieu-do.h">Đọc các chỉ số và biểu đồ</h2><ol class="cp-ol"><li><span data-i18n="g.doc-bieu-do.o1.1">Bốn thẻ đầu: "Thu nhập", "Chi tiêu", "Số dư" và "TB Ngày".</span></li><li><span data-i18n="g.doc-bieu-do.o1.2">"Chi tiêu dự báo" cho số ước tính cả tháng, kèm thanh tiến độ và nhãn "Đúng kế hoạch" hoặc "Vượt ngân sách". Cần ít nhất 3 ngày có chi tiêu, nếu không bạn thấy "Chưa đủ dữ liệu".</span></li><li><span data-i18n="g.doc-bieu-do.o1.3">"Tháng này vs Tháng trước" đặt thanh cặp cho tối đa 6 danh mục: cam là tháng này, xám là tháng trước.</span></li><li><span data-i18n="g.doc-bieu-do.o1.4">"Danh mục hàng đầu" liệt kê top 5 danh mục chi nhiều nhất kèm phần trăm. "Phân loại chi tiêu" cho thấy thanh màu theo danh mục.</span></li><li><span data-i18n="g.doc-bieu-do.o1.5">"Xu hướng chi tiêu hàng ngày" là biểu đồ cột 14 ngày gần nhất, kèm mức trung bình.</span></li></ol><p class="cp-callout cp-callout-info"><span data-i18n="g.doc-bieu-do.n1">Nếu chưa có chi tiêu trong kỳ, các biểu đồ hiện "Chưa có dữ liệu chi tiêu".</span></p><div class="cp-shots-row"><figure class="cp-shot"><img src="/images/analytics/analytics-overview.webp" alt="Chọn kỳ, bốn chỉ số và chi tiêu dự báo" data-i18n-alt="shot.analytics-overview" width="600" height="1304" loading="lazy"><figcaption data-i18n="shot.analytics-overview.cap">Kỳ, bốn chỉ số, dự báo</figcaption></figure><figure class="cp-shot"><img src="/images/analytics/analytics-compare.webp" alt="So sánh với tháng trước và danh mục hàng đầu" data-i18n-alt="shot.analytics-compare" width="600" height="1304" loading="lazy"><figcaption data-i18n="shot.analytics-compare.cap">So sánh tháng trước, danh mục hàng đầu</figcaption></figure></div></div></section>
+<section class="cp-guide-sec" id="bao-cao-thang"><div class="cp-guide-body"><h2 class="cp-h3" data-i18n="g.bao-cao-thang.h">Xem báo cáo tháng</h2><ol class="cp-ol"><li><span data-i18n="g.bao-cao-thang.o1.1">Cuối màn Phân Tích bấm banner "Báo cáo tháng", hoặc vào "Khám Phá", mục "Báo Cáo", chọn "Báo Cáo Chi Tiết".</span></li><li><span data-i18n="g.bao-cao-thang.o1.2">Dùng mũi tên ở đầu để chọn tháng.</span></li><li><span data-i18n="g.bao-cao-thang.o1.3">Đọc lần lượt: tổng kết thu, chi, tiết kiệm và tỷ lệ; "Danh mục hàng đầu"; "Tuân thủ ngân sách" với nhãn OK hoặc Vượt; "Chi tiêu lớn nhất"; "Nhận xét".</span></li></ol><div class="cp-table-wrap"><table class="cp-table"><thead><tr><th><span data-i18n="g.bao-cao-thang.t1.h1">Nhận xét</span></th><th><span data-i18n="g.bao-cao-thang.t1.h2">Khi nào hiện</span></th></tr></thead><tbody><tr><td><span data-i18n="g.bao-cao-thang.t1.r1c1">Tiết kiệm tốt</span></td><td><span data-i18n="g.bao-cao-thang.t1.r1c2">Tỷ lệ tiết kiệm từ 20% trở lên.</span></td></tr><tr><td><span data-i18n="g.bao-cao-thang.t1.r2c1">Nhắc tăng tiết kiệm</span></td><td><span data-i18n="g.bao-cao-thang.t1.r2c2">Tỷ lệ tiết kiệm trên 0 nhưng dưới 20%.</span></td></tr><tr><td><span data-i18n="g.bao-cao-thang.t1.r3c1">Chi vượt thu</span></td><td><span data-i18n="g.bao-cao-thang.t1.r3c2">Số tiết kiệm âm.</span></td></tr><tr><td><span data-i18n="g.bao-cao-thang.t1.r4c1">Chi tiêu tăng</span></td><td><span data-i18n="g.bao-cao-thang.t1.r4c2">Tăng hơn 20% so với tháng trước.</span></td></tr><tr><td><span data-i18n="g.bao-cao-thang.t1.r5c1">Chi tiêu giảm</span></td><td><span data-i18n="g.bao-cao-thang.t1.r5c2">Giảm hơn 10% so với tháng trước.</span></td></tr><tr><td><span data-i18n="g.bao-cao-thang.t1.r6c1">Danh mục chi nhiều nhất và trung bình mỗi ngày</span></td><td><span data-i18n="g.bao-cao-thang.t1.r6c2">Luôn hiện khi có dữ liệu.</span></td></tr></tbody></table></div><div class="cp-shots-row"><figure class="cp-shot"><img src="/images/analytics/report-summary.webp" alt="Tổng kết báo cáo tháng và danh mục hàng đầu" data-i18n-alt="shot.report-summary" width="600" height="955" loading="lazy"><figcaption data-i18n="shot.report-summary.cap">Tổng kết và danh mục hàng đầu</figcaption></figure><figure class="cp-shot"><img src="/images/analytics/report-insights.webp" alt="Tuân thủ ngân sách, chi tiêu lớn nhất và nhận xét" data-i18n-alt="shot.report-insights" width="600" height="1304" loading="lazy"><figcaption data-i18n="shot.report-insights.cap">Ngân sách, chi lớn nhất, nhận xét</figcaption></figure></div></div></section>
+<section class="cp-guide-sec" id="xuat-du-lieu"><div class="cp-guide-body"><h2 class="cp-h3" data-i18n="g.xuat-du-lieu.h">Xuất CSV hoặc PDF</h2><ol class="cp-ol"><li><span data-i18n="g.xuat-du-lieu.o1.1">Ở màn Phân Tích Chi Tiêu, chọn kỳ rồi bấm "Xuất CSV" hoặc "Xuất PDF". Hai nút bị tắt khi kỳ đó chưa có giao dịch.</span></li><li><span data-i18n="g.xuat-du-lieu.o1.2">Tệp CSV có các cột Date, Title, Amount, Category, Type, Notes. Số tiền đã được định dạng sẵn chứ không phải số thô.</span></li><li><span data-i18n="g.xuat-du-lieu.o1.3">Ở báo cáo tháng bấm "Xuất" để tạo PDF của báo cáo rồi chia sẻ.</span></li></ol><p class="cp-callout cp-callout-warn"><span data-i18n="g.xuat-du-lieu.n1">PDF của báo cáo tháng hiện có nội dung bằng tiếng Anh. Báo cáo tháng không có CSV.</span></p></div></section>
+<section class="cp-guide-sec" id="cau-hoi-thuong-gap"><div class="cp-guide-body"><h2 class="cp-h3" data-i18n="g.cau-hoi-thuong-gap.h">Câu hỏi thường gặp</h2><div class="space-y-3">
+        <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
+          <button class="faq-question w-full text-left px-6 py-4 flex items-center justify-between gap-4" aria-expanded="false">
+            <span data-i18n="faq.q1">Phân tích chi tiêu trên Moni có miễn phí không?</span>
+            <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer px-6 pb-4"><p class="text-gray-500 text-sm leading-relaxed" data-i18n="faq.a1">Có. Moni miễn phí, không quảng cáo và không có phí ẩn. Phân tích chi tiêu và báo cáo tháng đều có sẵn trong ứng dụng.</p></div>
+        </div>
+        <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
+          <button class="faq-question w-full text-left px-6 py-4 flex items-center justify-between gap-4" aria-expanded="false">
+            <span data-i18n="faq.q2">Phân tích có tính chi tiêu ví chung của cặp đôi không?</span>
+            <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer px-6 pb-4"><p class="text-gray-500 text-sm leading-relaxed" data-i18n="faq.a2">Không. Phân tích và báo cáo tháng chỉ tính các giao dịch ví cá nhân. Chi tiêu chung của cặp đôi xem trong màn Tài chính cặp đôi.</p></div>
+        </div>
+        <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
+          <button class="faq-question w-full text-left px-6 py-4 flex items-center justify-between gap-4" aria-expanded="false">
+            <span data-i18n="faq.q3">"Chi tiêu dự báo" được tính thế nào?</span>
+            <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer px-6 pb-4"><p class="text-gray-500 text-sm leading-relaxed" data-i18n="faq.a3">Moni lấy nhịp chi tiêu từng ngày của tháng hiện tại để ước tính tổng chi cả tháng. Cần ít nhất 3 ngày có dữ liệu, nếu chưa đủ bạn thấy dòng "Chưa đủ dữ liệu". Đây chỉ là ước lượng.</p></div>
+        </div>
+        <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
+          <button class="faq-question w-full text-left px-6 py-4 flex items-center justify-between gap-4" aria-expanded="false">
+            <span data-i18n="faq.q4">Tuần và Tháng được tính thế nào?</span>
+            <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer px-6 pb-4"><p class="text-gray-500 text-sm leading-relaxed" data-i18n="faq.a4">"Tuần" là 7 ngày gần nhất chứ không phải tuần lịch. "Tháng" tính từ đầu tháng tài chính của bạn đến hiện tại. "Năm" tính từ 1/1.</p></div>
+        </div>
+        <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
+          <button class="faq-question w-full text-left px-6 py-4 flex items-center justify-between gap-4" aria-expanded="false">
+            <span data-i18n="faq.q5">Xuất CSV và PDF gồm những gì?</span>
+            <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer px-6 pb-4"><p class="text-gray-500 text-sm leading-relaxed" data-i18n="faq.a5">Ở Phân Tích Chi Tiêu, "Xuất CSV" và "Xuất PDF" tạo danh sách giao dịch của kỳ đang xem. CSV có các cột Date, Title, Amount, Category, Type, Notes. Báo cáo tháng chỉ xuất PDF và nội dung PDF hiện bằng tiếng Anh.</p></div>
+        </div>
+        <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
+          <button class="faq-question w-full text-left px-6 py-4 flex items-center justify-between gap-4" aria-expanded="false">
+            <span data-i18n="faq.q6">Nhận xét trong báo cáo tháng có phải do AI viết không?</span>
+            <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer px-6 pb-4"><p class="text-gray-500 text-sm leading-relaxed" data-i18n="faq.a6">Không. Đó là các câu mẫu hiện theo quy tắc cố định, ví dụ tỷ lệ tiết kiệm, chi tiêu tăng hay giảm so với tháng trước, danh mục chi nhiều nhất.</p></div>
+        </div>
+        <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
+          <button class="faq-question w-full text-left px-6 py-4 flex items-center justify-between gap-4" aria-expanded="false">
+            <span data-i18n="faq.q7">Vì sao thanh "Tháng này vs Tháng trước" không đúng khi tôi chọn Tuần hay Năm?</span>
+            <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer px-6 pb-4"><p class="text-gray-500 text-sm leading-relaxed" data-i18n="faq.a7">Biểu đồ này dùng số liệu của kỳ đang chọn cho phần "Tháng này". Để so sánh đúng nghĩa, hãy chọn kỳ "Tháng".</p></div>
+        </div>
+        <div class="faq-item border border-gray-200 rounded-xl overflow-hidden">
+          <button class="faq-question w-full text-left px-6 py-4 flex items-center justify-between gap-4" aria-expanded="false">
+            <span data-i18n="faq.q8">Tôi xem được các tháng cũ không?</span>
+            <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer px-6 pb-4"><p class="text-gray-500 text-sm leading-relaxed" data-i18n="faq.a8">Có. Ở báo cáo tháng bạn dùng mũi tên để lùi về các tháng trước. Ở màn phân tích bạn chọn "Tùy chỉnh" và nhập khoảng ngày.</p></div>
+        </div>
+      </div></div></section>
+    </main>
+  </div>
+  <section class="cta-section py-20 lg:py-28" id="download">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <p class="text-gold font-mono text-sm font-medium tracking-wider uppercase mb-4"><span data-i18n="cta.tagline">Sẵn sàng chưa?</span></p>
+      <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-6" data-i18n="cta.title">Hiểu chi tiêu của bạn cùng Moni</h2>
+      <p class="text-white/60 text-lg max-w-lg mx-auto mb-10" data-i18n="cta.desc">Tải Moni miễn phí, ghi chi tiêu và xem phân tích ngay trong tháng này.</p>
+      <div class="flex flex-wrap gap-4 justify-center"><a href="https://apps.apple.com/vn/app/moni-s%E1%BB%95-thu-chi-ho%C3%A0n-ti%E1%BB%81n/id6759211409" target="_blank" rel="noopener noreferrer" class="store-badge"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg><div><span class="badge-text-sm block">App Store</span><span class="badge-text-lg block">iPhone</span></div></a><a href="https://play.google.com/store/apps/details?id=com.code4change.moneymate" target="_blank" rel="noopener noreferrer" class="store-badge"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 010 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658L16.802 8.99l-2.303 2.303-8.635-8.635z"/></svg><div><span class="badge-text-sm block">Google Play</span><span class="badge-text-lg block">Android</span></div></a></div>
+    </div>
+  </section>
+  <footer class="footer py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-6">
+        <a href="/" class="flex items-center gap-3"><img src="/images/logo.png" alt="Moni" class="w-8 h-8 rounded-lg" width="32" height="32"><span class="text-white font-bold text-lg">Moni</span></a>
+        <ul class="flex flex-wrap justify-center gap-6 text-sm">
+          <li><a data-i18n="foot.home" href="/">Trang chủ</a></li>
+          <li><a href="/analytics/" data-i18n="foot.intro">Phân Tích Chi Tiêu</a></li>
+          <li><a href="/analytics/guide/" data-i18n="foot.guide">Hướng Dẫn Phân Tích</a></li>
+          <li><a data-i18n="foot.privacy" href="/privacy-policy.html">Chính sách bảo mật</a></li>
+          <li><a href="mailto:moni.support@gmail.com">moni.support@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="border-t border-white/10 mt-8 pt-6 text-center"><p class="text-sm"><span data-i18n="foot.copy">© 2026 Code4change. Bảo lưu mọi quyền.</span></p></div>
+    </div>
+  </footer>
+  <script src="/js/analytics-en.js"></script>
+  <script src="/js/page-i18n.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

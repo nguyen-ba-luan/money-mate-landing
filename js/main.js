@@ -24,19 +24,50 @@
   const mobileMenu = document.getElementById('mobile-menu');
   let menuOpen = false;
 
-  function toggleMenu() {
-    menuOpen = !menuOpen;
-    hamburgerBtn.classList.toggle('active', menuOpen);
-    mobileMenu.classList.toggle('open', menuOpen);
-    document.body.style.overflow = menuOpen ? 'hidden' : '';
+  function menuLabel(open) {
+    var vi = document.documentElement.lang !== 'en';
+    return open ? (vi ? 'Đóng menu' : 'Close menu') : (vi ? 'Mở menu' : 'Open menu');
   }
 
-  hamburgerBtn.addEventListener('click', toggleMenu);
+  function toggleMenu(forceOpen) {
+    menuOpen = typeof forceOpen === 'boolean' ? forceOpen : !menuOpen;
+    hamburgerBtn.classList.toggle('active', menuOpen);
+    mobileMenu.classList.toggle('open', menuOpen);
+    document.body.classList.toggle('menu-open', menuOpen);
+    document.body.style.overflow = menuOpen ? 'hidden' : '';
+    hamburgerBtn.setAttribute('aria-expanded', String(menuOpen));
+    hamburgerBtn.setAttribute('aria-label', menuLabel(menuOpen));
+    hamburgerBtn.setAttribute('aria-controls', 'mobile-menu');
+    if (!menuOpen) hamburgerBtn.focus({ preventScroll: true });
+  }
+
+  hamburgerBtn.setAttribute('aria-expanded', 'false');
+  hamburgerBtn.setAttribute('aria-label', menuLabel(false));
+  hamburgerBtn.addEventListener('click', function () { toggleMenu(); });
+
+  // Esc closes the menu; leaving the mobile breakpoint must not leave it stuck open
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && menuOpen) toggleMenu(false);
+  });
+  window.matchMedia('(min-width: 768px)').addEventListener('change', function (e) {
+    if (e.matches && menuOpen) toggleMenu(false);
+  });
+
+  // Mark the link that points at the current page (path links only, hash anchors are skipped)
+  function normalizePath(p) {
+    return p.replace(/index\.html$/, '').replace(/\/+$/, '') || '/';
+  }
+  var here = normalizePath(location.pathname);
+  document.querySelectorAll('.nav-link, .mobile-menu-link').forEach(function (a) {
+    var href = a.getAttribute('href') || '';
+    if (href.charAt(0) !== '/') return;
+    if (normalizePath(href.split('#')[0]) === here) a.setAttribute('aria-current', 'page');
+  });
 
   // Close mobile menu on link click
   mobileMenu.querySelectorAll('a').forEach(function (link) {
     link.addEventListener('click', function () {
-      if (menuOpen) toggleMenu();
+      if (menuOpen) toggleMenu(false);
     });
   });
 

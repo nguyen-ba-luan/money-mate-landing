@@ -142,13 +142,24 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 2rem;
+  justify-content: flex-start;
+  gap: 0.25rem;
+  padding: 6.5rem 1.5rem 2rem;
+  overflow-y: auto;
   opacity: 0;
   visibility: hidden;
   transition:
     opacity var(--transition-base),
     visibility var(--transition-base);
+}
+
+/* While the menu is open the header must blend into it, not sit on top as a lighter band */
+body.menu-open .nav,
+body.menu-open .nav.scrolled {
+  background-color: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow: none;
 }
 
 .mobile-menu.open {
@@ -191,6 +202,50 @@ a {
 
 .mobile-menu a:hover {
   color: var(--color-gold);
+}
+
+/* Full-width rows: the whole row is the tap target (>= 52px) */
+.mobile-menu .mobile-menu-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 20rem;
+  min-height: 3.25rem;
+  border-radius: 0.75rem;
+}
+
+.mobile-menu .mobile-menu-link:active {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* Current page */
+.mobile-menu [aria-current="page"] {
+  color: var(--color-gold);
+  font-weight: 700;
+}
+
+.nav-link[aria-current="page"]::after {
+  width: 100%;
+}
+
+.nav-link[aria-current="page"] {
+  color: #fff;
+}
+
+.mobile-menu .lang-toggle {
+  margin-top: 1.25rem;
+}
+
+.mobile-menu .btn-gold {
+  margin-top: 0.75rem;
+}
+
+.mobile-menu a:focus-visible,
+.mobile-menu button:focus-visible,
+.hamburger:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
 }
 
 /* Hamburger */

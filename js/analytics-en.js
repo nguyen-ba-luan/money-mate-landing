@@ -79,7 +79,7 @@ window.PAGE_EN = {
   "faq.q4": "How are Week and Month counted?",
   "faq.a4": "\"Week\" is the latest 7 days, not a calendar week. \"Month\" runs from the start of your financial month to now. \"Year\" runs from January 1.",
   "faq.q5": "What do the CSV and PDF exports contain?",
-  "faq.a5": "In Spending Analytics, \"Export CSV\" and \"Export PDF\" create a list of the transactions in the period you are viewing. The CSV has the columns Date, Title, Amount, Category, Type, Notes. The monthly report only exports PDF and its PDF text is currently in English.",
+  "faq.a5": "In Spending Analytics, \"Export CSV\" and \"Export PDF\" create a list of the transactions in the period you are viewing. The CSV has the columns Date, Title, Amount, Category, Type, Notes. The monthly report only exports PDF, with labels in the language you use in the app.",
   "faq.q6": "Are the report insights written by AI?",
   "faq.a6": "No. They are template sentences shown by fixed rules, such as your savings rate, spending up or down from last month and your top category.",
   "faq.q7": "Can I view earlier months?",
@@ -147,6 +147,6 @@ window.PAGE_EN = {
   "g.xuat-du-lieu.o1.1": "On Spending Analytics, pick a period and tap \"Export CSV\" or \"Export PDF\". Both buttons are disabled when the period has no transactions.",
   "g.xuat-du-lieu.o1.2": "The CSV has the columns Date, Title, Amount, Category, Type, Notes. Amounts are already formatted rather than raw numbers.",
   "g.xuat-du-lieu.o1.3": "In the monthly report tap \"Export\" to create a PDF of the report and share it.",
-  "g.xuat-du-lieu.n1": "The monthly report PDF is currently in English. The monthly report has no CSV.",
+  "g.xuat-du-lieu.n1": "The monthly report only exports PDF, with no CSV. The PDF labels follow your app language.",
   "g.cau-hoi-thuong-gap.h": "Frequently asked questions"
 };

@@ -75,7 +75,8 @@
       // Feature 4: AI Gold Advisor
       'solution.f4.badge': 'AI Feature',
       'solution.f4.title': 'AI Gold Advisor — Buy, Hold, or Sell?',
-      'solution.f4.desc': 'Moni\'s built-in AI analyzes gold price trends using ARIMA forecasting and technical indicators (RSI, MACD, Bollinger Bands) to give clear Buy/Sell/Hold signals daily. Compare live prices by brand, province and store in Gold Hub, track your gold assets, set price alerts, and follow a source for a daily price digest.',
+      'solution.f4.guide': 'See gold prices and AI signals in detail →',
+      'solution.f4.desc': 'Moni\'s built-in AI analyzes gold price trends using ARIMA forecasting and technical indicators (RSI, MACD) to give clear Buy/Sell/Hold signals daily. Compare live prices by brand and store in Gold Hub, track your gold assets, set price alerts, and follow a source for a daily price digest.',
       'solution.f4.tag1': 'AI Signals',
       'solution.f4.tag2': 'Price Alerts',
       'solution.f4.tag3': 'ARIMA Forecast',
@@ -191,7 +192,7 @@
       'faq.q7': 'How does cashback work?',
       'faq.a7': 'Shop on Shopee, TikTok Shop and partner brands through Moni\'s affiliate links and earn cashback on every order. Your cashback rate rises as you climb member tiers (Bronze to Diamond), and you earn bonuses when friends join with your referral code. Withdraw your balance anytime.',
       'faq.q8': 'How does the AI Gold Advisor work?',
-      'faq.a8': "Moni's AI Gold Advisor fetches live gold prices every 15 minutes, then runs ARIMA forecasting and technical indicator analysis (RSI, MACD, Bollinger Bands) to generate a daily Buy/Hold/Sell signal. You can track your gold assets, set custom price alert thresholds, and receive push notifications when prices hit your targets.",
+      'faq.a8': "Moni's AI Gold Advisor fetches live gold prices every 15 minutes, then runs ARIMA forecasting and technical indicator analysis (RSI, MACD) to generate a daily Buy/Hold/Sell signal. You can track your gold assets, set custom price alert thresholds, and receive push notifications when prices hit your targets.",
       'faq.a4': 'Moni is available for both iPhone (iOS) and Android. Download free on the App Store or Google Play. The app supports 10 languages including English and Vietnamese, and works fully offline on both platforms.',
 
       // CTA
@@ -208,6 +209,8 @@
       'footer.features': 'Features',
       'footer.couple': 'Couple Finance',
       'footer.coupleGuide': 'Couple Guide',
+      'footer.gold': 'Gold Prices & AI Signals',
+      'footer.goldGuide': 'Gold Guide',
       'footer.savings': 'Savings Goals',
       'footer.savingsGuide': 'Savings Guide',
       'footer.groups': 'Spending Groups',
@@ -292,7 +295,8 @@
       // Feature 4: AI Gold Advisor (VI)
       'solution.f4.badge': 'T\u00EDnh N\u0103ng AI',
       'solution.f4.title': 'AI T\u01B0 V\u1EA5n V\u00E0ng \u2014 Mua, Gi\u1EEF hay B\u00E1n?',
-      'solution.f4.desc': 'AI tích hợp trong Moni phân tích xu hướng giá vàng bằng mô hình ARIMA và các chỉ báo kỹ thuật (RSI, MACD, Bollinger Bands) để đưa ra tín hiệu Mua/Giữ/Bán mỗi ngày. So sánh giá vàng theo thương hiệu, tỉnh thành và tiệm trong Gold Hub, theo dõi tài sản vàng, đặt cảnh báo giá và nhận bản tin giá hằng ngày từ nguồn bạn theo dõi.',
+      'solution.f4.guide': 'Xem chi tiết giá vàng và tín hiệu AI →',
+      'solution.f4.desc': 'AI tích hợp trong Moni phân tích xu hướng giá vàng bằng mô hình ARIMA và các chỉ báo kỹ thuật (RSI, MACD) để đưa ra tín hiệu Mua/Giữ/Bán mỗi ngày. So sánh giá vàng theo thương hiệu và tiệm trong Gold Hub, theo dõi tài sản vàng, đặt cảnh báo giá và nhận bản tin giá hằng ngày từ nguồn bạn theo dõi.',
       'solution.f4.tag1': 'T\u00EDn Hi\u1EC7u AI',
       'solution.f4.tag2': 'C\u1EA3nh B\u00E1o Gi\u00E1',
       'solution.f4.tag3': 'D\u1EF1 B\u00E1o ARIMA',
@@ -408,7 +412,7 @@
       'faq.q7': 'Ho\u00E0n ti\u1EC1n ho\u1EA1t \u0111\u1ED9ng nh\u01B0 th\u1EBF n\u00E0o?',
       'faq.a7': 'Mua sắm trên Shopee, TikTok Shop và các thương hiệu đối tác qua liên kết của Moni để nhận hoàn tiền mỗi đơn hàng. Tỉ lệ hoàn tăng khi bạn lên hạng thành viên (Đồng đến Kim Cương) và bạn nhận thưởng khi bạn bè dùng mã giới thiệu của bạn. Rút số dư bất cứ lúc nào.',
       'faq.q8': 'AI T\u01B0 V\u1EA5n V\u00E0ng ho\u1EA1t \u0111\u1ED9ng nh\u01B0 th\u1EBF n\u00E0o?',
-      'faq.a8': 'AI T\u01B0 V\u1EA5n V\u00E0ng c\u1EE7a Moni c\u1EADp nh\u1EADt gi\u00E1 v\u00E0ng th\u1EF1c t\u1EBF m\u1ED7i 15 ph\u00FAt, sau \u0111\u00F3 ch\u1EA1y m\u00F4 h\u00ECnh d\u1EF1 b\u00E1o ARIMA v\u00E0 ph\u00E2n t\u00EDch ch\u1EC9 b\u00E1o k\u1EF9 thu\u1EADt (RSI, MACD, Bollinger Bands) \u0111\u1EC3 t\u1EA1o ra t\u00EDn hi\u1EC7u Mua/Gi\u1EEF/B\u00E1n m\u1ED7i ng\u00E0y. B\u1EA1n c\u00F3 th\u1EC3 theo d\u00F5i t\u00E0i s\u1EA3n v\u00E0ng, \u0111\u1EB7t ng\u01B0\u1EE1ng c\u1EA3nh b\u00E1o gi\u00E1 t\u00F9y ch\u1EC9nh v\u00E0 nh\u1EADn push notification khi gi\u00E1 \u0111\u1EA1t m\u1EE9c m\u1EE5c ti\u00EAu.',
+      'faq.a8': 'AI T\u01B0 V\u1EA5n V\u00E0ng c\u1EE7a Moni c\u1EADp nh\u1EADt gi\u00E1 v\u00E0ng th\u1EF1c t\u1EBF m\u1ED7i 15 ph\u00FAt, sau \u0111\u00F3 ch\u1EA1y m\u00F4 h\u00ECnh d\u1EF1 b\u00E1o ARIMA v\u00E0 ph\u00E2n t\u00EDch ch\u1EC9 b\u00E1o k\u1EF9 thu\u1EADt (RSI, MACD) \u0111\u1EC3 t\u1EA1o ra t\u00EDn hi\u1EC7u Mua/Gi\u1EEF/B\u00E1n m\u1ED7i ng\u00E0y. B\u1EA1n c\u00F3 th\u1EC3 theo d\u00F5i t\u00E0i s\u1EA3n v\u00E0ng, \u0111\u1EB7t ng\u01B0\u1EE1ng c\u1EA3nh b\u00E1o gi\u00E1 t\u00F9y ch\u1EC9nh v\u00E0 nh\u1EADn push notification khi gi\u00E1 \u0111\u1EA1t m\u1EE9c m\u1EE5c ti\u00EAu.',
       'faq.a4': 'Moni hi\u1EC7n c\u00F3 s\u1EB5n cho c\u1EA3 iOS (iPhone) v\u00E0 Android. T\u1EA3i mi\u1EC5n ph\u00ED tr\u00EAn App Store ho\u1EB7c Google Play. \u1EE8ng d\u1EE5ng h\u1ED7 tr\u1EE3 10 ng\u00F4n ng\u1EEF bao g\u1ED3m ti\u1EBFng Vi\u1EC7t v\u00E0 ti\u1EBFng Anh, v\u00E0 ho\u1EA1t \u0111\u1ED9ng ho\u00E0n to\u00E0n ngo\u1EA1i tuy\u1EBFn tr\u00EAn c\u1EA3 hai n\u1EC1n t\u1EA3ng.',
 
       // CTA
@@ -425,6 +429,8 @@
       'footer.features': 'T\u00EDnh N\u0103ng',
       'footer.couple': 'T\u00E0i Ch\u00EDnh C\u1EB7p \u0110\u00F4i',
       'footer.coupleGuide': 'H\u01B0\u1EDBng D\u1EABn C\u1EB7p \u0110\u00F4i',
+      'footer.gold': 'Giá Vàng & Tín Hiệu AI',
+      'footer.goldGuide': 'Hướng Dẫn Giá Vàng',
       'footer.savings': 'Tiết Kiệm',
       'footer.savingsGuide': 'Hướng Dẫn Tiết Kiệm',
       'footer.groups': 'Nhóm Chi Tiêu',

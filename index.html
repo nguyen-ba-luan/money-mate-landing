@@ -101,7 +101,7 @@
       "Hoàn tiền Shopee, TikTok Shop và thương hiệu đối tác",
       "Hạng thành viên và thưởng giới thiệu bạn bè",
       "AI tư vấn vàng — tín hiệu mua/bán/giữ ARIMA",
-      "Gold Hub: so sánh giá vàng theo thương hiệu, tỉnh thành, tiệm",
+      "Gold Hub: so sánh giá vàng theo thương hiệu và tiệm",
       "Cảnh báo giá vàng và bản tin giá hằng ngày",
       "Cảnh báo giá xăng dầu thay đổi",
       "Quản lý ngân sách theo danh mục",
@@ -213,7 +213,7 @@
         "name": "AI Tư Vấn Vàng hoạt động như thế nào?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "AI Tư Vấn Vàng của Moni cập nhật giá vàng thực tế mỗi 15 phút, sau đó chạy mô hình dự báo ARIMA và phân tích chỉ báo kỹ thuật (RSI, MACD, Bollinger Bands) để tạo ra tín hiệu Mua/Giữ/Bán mỗi ngày. Bạn có thể theo dõi tài sản vàng, đặt ngưỡng cảnh báo giá tùy chỉnh và nhận push notification khi giá đạt mức mục tiêu."
+          "text": "AI Tư Vấn Vàng của Moni cập nhật giá vàng thực tế mỗi 15 phút, sau đó chạy mô hình dự báo ARIMA và phân tích chỉ báo kỹ thuật (RSI, MACD) để tạo ra tín hiệu Mua/Giữ/Bán mỗi ngày. Bạn có thể theo dõi tài sản vàng, đặt ngưỡng cảnh báo giá tùy chỉnh và nhận push notification khi giá đạt mức mục tiêu."
         }
       }
     ]
@@ -541,7 +541,8 @@
         <div class="flex-1 text-center lg:text-left">
           <div class="inline-flex items-center gap-2 bg-yellow-50 text-yellow-700 rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide mb-4" data-i18n="solution.f4.badge">AI Feature</div>
           <h3 class="font-display text-2xl sm:text-3xl font-bold text-navy mb-4" data-i18n="solution.f4.title">AI Gold Advisor — Buy, Hold, or Sell?</h3>
-          <p class="text-gray-500 text-base leading-relaxed mb-6" data-i18n="solution.f4.desc">Moni's built-in AI analyzes gold price trends using ARIMA forecasting and technical indicators (RSI, MACD, Bollinger Bands) to give clear Buy/Sell/Hold signals daily. Compare live prices by brand, province and store in Gold Hub, track your gold assets, set price alerts, and follow a source for a daily price digest.</p>
+          <p class="text-gray-500 text-base leading-relaxed mb-6" data-i18n="solution.f4.desc">Moni's built-in AI analyzes gold price trends using ARIMA forecasting and technical indicators (RSI, MACD) to give clear Buy/Sell/Hold signals daily. Compare live prices by brand and store in Gold Hub, track your gold assets, set price alerts, and follow a source for a daily price digest.</p>
+          <a href="/gold/" class="inline-flex items-center gap-1.5 text-sm font-semibold text-gold hover:underline mb-6"><span data-i18n="solution.f4.guide">See gold prices and AI signals in detail →</span><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></a>
           <div class="flex flex-wrap gap-3 justify-center lg:justify-start">
             <span class="inline-flex items-center gap-1.5 bg-gray-100 rounded-full px-3 py-1.5 text-sm text-gray-600">
               <svg class="w-4 h-4 text-amber-500" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
@@ -1125,7 +1126,7 @@
             <span data-i18n="faq.q8">How does the AI Gold Advisor work?</span>
             <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
           </button>
-          <div class="faq-answer px-6 pb-4"><p class="text-gray-500 text-sm leading-relaxed" data-i18n="faq.a8">Moni's AI Gold Advisor fetches live gold prices every 15 minutes, then runs ARIMA forecasting and technical indicator analysis (RSI, MACD, Bollinger Bands) to generate a daily Buy/Hold/Sell signal. You can track your gold assets, set custom price alert thresholds, and receive push notifications when prices hit your targets.</p></div>
+          <div class="faq-answer px-6 pb-4"><p class="text-gray-500 text-sm leading-relaxed" data-i18n="faq.a8">Moni's AI Gold Advisor fetches live gold prices every 15 minutes, then runs ARIMA forecasting and technical indicator analysis (RSI, MACD) to generate a daily Buy/Hold/Sell signal. You can track your gold assets, set custom price alert thresholds, and receive push notifications when prices hit your targets.</p></div>
         </div>
       </div>
     </div>
@@ -1197,6 +1198,8 @@
             <li><a href="#features" data-i18n="footer.features">Features</a></li>
             <li><a href="/couple/" data-i18n="footer.couple">Couple Finance</a></li>
             <li><a href="/couple/guide/" data-i18n="footer.coupleGuide">Couple Guide</a></li>
+            <li><a href="/gold/" data-i18n="footer.gold">Gold Prices & AI Signals</a></li>
+            <li><a href="/gold/guide/" data-i18n="footer.goldGuide">Gold Guide</a></li>
             <li><a href="/savings/" data-i18n="footer.savings">Savings Goals</a></li>
             <li><a href="/savings/guide/" data-i18n="footer.savingsGuide">Savings Guide</a></li>
             <li><a href="/groups/" data-i18n="footer.groups">Spending Groups</a></li>

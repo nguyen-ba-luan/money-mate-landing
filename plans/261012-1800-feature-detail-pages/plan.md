@@ -15,6 +15,8 @@ Mẫu: `couple/` + `couple/guide/` (vi baked, en qua `js/page-i18n.js` + `js/<sl
 | 3 | Tiết kiệm cá nhân | `/savings/`, `/savings/guide/` | XONG local, chưa commit. Quỹ tiết kiệm nhóm KHÔNG làm: lối vào Khám Phá đang ẩn (TODO), định kỳ/mục tiêu thành viên chỉ có API; phần cặp đôi đã nằm trong /couple/guide/#thong-ke |
 | 4 | Sổ nợ | `/debts/`, `/debts/guide/` | BỎ: tính năng chưa phát hành (mục Khám Phá bị ẩn, nhắc hạn không chạy, UI thiếu trả một phần/sửa, nghi lỗi hiển thị tiền). Xem reports/debts-fact-sheet.md |
 
+| 5 | Giá vàng + tín hiệu AI + cảnh báo + tài sản vàng | `/gold/`, `/gold/guide/` | XONG local, chưa commit (10 ảnh `images/gold/`, 2 OG, wire showcase `solution.f4`). KHÔNG quảng cáo: Bollinger, "Gần tôi", chọn tỉnh thành, chatbot. Xem reports/gold-fact-sheet.md |
+
 Mỗi tính năng: fact sheet đối chiếu code → seed API/DB local + chụp simulator (xem memory `reference_local_api_simulator_screenshots`) → 2 trang vi/en → sitemap, footer, thẻ trang chủ clickable, OG riêng → nút "?" trong app (+ 10 locale nếu thêm chuỗi) → test Chrome desktop/mobile.
 
 Ràng buộc: không quảng cáo tính năng không có trong code; không dùng dữ liệu production; không commit/push/OTA khi chưa có lệnh.

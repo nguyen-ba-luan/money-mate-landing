@@ -94,7 +94,7 @@ def head(spec, page_kind, jsonld):
         title, desc, url = s['meta_title'], s['meta_desc'], f'https://moni.live/{s["slug"]}/'
     else:
         title, desc, url = s['guide_meta_title'], s['guide_meta_desc'], f'https://moni.live/{s["slug"]}/guide/'
-    og = f'https://moni.live/images/og-image-{s["slug"]}.jpg?v=1'
+    og = f'https://moni.live/images/og-image-{s["slug"]}{"" if page_kind == "intro" else "-guide"}.jpg?v=1'
     ld = ''.join(f'  <script type="application/ld+json">\n{json.dumps(j, ensure_ascii=False, indent=2)}\n  </script>\n' for j in jsonld(title, desc, url))
     return f'''<!DOCTYPE html>
 <html lang="vi">

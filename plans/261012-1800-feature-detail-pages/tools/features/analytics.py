@@ -98,8 +98,6 @@ SPEC = {
          ('Ở Phân Tích Chi Tiêu, "Xuất CSV" và "Xuất PDF" tạo danh sách giao dịch của kỳ đang xem. CSV có các cột Date, Title, Amount, Category, Type, Notes. Báo cáo tháng chỉ xuất PDF và nội dung PDF hiện bằng tiếng Anh.', 'In Spending Analytics, "Export CSV" and "Export PDF" create a list of the transactions in the period you are viewing. The CSV has the columns Date, Title, Amount, Category, Type, Notes. The monthly report only exports PDF and its PDF text is currently in English.')),
         (('Nhận xét trong báo cáo tháng có phải do AI viết không?', 'Are the report insights written by AI?'),
          ('Không. Đó là các câu mẫu hiện theo quy tắc cố định, ví dụ tỷ lệ tiết kiệm, chi tiêu tăng hay giảm so với tháng trước, danh mục chi nhiều nhất.', 'No. They are template sentences shown by fixed rules, such as your savings rate, spending up or down from last month and your top category.')),
-        (('Vì sao thanh "Tháng này vs Tháng trước" không đúng khi tôi chọn Tuần hay Năm?', 'Why does "This month vs Last month" look off when I pick Week or Year?'),
-         ('Biểu đồ này dùng số liệu của kỳ đang chọn cho phần "Tháng này". Để so sánh đúng nghĩa, hãy chọn kỳ "Tháng".', 'That chart uses the figures of the selected period for the "This month" side. For a true comparison, choose the "Month" period.')),
         (('Tôi xem được các tháng cũ không?', 'Can I view earlier months?'),
          ('Có. Ở báo cáo tháng bạn dùng mũi tên để lùi về các tháng trước. Ở màn phân tích bạn chọn "Tùy chỉnh" và nhập khoảng ngày.', 'Yes. In the monthly report use the arrows to go back through earlier months. In the analytics screen choose "Custom" and enter a date range.')),
     ],

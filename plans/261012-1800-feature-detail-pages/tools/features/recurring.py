@@ -1,5 +1,5 @@
 """Spec for /recurring/ and /recurring/guide/ (recurring transactions). Facts: reports/recurring-fact-sheet.md.
-Do not advertise: advance notifications ("Số ngày thông báo trước" is saved but unused), reminders for fixed-amount rules,
+Do not advertise: advance notifications (the field was removed from the form because nothing used it), reminders for fixed-amount rules,
 background/server auto-creation (it only happens when the app is opened), a rule history screen, skipping personal rules."""
 I = '/images/recurring/'
 SPEC = {
@@ -91,7 +91,7 @@ SPEC = {
         (('Vì sao giao dịch chưa xuất hiện đúng ngày?', 'Why has a transaction not appeared on its day?'),
          ('Moni chỉ tạo giao dịch định kỳ khi bạn mở ứng dụng. Mở Moni là các kỳ đến hạn được tạo ngay, mỗi giao dịch mang ngày của kỳ đó.', 'Moni only creates recurring transactions when you open the app. Opening Moni creates the due periods straight away, each dated for its own period.')),
         (('Moni có nhắc tôi trước ngày đến hạn không?', 'Does Moni remind me before the due date?'),
-         ('Hiện Moni chỉ nhắc với khoản "Số tiền biến động", vào ngày đến hạn. Khoản cố định không có nhắc. Ô "Số ngày thông báo trước" trong form được lưu nhưng hiện chưa gửi nhắc trước.', 'Currently Moni only reminds you for "Variable amount" items, on the due date. Fixed items have no reminder. The "Days to notify in advance" field is saved but does not send an advance reminder yet.')),
+         ('Hiện Moni chỉ nhắc với khoản "Số tiền biến động", vào ngày đến hạn. Khoản cố định không có nhắc.', 'Currently Moni only reminds you for "Variable amount" items, on the due date. Fixed items have no reminder.')),
         (('Tôi chọn được những tần suất nào?', 'Which frequencies can I choose?'),
          ('Hàng ngày, hàng tuần, hai tuần một lần, hàng tháng và hàng năm. Bạn có thể đặt ngày bắt đầu và ngày kết thúc tùy chọn.', 'Daily, weekly, every two weeks, monthly and yearly. You can set a start date and an optional end date.')),
         (('Nên chọn ngày nào trong tháng?', 'Which day of the month should I pick?'),
@@ -153,7 +153,6 @@ SPEC = {
                          ('Đổi loại, số tiền, tên, danh mục, tần suất, ngày hoặc công tắc biến động, rồi bấm "Lưu".', 'Change the type, amount, name, category, frequency, dates or the variable switch, then tap "Save".'),
                          ('Muốn bỏ hẳn, kéo xuống cuối form và bấm "Xóa quy tắc", rồi xác nhận.', 'To remove it, scroll to the bottom of the form, tap "Delete rule" and confirm.')]),
                  ('note', 'info', ('Khi sửa, ô "Ngày bắt đầu" hiển thị ngày tới hạn tiếp theo của quy tắc.', 'When editing, the "Start date" field shows the rule\'s next due date.')),
-                 ('note', 'warn', ('Mục "Số ngày thông báo trước" được lưu nhưng hiện chưa gửi nhắc trước ngày đến hạn.', 'The "Days to notify in advance" field is saved but does not send an advance reminder yet.')),
              ]},
             {'id': 'cap-doi', 'toc': ('Cặp đôi', 'Couples'), 'h': ('Khoản lặp lại của cặp đôi', 'Couple recurring items'),
              'blocks': [

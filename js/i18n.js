@@ -176,7 +176,7 @@
       'faq.q1': 'Is Moni free to use?',
       'faq.a1': 'Yes, Moni is completely free to download and use. All core features \u2014 expense tracking, budgets, group splitting, and analytics \u2014 are free. Premium features may be added in the future.',
       'faq.q2': 'Is my financial data secure?',
-      'faq.a2': 'Absolutely. We use biometric authentication (Face ID, Touch ID), local encryption with AES-256, and secure cloud sync via TLS 1.3. We never share your data with third parties.',
+      'faq.a2': 'Absolutely. We use biometric authentication (Face ID, Touch ID), local encryption with AES-256, and secure cloud sync via TLS 1.3. We never sell your data. A few optional features (receipt scanning, recording transactions from bank notifications) use Groq\'s AI as a processor on our behalf; Groq may not use that data for its own purposes. See our Privacy Policy for details.',
       'faq.q3': 'Does Moni work offline?',
       'faq.a3': 'Yes, Moni is offline-first. Track expenses without internet and your data syncs automatically when you reconnect.',
       'faq.q4': 'Which devices are supported?',

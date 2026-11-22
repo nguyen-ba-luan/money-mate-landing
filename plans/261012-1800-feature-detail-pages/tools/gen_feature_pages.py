@@ -88,13 +88,23 @@ class Page:
                 f'width="{wd}" height="{ht}"{ld}>{c}</figure>')
 
 
+POSTERS = {  # youtube id -> poster file in images/videos/
+    'xQgsCwSZHco': '00-trailer', 'zdjgbBdpOE8': '01-bat-dau-nhanh', 'e8MdrDVgIbI': '02-danh-muc-tuy-chinh', 'p3no5FciK78': '04-ngan-sach',
+    'na9rFLUEWMw': '05-phan-tich-bao-cao', '5vpx3JSNfi4': '06-chi-tieu-dinh-ky', 'v4VmKUb1aOc': '07-khoan-du-chi', '3qCLWZWBdAE': '08-tiet-kiem',
+    'IKY6snglJ-g': '09-quan-ly-no', '67y6oTZCKPo': '10-thu-thach', 'BfsUD85ih3k': '11-cong-thuc-quan-ly-tien', 'NumdiDjsbYQ': '12-gia-vang',
+    '8n-Wvbssxag': '13-nhom-tao-va-moi', '-Fps8CbJ63A': '14-nhom-chi-tieu-thanh-toan', 'BzAcl17PZgM': '15-tong-ket-chuyen-di', 'bUY2WX9yoY0': '16-quy-nhom',
+    'MeIbyKNR5QI': '17-cap-doi-ghep-doi', 'OGq-Sh-eFGk': '18-cap-doi-chi-chung', 'tGakdssNDBw': '19-khoa-sinh-trac-hoc', 'akdOBQfmv-8': '20-dong-bo-thiet-bi-ngon-ngu',
+    'yPDwLlu_gkY': '22-ban-do-chi-tieu', 'pBxaav5qT0Y': '23-hoan-tien-shopee-tiktok', '8q2Yw_wX1a4': '24-gioi-thieu-ban-be-hang-thuong', 'WEOCMnC3kjY': '27-moni-tren-web',
+}
+
+
 def video_block(p, key, v):
-    """Click-to-play YouTube embed. Hidden until v['date'] 19:00 (GMT+7) so it never shows an unavailable video."""
+    """Click-to-play YouTube embed with a local poster (YouTube serves no thumbnail for private videos)."""
     vid, label = v['id'], v['title']
     p.en[key] = 'Watch the video guide: ' + label[1]
     return (f'<figure class="cp-video" data-yt="{vid}" data-publish="{v["date"]}T19:00:00+07:00" hidden>'
             f'<button type="button" class="cp-video-btn" aria-label="{esc(label[0])}">'
-            f'<img src="https://i.ytimg.com/vi/{vid}/hqdefault.jpg" alt="" width="480" height="360" loading="lazy">'
+            f'<img src="/images/videos/{POSTERS[vid]}.webp" alt="" width="960" height="540" loading="lazy">'
             f'<span class="cp-video-play" aria-hidden="true"></span></button>'
             f'<figcaption data-i18n="{key}">Xem video hướng dẫn: {esc(label[0])}</figcaption></figure>')
 

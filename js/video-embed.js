@@ -1,9 +1,13 @@
-// Guide videos: show each .cp-video from its publish time on, load the YouTube player only on click.
+// Guide videos: before the publish time a .cp-video stays hidden, or with data-soon shows its poster
+// labelled "coming"; from the publish time on, clicking it loads the YouTube player.
 (function () {
   document.querySelectorAll('.cp-video[data-yt]').forEach(function (fig) {
-    if (Date.now() < Date.parse(fig.getAttribute('data-publish'))) return;
-    fig.hidden = false;
     var btn = fig.querySelector('.cp-video-btn');
+    if (Date.now() < Date.parse(fig.getAttribute('data-publish'))) {
+      if (fig.hasAttribute('data-soon')) { fig.classList.add('is-soon'); btn.disabled = true; }
+      return;
+    }
+    fig.hidden = false;
     btn.addEventListener('click', function () {
       var f = document.createElement('iframe');
       f.src = 'https://www.youtube-nocookie.com/embed/' + fig.getAttribute('data-yt') + '?autoplay=1&rel=0';

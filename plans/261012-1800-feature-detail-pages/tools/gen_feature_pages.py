@@ -88,6 +88,17 @@ class Page:
                 f'width="{wd}" height="{ht}"{ld}>{c}</figure>')
 
 
+def video_block(p, key, v):
+    """Click-to-play YouTube embed. Hidden until v['date'] 19:00 (GMT+7) so it never shows an unavailable video."""
+    vid, label = v['id'], v['title']
+    p.en[key] = 'Watch the video guide: ' + label[1]
+    return (f'<figure class="cp-video" data-yt="{vid}" data-publish="{v["date"]}T19:00:00+07:00" hidden>'
+            f'<button type="button" class="cp-video-btn" aria-label="{esc(label[0])}">'
+            f'<img src="https://i.ytimg.com/vi/{vid}/hqdefault.jpg" alt="" width="480" height="360" loading="lazy">'
+            f'<span class="cp-video-play" aria-hidden="true"></span></button>'
+            f'<figcaption data-i18n="{key}">Xem video hướng dẫn: {esc(label[0])}</figcaption></figure>')
+
+
 def head(spec, page_kind, jsonld):
     s = spec
     if page_kind == 'intro':
@@ -181,6 +192,7 @@ def footer(spec, p):
   </footer>
   <script src="/js/{s['slug']}-en.js"></script>
   <script src="/js/page-i18n.js"></script>
+  <script src="/js/video-embed.js" defer></script>
   <script src="/js/main.js"></script>
 </body>
 </html>
@@ -351,6 +363,8 @@ def build_guide(spec, en):
     out.append(f'  <div class="cp-guide-wrap max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">\n    <aside class="cp-toc" aria-label="Mục lục"><nav>{toc}</nav></aside>\n    <main class="cp-guide-main">\n')
     for x in g['sections']:
         sid = x['id']; body = [p.el('h2', 'cp-h3', f'g.{sid}.h', x['h'])]
+        if x.get('video'):
+            body.append(video_block(p, f'g.{sid}.video', x['video']))
         n = {'ol': 0, 'h4': 0, 'note': 0, 'table': 0}
         for b in x['blocks']:
             k = b[0]; n[k] = n.get(k, 0) + 1; i = n[k]

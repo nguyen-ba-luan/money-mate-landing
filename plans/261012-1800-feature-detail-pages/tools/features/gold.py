@@ -110,7 +110,7 @@ SPEC = {
         'title': ('Hướng dẫn dùng tab Vàng', 'How to use the Gold tab'),
         'desc': ('Từ xem giá đến theo dõi tài sản vàng, từng bước một.', 'From viewing prices to tracking your gold assets, step by step.'),
         'sections': [
-            {'id': 'xem-gia-vang', 'toc': ('Xem giá vàng', 'View gold prices'), 'h': ('Xem giá vàng và biểu đồ', 'View gold prices and charts'),
+            {'id': 'xem-gia-vang', 'video': {'id': 'NumdiDjsbYQ', 'date': '2026-12-03', 'title': ('Giá vàng', 'Gold prices')}, 'toc': ('Xem giá vàng', 'View gold prices'), 'h': ('Xem giá vàng và biểu đồ', 'View gold prices and charts'),
              'blocks': [
                  ('ol', [('Bấm tab "Vàng" ở thanh dưới cùng. Tab mặc định là "Giá vàng".', 'Tap the "Gold" tab on the bottom bar. The default sub-tab is "Gold prices".'),
                          ('Bấm ô "Vùng / Nguồn" để chọn Quốc gia hoặc một thương hiệu, một tiệm vàng. Bấm ô "Sản phẩm" để đổi loại vàng như vàng miếng SJC, vàng 9999 hay trang sức.', 'Tap the "Region / Source" box to choose National or a brand or gold shop. Tap the "Product" box to change the gold type, such as SJC bars, 9999 or jewelry.'),

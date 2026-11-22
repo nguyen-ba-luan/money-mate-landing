@@ -100,6 +100,7 @@ window.PAGE_EN = {
   "toc.cau-hoi-thuong-gap": "FAQ",
   "toc.label": "Table of contents",
   "g.tao-dinh-ky.h": "Create your first recurring transaction",
+  "g.tao-dinh-ky.video": "Watch the video guide: Recurring spending",
   "g.tao-dinh-ky.o1.1": "Sign in, open the \"Explore\" tab and choose \"Recurring Transactions\", or tap the \"Recurring\" tile on the home screen.",
   "g.tao-dinh-ky.o1.2": "Tap the orange + button (or \"Add recurring\" when the list is empty).",
   "g.tao-dinh-ky.o1.3": "Choose \"Expense\" or \"Income\", enter the \"Amount\" and the \"Name\" (for example Rent, Netflix, Salary).",

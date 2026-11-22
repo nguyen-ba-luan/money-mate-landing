@@ -99,6 +99,7 @@ window.PAGE_EN = {
   "toc.cau-hoi-thuong-gap": "FAQ",
   "toc.label": "Table of contents",
   "g.xem-gia-vang.h": "View gold prices and charts",
+  "g.xem-gia-vang.video": "Watch the video guide: Gold prices",
   "g.xem-gia-vang.o1.1": "Tap the \"Gold\" tab on the bottom bar. The default sub-tab is \"Gold prices\".",
   "g.xem-gia-vang.o1.2": "Tap the \"Region / Source\" box to choose National or a brand or gold shop. Tap the \"Product\" box to change the gold type, such as SJC bars, 9999 or jewelry.",
   "g.xem-gia-vang.o1.3": "The price card shows the Buy and Sell prices, the percent change today and the update time.",

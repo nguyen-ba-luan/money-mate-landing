@@ -107,7 +107,7 @@ SPEC = {
         'title': ('Hướng dẫn phân tích chi tiêu', 'How to use spending analytics'),
         'desc': ('Từ mở màn hình đến xuất dữ liệu, từng bước một.', 'From opening the screen to exporting data, step by step.'),
         'sections': [
-            {'id': 'mo-phan-tich', 'toc': ('Mở Phân Tích', 'Open Analytics'), 'h': ('Mở màn Phân Tích Chi Tiêu', 'Open the Spending Analytics screen'),
+            {'id': 'mo-phan-tich', 'video': {'id': 'na9rFLUEWMw', 'date': '2026-11-26', 'title': ('Phân tích và báo cáo', 'Analytics and reports')}, 'toc': ('Mở Phân Tích', 'Open Analytics'), 'h': ('Mở màn Phân Tích Chi Tiêu', 'Open the Spending Analytics screen'),
              'blocks': [
                  ('ol', [('Mở tab "Khám Phá", mục "Báo Cáo" rồi chọn "Phân Tích Chi Tiêu".', 'Open the "Explore" tab, go to "Reports" and choose "Spending Analytics".'),
                          ('Hoặc bấm biểu tượng biểu đồ ở thẻ số dư đầu trang chủ.', 'Or tap the chart icon on the balance card at the top of the home screen.'),

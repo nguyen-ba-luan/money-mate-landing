@@ -109,7 +109,7 @@ SPEC = {
         'title': ('Hướng dẫn đặt mục tiêu tiết kiệm', 'How to set savings goals'),
         'desc': ('Từ mục tiêu đầu tiên đến khi hoàn thành, từng bước một.', 'From your first goal to completion, step by step.'),
         'sections': [
-            {'id': 'tao-muc-tieu', 'toc': ('Tạo mục tiêu', 'Create a goal'), 'h': ('Tạo mục tiêu tiết kiệm đầu tiên', 'Create your first savings goal'),
+            {'id': 'tao-muc-tieu', 'video': {'id': '3qCLWZWBdAE', 'date': '2026-11-29', 'title': ('Tiết kiệm', 'Savings')}, 'toc': ('Tạo mục tiêu', 'Create a goal'), 'h': ('Tạo mục tiêu tiết kiệm đầu tiên', 'Create your first savings goal'),
              'blocks': [
                  ('ol', [('Mở tab "Khám Phá", mục "Tài Sản" rồi chọn "Mục Tiêu Tiết Kiệm". Bạn cũng vào được từ ô "Tiết kiệm" ở trang chủ hoặc dòng "Mục tiêu tiết kiệm" trong màn Ngân sách.', 'Open the "Explore" tab, go to "Assets" and choose "Savings Goals". You can also use the "Savings" tile on the home screen or the "Savings goals" row on the Budgets screen.'),
                          ('Bấm "+ Thêm" ở góc phải phía trên.', 'Tap "+ Add" at the top right.'),

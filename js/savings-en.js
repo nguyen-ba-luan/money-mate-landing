@@ -99,6 +99,7 @@ window.PAGE_EN = {
   "toc.cau-hoi-thuong-gap": "FAQ",
   "toc.label": "Table of contents",
   "g.tao-muc-tieu.h": "Create your first savings goal",
+  "g.tao-muc-tieu.video": "Watch the video guide: Savings",
   "g.tao-muc-tieu.o1.1": "Open the \"Explore\" tab, go to \"Assets\" and choose \"Savings Goals\". You can also use the \"Savings\" tile on the home screen or the \"Savings goals\" row on the Budgets screen.",
   "g.tao-muc-tieu.o1.2": "Tap \"+ Add\" at the top right.",
   "g.tao-muc-tieu.o1.3": "Enter the goal name (up to 60 characters) and the target amount. Both are required.",

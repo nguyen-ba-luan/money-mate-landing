@@ -105,7 +105,7 @@ SPEC = {
         'title': ('Hướng dẫn lập ngân sách và dùng công thức', 'How to set budgets and use formulas'),
         'desc': ('Từ ngân sách đầu tiên đến công thức 50/30/20, từng bước một.', 'From your first budget to the 50/30/20 formula, step by step.'),
         'sections': [
-            {'id': 'tao-ngan-sach', 'toc': ('Tạo ngân sách', 'Create a budget'), 'h': ('Tạo ngân sách đầu tiên', 'Create your first budget'),
+            {'id': 'tao-ngan-sach', 'video': {'id': 'p3no5FciK78', 'date': '2026-11-25', 'title': ('Ngân sách', 'Budgets')}, 'toc': ('Tạo ngân sách', 'Create a budget'), 'h': ('Tạo ngân sách đầu tiên', 'Create your first budget'),
              'blocks': [
                  ('ol', [('Mở tab "Khám Phá" và chọn "Ngân sách" ở mục Ngân sách.', 'Open the "Explore" tab and choose "Budgets" in the Budgets section.'),
                          ('Bấm nút "+" ở góc dưới bên phải, hoặc "Tạo ngân sách đầu tiên" nếu chưa có ngân sách nào.', 'Tap the "+" button at the bottom right, or "Create your first budget" if you have none yet.'),
@@ -137,7 +137,7 @@ SPEC = {
                  ('note', 'warn', ('Nếu danh mục của ngân sách đã bị xóa, Moni nhắc bạn bấm "Sửa" để chọn danh mục mới.', 'If a budget\'s category has been deleted, Moni asks you to tap "Edit" and pick a new one.')),
                  ('shots', [(I + 'budget-detail-over.webp', ('Chi tiết một ngân sách đã vượt hạn mức', 'Details of an over-limit budget'), ('Ngân sách Giải trí vượt 150.000 đ', 'The Entertainment budget is 150,000 đ over'))]),
              ]},
-            {'id': 'cong-thuc', 'toc': ('Dùng công thức', 'Use a formula'), 'h': ('Dùng công thức tài chính', 'Use a financial formula'),
+            {'id': 'cong-thuc', 'video': {'id': 'BfsUD85ih3k', 'date': '2026-12-02', 'title': ('Công thức quản lý tiền', 'Money-management formulas')}, 'toc': ('Dùng công thức', 'Use a formula'), 'h': ('Dùng công thức tài chính', 'Use a financial formula'),
              'blocks': [
                  ('ol', [('Vào tab "Khám Phá" rồi chọn "Công Thức Tài Chính", hoặc vào Cài đặt và chọn "Công thức tài chính".', 'Go to the "Explore" tab and choose "Financial Formula", or open Settings and choose "Financial formula".'),
                          ('Chọn một công thức rồi bấm "Tiếp tục".', 'Choose a formula and tap "Continue".'),

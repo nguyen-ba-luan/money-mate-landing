@@ -224,5 +224,7 @@ window.PAGE_EN = {
   "crumb.couple": "Couple finance",
   "crumb.guide": "Guide",
   "ghero.title": "How to use Couple finance",
-  "ghero.desc": "From connecting with your partner to getting paid back, one step at a time."
+  "ghero.desc": "From connecting with your partner to getting paid back, one step at a time.",
+  "g.ket-noi.video": "Watch the video guide: Pair up with your partner",
+  "g.chi-tieu-chung.video": "Watch the video guide: Shared spending and reimbursement"
 };

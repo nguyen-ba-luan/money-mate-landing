@@ -108,7 +108,7 @@ SPEC = {
         'title': ('Hướng dẫn chia tiền nhóm và chuyến đi', 'How to split costs in groups and trips'),
         'desc': ('Từ lúc tạo nhóm đến khi ghi nhận thanh toán, từng bước một.', 'From creating a group to recording payments, step by step.'),
         'sections': [
-            {'id': 'tao-nhom', 'toc': ('Tạo nhóm hoặc chuyến đi', 'Create a group or trip'), 'h': ('Tạo nhóm hoặc chuyến đi', 'Create a group or a trip'),
+            {'id': 'tao-nhom', 'video': {'id': '8n-Wvbssxag', 'date': '2026-12-04', 'title': ('Tạo nhóm và mời bạn bè', 'Create a group and invite friends')}, 'toc': ('Tạo nhóm hoặc chuyến đi', 'Create a group or trip'), 'h': ('Tạo nhóm hoặc chuyến đi', 'Create a group or a trip'),
              'blocks': [
                  ('ol', [('Mở tab "Khám Phá", mục "Cộng Tác" rồi chọn "Nhóm Chi Tiêu". Cũng có thể bấm ô "Nhóm chi tiêu" ở trang chủ.', 'Open the "Explore" tab, go to "Collaborate" and choose "Spending Groups". You can also tap the "Spending groups" tile on the home screen.'),
                          ('Bấm nút "+" ở góc dưới bên phải rồi chọn "Nhóm chi tiêu chung" (tiền nhà, ăn uống hằng ngày) hoặc "Chuyến đi" (du lịch, team building, picnic).', 'Tap the "+" button at the bottom right and choose "Shared spending group" (rent, daily meals) or "Trip" (travel, team building, picnics).'),
@@ -132,7 +132,7 @@ SPEC = {
                  ('shots', [(I + 'groups-members.webp', ('Màn hình thành viên và lời mời', 'Members and invitations screen'), ('Chia sẻ liên kết mời ở cuối màn hình', 'Share the invite link at the bottom')),
                             (I + 'groups-join-code.webp', ('Nhập mã mời để tham gia nhóm', 'Enter an invite code to join a group'), ('Bạn bè dán mã vào "Nhập mã mời"', 'Friends paste the code into "Enter invite code"'))]),
              ]},
-            {'id': 'them-chi-tieu', 'toc': ('Thêm chi tiêu', 'Add a cost'), 'h': ('Thêm chi tiêu và chọn cách chia', 'Add a cost and choose the split'),
+            {'id': 'them-chi-tieu', 'video': {'id': '-Fps8CbJ63A', 'date': '2026-12-05', 'title': ('Thêm khoản chi và thanh toán', 'Add costs and settle up')}, 'toc': ('Thêm chi tiêu', 'Add a cost'), 'h': ('Thêm chi tiêu và chọn cách chia', 'Add a cost and choose the split'),
              'blocks': [
                  ('ol', [('Trong nhóm hoặc chuyến đi, bấm "Thêm chi tiêu".', 'In the group or trip, tap "Add expense".'),
                          ('Nhập số tiền và tiêu đề (bắt buộc), chọn ngày và người đã trả. Người trả có thể là bất kỳ thành viên nào.', 'Enter the amount and a title (required), pick the date and who paid. Any member can be the payer.'),
@@ -175,7 +175,7 @@ SPEC = {
                             (I + 'groups-expenses.webp', ('Danh sách chi tiêu của nhóm', 'Group expense list'), ('Danh sách chi tiêu, xuất CSV hoặc PDF', 'Expense list with CSV and PDF export')),
                             (I + 'trip-balances.webp', ('Thanh toán tối ưu với khách trong chuyến đi', 'Optimal payments including a guest on a trip'), ('Ai trả ai, kể cả khách', 'Who pays whom, guests included'))]),
              ]},
-            {'id': 'tong-ket', 'toc': ('Tổng kết chuyến đi', 'Trip summary'), 'h': ('Tổng kết chuyến đi và theo dõi ngân sách', 'Trip summary and budget tracking'),
+            {'id': 'tong-ket', 'video': {'id': 'BzAcl17PZgM', 'date': '2026-12-06', 'title': ('Tổng kết chuyến đi', 'Trip summary')}, 'toc': ('Tổng kết chuyến đi', 'Trip summary'), 'h': ('Tổng kết chuyến đi và theo dõi ngân sách', 'Trip summary and budget tracking'),
              'blocks': [
                  ('ol', [('Ở chuyến đi, thanh ngân sách trên đầu hiện "Đã chi" so với ngân sách và phần trăm đã dùng. Người tạo bấm vào thanh này để đổi ngân sách.', 'On a trip the bar at the top compares "Spent" with the budget and shows the percentage used. The creator taps it to change the budget.'),
                          ('Tab "Dòng thời gian" liệt kê các khoản chi theo ngày. Tab "Thành viên" xếp hạng số dư của từng người.', 'The "Timeline" tab lists costs by day. The "Members" tab ranks each person\'s balance.'),

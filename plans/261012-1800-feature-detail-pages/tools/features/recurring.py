@@ -109,7 +109,7 @@ SPEC = {
         'title': ('Hướng dẫn giao dịch định kỳ', 'How to use recurring transactions'),
         'desc': ('Từ tạo quy tắc đầu tiên đến xử lý hóa đơn thay đổi, từng bước một.', 'From your first rule to bills that change, step by step.'),
         'sections': [
-            {'id': 'tao-dinh-ky', 'toc': ('Tạo giao dịch định kỳ', 'Create a rule'), 'h': ('Tạo giao dịch định kỳ đầu tiên', 'Create your first recurring transaction'),
+            {'id': 'tao-dinh-ky', 'video': {'id': '5vpx3JSNfi4', 'date': '2026-11-27', 'title': ('Chi tiêu định kỳ', 'Recurring spending')}, 'toc': ('Tạo giao dịch định kỳ', 'Create a rule'), 'h': ('Tạo giao dịch định kỳ đầu tiên', 'Create your first recurring transaction'),
              'blocks': [
                  ('ol', [('Đăng nhập, mở tab "Khám Phá" rồi chọn "Giao Dịch Định Kỳ", hoặc bấm ô "Định kỳ" ở trang chủ.', 'Sign in, open the "Explore" tab and choose "Recurring Transactions", or tap the "Recurring" tile on the home screen.'),
                          ('Bấm nút + màu cam (hoặc "Thêm định kỳ" khi danh sách đang trống).', 'Tap the orange + button (or "Add recurring" when the list is empty).'),

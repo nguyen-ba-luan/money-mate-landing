@@ -97,6 +97,7 @@ window.PAGE_EN = {
   "toc.cau-hoi-thuong-gap": "FAQ",
   "toc.label": "Table of contents",
   "g.mo-phan-tich.h": "Open the Spending Analytics screen",
+  "g.mo-phan-tich.video": "Watch the video guide: Analytics and reports",
   "g.mo-phan-tich.o1.1": "Open the \"Explore\" tab, go to \"Reports\" and choose \"Spending Analytics\".",
   "g.mo-phan-tich.o1.2": "Or tap the chart icon on the balance card at the top of the home screen.",
   "g.mo-phan-tich.o1.3": "You need logged transactions for the charts to have data. Pull down to refresh.",

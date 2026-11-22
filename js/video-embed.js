@@ -1,12 +1,7 @@
-// Guide videos: before the publish time a .cp-video stays hidden, or with data-soon shows its poster
-// labelled "coming"; from the publish time on, clicking it loads the YouTube player.
+// Guide videos: show the poster; clicking it loads the YouTube player in place.
 (function () {
   document.querySelectorAll('.cp-video[data-yt]').forEach(function (fig) {
     var btn = fig.querySelector('.cp-video-btn');
-    if (Date.now() < Date.parse(fig.getAttribute('data-publish'))) {
-      if (fig.hasAttribute('data-soon')) { fig.classList.add('is-soon'); btn.disabled = true; }
-      return;
-    }
     fig.hidden = false;
     btn.addEventListener('click', function () {
       var f = document.createElement('iframe');

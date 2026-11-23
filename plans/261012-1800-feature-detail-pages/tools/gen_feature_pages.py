@@ -35,6 +35,7 @@ ICONS = {  # heroicons outline, 24px
     'flag': 'M3 3v1.5M3 21v-6m0 0l2.77-.693a9 9 0 016.208.682l.108.054a9 9 0 006.086.71l3.114-.732a48.524 48.524 0 01-.005-10.499l-3.11.732a9 9 0 01-6.085-.711l-.108-.054a9 9 0 00-6.208-.682L3 4.5M3 15V4.5',
     'receipt': 'M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25z',
 }
+ICONS['heart'] = 'M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z'
 TONES = ['orange', 'navy', 'emerald', 'blue']
 CHEV = '<svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>'
 COMMON_EN = {
@@ -111,6 +112,7 @@ def video_block(p, key, v):
 
 
 def head(spec, page_kind, jsonld):
+    extra = '  <link rel="stylesheet" href="/css/guide.css">\n' if page_kind == 'guide' else ''
     s = spec
     if page_kind == 'intro':
         title, desc, url = s['meta_title'], s['meta_desc'], f'https://moni.live/{s["slug"]}/'
@@ -155,7 +157,7 @@ def head(spec, page_kind, jsonld):
   <link rel="stylesheet" href="/css/tailwind-compiled.css">
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" href="/css/couple.css">
-{ld}</head>
+{extra}{ld}</head>
 '''
 
 
@@ -184,7 +186,8 @@ def nav(spec):
 '''
 
 
-def footer(spec, p):
+def footer(spec, p, guide=False):
+    gjs = '  <script src="/js/guide.js" defer></script>\n' if guide else ''
     s = spec; base = f'/{s["slug"]}/'
     return f'''  <footer class="footer py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -205,7 +208,7 @@ def footer(spec, p):
   <script src="/js/page-i18n.js"></script>
   <script src="/js/video-embed.js" defer></script>
   <script src="/js/main.js"></script>
-</body>
+{gjs}</body>
 </html>
 '''
 
@@ -341,63 +344,199 @@ def build_intro(spec, en):
     return ''.join(out)
 
 
+# Every guide page, for the "more guides" cards at the bottom of each guide.
+GUIDES = [
+    ('budget', 'wallet', ('Ngân sách', 'Budgets'), ('Đặt hạn mức theo danh mục và dùng công thức 50/30/20.', 'Set category limits and use the 50/30/20 formula.')),
+    ('couple', 'heart', ('Tài chính cặp đôi', 'Couple finance'), ('Kết nối với người ấy, chi chung và hoàn ứng.', 'Connect with your partner, share costs and pay each other back.')),
+    ('groups', 'users', ('Nhóm chi tiêu', 'Spending groups'), ('Chia tiền chuyến đi, thêm khách và tất toán.', 'Split trip costs, add guests and settle up.')),
+    ('savings', 'flag', ('Mục tiêu tiết kiệm', 'Savings goals'), ('Đặt mục tiêu, nạp rút và theo dõi tiến độ.', 'Set goals, add or withdraw and track progress.')),
+    ('recurring', 'refresh', ('Giao dịch định kỳ', 'Recurring transactions'), ('Tự ghi tiền nhà, lương và hóa đơn hàng tháng.', 'Log rent, salary and monthly bills automatically.')),
+    ('analytics', 'chart', ('Phân tích & báo cáo', 'Analytics & reports'), ('Đọc biểu đồ, báo cáo tháng và xuất dữ liệu.', 'Read the charts, monthly report and export data.')),
+    ('gold', 'coin', ('Giá vàng & tín hiệu AI', 'Gold prices & AI signals'), ('Xem giá, đặt cảnh báo và theo dõi tài sản vàng.', 'Check prices, set alerts and track your gold.')),
+]
+GUIDE_EN = {
+    'ghero.kicker': 'Step-by-step guide', 'meta.sections': 'sections', 'meta.read': 'min read', 'meta.videos': 'videos',
+    'meta.video': 'video', 'ghero.start': 'Start reading', 'ghero.watch': 'Watch the video', 'toc.title': 'In this guide',
+    'toc.dl.t': 'No Moni yet?', 'toc.dl.d': 'Free, no ads. Follow along on your phone.', 'toc.dl.btn': 'Download free',
+    'next': 'Next:', 'rel.tag': 'Keep learning', 'rel.title': 'More Moni guides', 'rel.open': 'Read guide',
+}
+CALLOUT_ICON = {
+    'info': 'M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z',
+    'warn': 'M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z',
+}
+
+
+def svg(path, size=20, sw=1.75):
+    return (f'<svg width="{size}" height="{size}" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="{sw}" '
+            f'aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="{path}"/></svg>')
+
+
+def _texts(sec):
+    """All Vietnamese strings in a section, for the reading-time estimate."""
+    out = [sec['h'][0]]
+    for b in sec['blocks']:
+        if b[0] == 'ol': out += [x[0] for x in b[1]]
+        elif b[0] == 'note': out.append(b[2][0])
+        elif b[0] == 'h4': out.append(b[1][0])
+        elif b[0] == 'table': out += [c[0] for row in b[2] for c in row]
+    return out
+
+
+def shot(p, im, al, ca):
+    """Screenshot in a phone bezel; the button opens it full size (js/guide.js)."""
+    fig = p.img(im, al, ca).replace('<figure class="cp-shot"><img', '<figure class="cp-shot gd-shot"><button type="button" class="gd-zoom" aria-label="Phóng to ảnh"><img', 1)
+    cut = '<figcaption' if ca else '</figure>'
+    return fig.replace(cut, '</button>' + cut, 1)
+
+
+PLAY = 'M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z'
+ARROW_R = 'M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3'
+
+
+def read_minutes(words):
+    return max(2, round(words / 200))
+
+
+def guide_hero(p, crumb, base, title, desc, sec_ids, video_ids, read_min, shot_img):
+    """Hero: crumbs, title, meta chips, CTAs and a tilted phone. crumb/title/desc are (vi, key) and
+    their English must already be in p.en; shot_img is an already-rendered <figure>."""
+    meta = (f'<li>{svg(ICONS["receipt"], 16)}<b>{len(sec_ids)}</b> <span data-i18n="meta.sections">phần</span></li>'
+            f'<li>{svg("M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z", 16)}<b>{read_min}</b> <span data-i18n="meta.read">phút đọc</span></li>')
+    watch = ''
+    if video_ids:
+        meta += f'<li>{svg(PLAY, 16)}<b>{len(video_ids)}</b> <span data-i18n="meta.video{"s" if len(video_ids) > 1 else ""}">video</span></li>'
+        watch = f'<a class="gd-btn-ghost" href="#{video_ids[0]}">{svg(PLAY, 18)}<span data-i18n="ghero.watch">Xem video</span></a>'
+    return f'''  <div class="gd-progress" aria-hidden="true"><span></span></div>
+  <section class="gd-hero" id="hero">
+    <div class="gd-hero-inner max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="gd-hero-text">
+        <nav aria-label="breadcrumb" class="gd-crumbs"><a href="/">Moni</a><span>/</span><a href="{base}"><span data-i18n="{crumb[1]}">{esc(crumb[0])}</span></a><span>/</span><span data-i18n="crumb.guide">Hướng dẫn</span></nav>
+        <p class="gd-kicker"><span class="gd-kicker-dot"></span><span data-i18n="ghero.kicker">Hướng dẫn từng bước</span></p>
+        <h1 class="gd-h1" data-i18n="ghero.title">{esc(title)}</h1>
+        <p class="gd-lead" data-i18n="ghero.desc">{esc(desc)}</p>
+        <ul class="gd-meta">{meta}</ul>
+        <div class="gd-hero-cta"><a class="btn-gold" href="#{sec_ids[0]}" data-i18n="ghero.start">Bắt đầu đọc</a>{watch}</div>
+      </div>
+      <div class="gd-hero-shot" aria-hidden="true">{shot_img}</div>
+    </div>
+  </section>
+'''
+
+
+def guide_open(toc_items):
+    """Body wrapper, TOC and the opening of <main>. toc_items: [(id, vi label)], keys toc.<id>."""
+    toc = ''.join(f'<li><a data-sec="{i}" href="#{i}"><span class="gd-toc-n">{n:02d}</span><span data-i18n="toc.{i}">{esc(label)}</span></a></li>'
+                  for n, (i, label) in enumerate(toc_items, 1))
+    return f'''  <div class="gd-body">
+  <div class="gd-wrap max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <aside class="gd-toc" aria-label="Mục lục">
+      <p class="gd-toc-title" data-i18n="toc.title">Nội dung hướng dẫn</p>
+      <div class="gd-toc-bar"><span></span></div>
+      <nav><ol>{toc}</ol></nav>
+      <div class="gd-toc-dl"><p class="gd-toc-dl-t" data-i18n="toc.dl.t">Chưa có Moni?</p><p class="gd-toc-dl-d" data-i18n="toc.dl.d">Miễn phí, không quảng cáo. Mở app làm theo từng bước.</p><a class="btn-gold" data-i18n="toc.dl.btn" href="https://moni.live/download" target="_blank" rel="noopener noreferrer">Tải miễn phí</a></div>
+    </aside>
+    <main class="gd-main">
+'''
+
+
+def sec_head(n, h2):
+    return f'<header class="gd-sec-head"><span class="gd-sec-n">{n:02d}</span>{h2}</header>'
+
+
+def next_link(nx_id, nx_label):
+    return (f'<a class="gd-next" href="#{nx_id}"><span data-i18n="next">Tiếp theo:</span> <b data-i18n="toc.{nx_id}">{esc(nx_label)}</b>'
+            f'{svg("M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3", 16, 2)}</a>')
+
+
+def callout(kind, inner_p):
+    return f'<div class="gd-callout gd-callout-{kind}"><span class="gd-callout-i">{svg(CALLOUT_ICON[kind], 20)}</span>{inner_p}</div>'
+
+
+def guide_close(slug, en):
+    """Closes <main>, adds the other guides, back-to-top and the lightbox. Registers English keys."""
+    en.update(GUIDE_EN)
+    cards = ''
+    for k, (g_slug, ic, name, desc) in enumerate(x for x in GUIDES if x[0] != slug):
+        en[f'rel.{g_slug}.n'], en[f'rel.{g_slug}.d'] = name[1], desc[1]
+        cards += (f'<a class="gd-rel-card" href="/{g_slug}/guide/"><span class="cp-icon cp-tone-{TONES[k % 4]} gd-rel-ic">{icon_svg(ic)}</span>'
+                  f'<span class="gd-rel-n" data-i18n="rel.{g_slug}.n">{esc(name[0])}</span><span class="gd-rel-d" data-i18n="rel.{g_slug}.d">{esc(desc[0])}</span>'
+                  f'<span class="gd-rel-go"><span data-i18n="rel.open">Xem hướng dẫn</span>{svg(ARROW_R, 16, 2)}</span></a>')
+    return f'''    </main>
+  </div>
+  <section class="gd-related">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="cp-eyebrow" data-i18n="rel.tag">Học tiếp</p>
+      <h2 class="gd-rel-title" data-i18n="rel.title">Các hướng dẫn khác của Moni</h2>
+      <div class="gd-rel-grid">{cards}</div>
+    </div>
+  </section>
+  </div>
+'''
+
+
+GUIDE_TAIL = (f'  <button type="button" class="gd-top" aria-label="Lên đầu trang">{svg("M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18", 20, 2)}</button>\n'
+              '  <dialog class="gd-lightbox" aria-label="Ảnh phóng to"><img alt=""></dialog>\n')
+
+
 def build_guide(spec, en):
     s = spec; p = Page(en); g = s['guide']; base = f'/{s["slug"]}/'
+    secs = g['sections']
     def jsonld(title, desc, url):
         steps = []
-        for sec in g['sections']:
+        for sec in secs:
             if sec.get('faq'): continue
             first = next((b[1] for b in sec['blocks'] if b[0] == 'ol'), [])
             steps.append({'@type': 'HowToStep', 'name': sec['h'][0], 'url': f'{url}#{sec["id"]}',
                           'text': ' '.join(x[0] for x in first)})
         return [
             {'@context': 'https://schema.org', '@type': 'HowTo', 'name': g['title'][0], 'description': g['desc'][0],
-             'inLanguage': 'vi', 'step': steps},
+             'inLanguage': 'vi', 'totalTime': f'PT{read_min}M', 'step': steps},
             {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
                 {'@type': 'ListItem', 'position': 1, 'name': 'Moni', 'item': 'https://moni.live/'},
                 {'@type': 'ListItem', 'position': 2, 'name': s['name'][0], 'item': f'https://moni.live{base}'},
                 {'@type': 'ListItem', 'position': 3, 'name': 'Hướng dẫn', 'item': url}]},
         ]
+    words = sum(len(t.split()) for sec in secs for t in _texts(sec)) + sum(len(a[0].split()) + len(q[0].split()) for q, a in s['faq'])
+    read_min = read_minutes(words)
     out = [head(s, 'guide', jsonld), nav(s)]
     en['crumb.feature'] = s['name'][1]; en['ghero.title'] = g['title'][1]; en['ghero.desc'] = g['desc'][1]
-    out.append(f'''  <section class="hero-gradient cp-hero cp-hero-sm pt-28 pb-24" id="hero">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <nav aria-label="breadcrumb" class="cp-crumbs"><a href="/">Moni</a><span>/</span><a href="{base}"><span data-i18n="crumb.feature">{esc(s['name'][0])}</span></a><span>/</span><span data-i18n="crumb.guide">Hướng dẫn</span></nav>
-      <h1 class="font-display text-4xl sm:text-5xl font-extrabold text-white leading-tight mb-5" data-i18n="ghero.title">{esc(g['title'][0])}</h1>
-      <p class="text-white/70 text-lg max-w-2xl mx-auto" data-i18n="ghero.desc">{esc(g['desc'][0])}</p>
-    </div>
-  </section>
-''')
-    toc = ''.join(f'<a data-i18n="toc.{x["id"]}" href="#{x["id"]}">{esc(x["toc"][0])}</a>' for x in g['sections'])
-    for x in g['sections']: en[f'toc.{x["id"]}'] = x['toc'][1]
-    en['toc.label'] = 'Table of contents'
-    out.append(f'  <div class="cp-guide-wrap max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">\n    <aside class="cp-toc" aria-label="Mục lục"><nav>{toc}</nav></aside>\n    <main class="cp-guide-main">\n')
-    for x in g['sections']:
-        sid = x['id']; body = [p.el('h2', 'cp-h3', f'g.{sid}.h', x['h'])]
+    out.append(guide_hero(p, (s['name'][0], 'crumb.feature'), base, g['title'][0], g['desc'][0], [x['id'] for x in secs],
+                          [x['id'] for x in secs if x.get('video')], read_min, p.img(s['hero']['shot'][0], s['hero']['shot'][1], lazy=False)))
+    for x in secs: en[f'toc.{x["id"]}'] = x['toc'][1]
+    out.append(guide_open([(x['id'], x['toc'][0]) for x in secs]))
+    for idx, x in enumerate(secs):
+        sid = x['id']
+        body = [sec_head(idx + 1, p.el("h2", "gd-h2", f"g.{sid}.h", x["h"]))]
         if x.get('video'):
             body.append(video_block(p, f'g.{sid}.video', x['video']))
-        n = {'ol': 0, 'h4': 0, 'note': 0, 'table': 0}
+        n = {}
         for b in x['blocks']:
             k = b[0]; n[k] = n.get(k, 0) + 1; i = n[k]
             if k == 'h4':
-                body.append(f'<h3 class="cp-h4">{p.t(f"g.{sid}.h4.{i}", b[1])}</h3>')
+                body.append(f'<h3 class="gd-h3">{p.t(f"g.{sid}.h4.{i}", b[1])}</h3>')
             elif k == 'ol':
-                body.append('<ol class="cp-ol">' + ''.join(f'<li>{p.t(f"g.{sid}.o{i}.{j}", it)}</li>' for j, it in enumerate(b[1], 1)) + '</ol>')
+                body.append('<ol class="gd-steps">' + ''.join(f'<li>{p.t(f"g.{sid}.o{i}.{j}", it)}</li>' for j, it in enumerate(b[1], 1)) + '</ol>')
             elif k == 'note':
-                body.append(f'<p class="cp-callout cp-callout-{b[1]}">{p.t(f"g.{sid}.n{i}", b[2])}</p>')
+                body.append(callout(b[1], p.el("p", "", f"g.{sid}.n{i}", b[2])))
             elif k == 'table':
                 hdr = ''.join(f'<th>{p.t(f"g.{sid}.t{i}.h{j}", c)}</th>' for j, c in enumerate(b[1], 1))
-                rows = ''.join('<tr>' + ''.join(f'<td>{p.t(f"g.{sid}.t{i}.r{r}c{c}", cell)}</td>' for c, cell in enumerate(row, 1)) + '</tr>' for r, row in enumerate(b[2], 1))
-                body.append(f'<div class="cp-table-wrap"><table class="cp-table"><thead><tr>{hdr}</tr></thead><tbody>{rows}</tbody></table></div>')
+                # a cell may carry a third item, a colour tone, shown as a status dot before the text
+                def td(key, cell):
+                    dot = f'<span class="gd-dot gd-dot-{cell[2]}" aria-hidden="true"></span>' if len(cell) > 2 else ''
+                    return f'<td>{dot}{p.t(key, cell[:2])}</td>'
+                rows = ''.join('<tr>' + ''.join(td(f"g.{sid}.t{i}.r{r}c{c}", cell) for c, cell in enumerate(row, 1)) + '</tr>' for r, row in enumerate(b[2], 1))
+                body.append(f'<div class="gd-table-wrap"><table class="gd-table"><thead><tr>{hdr}</tr></thead><tbody>{rows}</tbody></table></div>')
             elif k == 'link':
-                body.append(f'<p class="cp-callout cp-callout-info"><a class="text-gold font-semibold" href="{b[1]}" data-i18n="g.{sid}.l{i}">{esc(b[2][0])}</a></p>')
+                body.append(f'<a class="gd-link-card" href="{b[1]}"><span data-i18n="g.{sid}.l{i}">{esc(b[2][0])}</span>{svg(ARROW_R, 18)}</a>')
                 en[f'g.{sid}.l{i}'] = b[2][1]
             elif k == 'shots':
-                body.append('<div class="cp-shots-row">' + ''.join(p.img(im, al, ca) for im, al, ca in b[1]) + '</div>')
+                body.append('<div class="gd-shots">' + ''.join(shot(p, im, al, ca) for im, al, ca in b[1]) + '</div>')
         if x.get('faq'):
             body.append('<div class="space-y-3">\n' + faq_items(p, s['faq']) + '\n      </div>')
-        out.append(f'<section class="cp-guide-sec" id="{sid}"><div class="cp-guide-body">{"".join(body)}</div></section>\n')
-    out.append('    </main>\n  </div>\n')
+        if idx + 1 < len(secs):
+            body.append(next_link(secs[idx + 1]['id'], secs[idx + 1]['toc'][0]))
+        out.append(f'      <section class="gd-sec" id="{sid}">{"".join(body)}</section>\n')
+    out.append(guide_close(s['slug'], en))
     out.append(f'''  <section class="cta-section py-20 lg:py-28" id="download">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
       <p class="text-gold font-mono text-sm font-medium tracking-wider uppercase mb-4"><span data-i18n="cta.tagline">Sẵn sàng chưa?</span></p>
@@ -406,9 +545,9 @@ def build_guide(spec, en):
       {stores('justify-center')}
     </div>
   </section>
-''')
+''' + GUIDE_TAIL)
     en['cta.title'], en['cta.desc'] = s['cta']['title'][1], s['cta']['desc'][1]
-    out.append(footer(s, p))
+    out.append(footer(s, p, guide=True))
     return ''.join(out)
 
 

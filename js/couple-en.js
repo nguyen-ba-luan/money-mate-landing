@@ -228,3 +228,33 @@ window.PAGE_EN = {
   "g.ket-noi.video": "Watch the video guide: Pair up with your partner",
   "g.chi-tieu-chung.video": "Watch the video guide: Shared spending and reimbursement"
 };
+// Guide layout strings (meta chips, TOC, other guides).
+Object.assign(window.PAGE_EN, {
+  "ghero.kicker": "Step-by-step guide",
+  "meta.sections": "sections",
+  "meta.read": "min read",
+  "meta.videos": "videos",
+  "meta.video": "video",
+  "ghero.start": "Start reading",
+  "ghero.watch": "Watch the video",
+  "toc.title": "In this guide",
+  "toc.dl.t": "No Moni yet?",
+  "toc.dl.d": "Free, no ads. Follow along on your phone.",
+  "toc.dl.btn": "Download free",
+  "next": "Next:",
+  "rel.tag": "Keep learning",
+  "rel.title": "More Moni guides",
+  "rel.open": "Read guide",
+  "rel.budget.n": "Budgets",
+  "rel.budget.d": "Set category limits and use the 50/30/20 formula.",
+  "rel.groups.n": "Spending groups",
+  "rel.groups.d": "Split trip costs, add guests and settle up.",
+  "rel.savings.n": "Savings goals",
+  "rel.savings.d": "Set goals, add or withdraw and track progress.",
+  "rel.recurring.n": "Recurring transactions",
+  "rel.recurring.d": "Log rent, salary and monthly bills automatically.",
+  "rel.analytics.n": "Analytics & reports",
+  "rel.analytics.d": "Read the charts, monthly report and export data.",
+  "rel.gold.n": "Gold prices & AI signals",
+  "rel.gold.d": "Check prices, set alerts and track your gold."
+});

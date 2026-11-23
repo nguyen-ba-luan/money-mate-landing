@@ -95,6 +95,7 @@ POSTERS = {  # youtube id -> poster file in images/videos/
     '8n-Wvbssxag': '13-nhom-tao-va-moi', '-Fps8CbJ63A': '14-nhom-chi-tieu-thanh-toan', 'BzAcl17PZgM': '15-tong-ket-chuyen-di', 'bUY2WX9yoY0': '16-quy-nhom',
     'MeIbyKNR5QI': '17-cap-doi-ghep-doi', 'OGq-Sh-eFGk': '18-cap-doi-chi-chung', 'tGakdssNDBw': '19-khoa-sinh-trac-hoc', 'akdOBQfmv-8': '20-dong-bo-thiet-bi-ngon-ngu',
     'yPDwLlu_gkY': '22-ban-do-chi-tieu', 'pBxaav5qT0Y': '23-hoan-tien-shopee-tiktok', '8q2Yw_wX1a4': '24-gioi-thieu-ban-be-hang-thuong', 'WEOCMnC3kjY': '27-moni-tren-web',
+    '-NQiNx513gY': '03-quet-hoa-don', 'LUZ2K0ArxlE': '21-widget', 'M36612lfOUg': '25-tu-ghi-thong-bao', '5t6HaOBbP4M': '26-quet-qr-thanh-toan',
 }
 
 

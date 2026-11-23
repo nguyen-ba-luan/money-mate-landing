@@ -448,7 +448,7 @@
         <div class="flex-1 text-center lg:text-left order-1 lg:order-2">
           <div class="inline-flex items-center gap-2 bg-blue-50 text-blue-700 rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide mb-4">Tính Năng Chính</div>
           <h3 class="font-display text-2xl sm:text-3xl font-bold text-navy mb-4">Ghi Nhận Từng Đồng Trong Vài Giây</h3>
-          <p class="text-gray-500 text-base leading-relaxed mb-6">Thêm chi tiêu bằng gõ phím, giọng nói hoặc chụp ảnh hóa đơn. Moni tự động phân loại để bạn luôn biết tiền đi đâu.</p>
+          <p class="text-gray-500 text-base leading-relaxed mb-6">Thêm chi tiêu bằng gõ phím, giọng nói, ảnh hóa đơn hay quét QR thanh toán, hoặc để Moni tự ghi từ thông báo ngân hàng. Moni tự động phân loại để bạn luôn biết tiền đi đâu.</p>
           <div class="flex flex-wrap gap-3 justify-center lg:justify-start">
             <span class="inline-flex items-center gap-1.5 bg-gray-100 rounded-full px-3 py-1.5 text-sm text-gray-600">
               <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z"/></svg>
@@ -461,6 +461,14 @@
             <span class="inline-flex items-center gap-1.5 bg-gray-100 rounded-full px-3 py-1.5 text-sm text-gray-600">
               <svg class="w-4 h-4 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z"/><path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6z"/></svg>
               <span>Tự Động Phân Loại</span>
+            </span>
+            <span class="inline-flex items-center gap-1.5 bg-gray-100 rounded-full px-3 py-1.5 text-sm text-gray-600">
+              <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"/></svg>
+              <span>Tự Ghi Từ Ngân Hàng</span>
+            </span>
+            <span class="inline-flex items-center gap-1.5 bg-gray-100 rounded-full px-3 py-1.5 text-sm text-gray-600">
+              <svg class="w-4 h-4 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 013.75 9.375v-4.5zM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 01-1.125-1.125v-4.5zM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0113.5 9.375v-4.5zM6.75 6.75h.75v.75h-.75v-.75zM6.75 16.5h.75v.75h-.75v-.75zM16.5 6.75h.75v.75h-.75v-.75zM13.5 13.5h.75v.75h-.75v-.75zM13.5 19.5h.75v.75h-.75v-.75zM19.5 13.5h.75v.75h-.75v-.75zM19.5 19.5h.75v.75h-.75v-.75zM16.5 16.5h.75v.75h-.75v-.75z"/></svg>
+              <span>Quét QR Thanh Toán</span>
             </span>
           </div>
         </div>
@@ -682,8 +690,59 @@
           <div class="feature-icon bg-blue-50 text-blue-600">
             <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z"/></svg>
           </div>
-          <h3 class="text-lg font-bold text-navy mb-2">Widget Thêm Nhanh</h3>
-          <p class="text-gray-500 text-sm leading-relaxed">Ghi chi tiêu ngay từ widget trên màn hình chính iPhone, không cần mở app.</p>
+          <h3 class="text-lg font-bold text-navy mb-2">Widget Màn Hình Chính</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Thêm nhanh, lịch chi tiêu và hạn mức ngay trên màn hình chính iPhone và Android. iPhone có thêm Finance Hub đầy đủ.</p>
+        </div>
+        <!-- capture -->
+        <div class="feature-card fade-up fade-up-delay-1">
+          <div class="feature-icon bg-emerald-50 text-emerald-600">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-navy mb-2">Tự Ghi Từ Thông Báo Ngân Hàng</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Chuyển khoản xong, Moni tự ghi khoản chi từ thông báo biến động số dư. Số dư được che ngay trên máy, tin OTP không bao giờ được gửi đi. Có trên Android và iPhone (iOS 27).</p>
+          <a href="/videos/" class="card-link text-gold text-sm font-semibold mt-3 inline-block hover:text-gold-light">Xem video →</a>
+        </div>
+        <!-- qrpay -->
+        <div class="feature-card fade-up fade-up-delay-2">
+          <div class="feature-icon bg-indigo-50 text-indigo-600">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 013.75 9.375v-4.5zM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 01-1.125-1.125v-4.5zM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0113.5 9.375v-4.5zM6.75 6.75h.75v.75h-.75v-.75zM6.75 16.5h.75v.75h-.75v-.75zM16.5 6.75h.75v.75h-.75v-.75zM13.5 13.5h.75v.75h-.75v-.75zM13.5 19.5h.75v.75h-.75v-.75zM19.5 13.5h.75v.75h-.75v-.75zM19.5 19.5h.75v.75h-.75v-.75zM16.5 16.5h.75v.75h-.75v-.75z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-navy mb-2">Quét QR Thanh Toán</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Quét VietQR của cửa hàng ngay trong Moni: khoản chi được lưu, rồi app ngân hàng mở ra để trả. MB, VietinBank, BIDV, ACB và OCB được điền sẵn lệnh chuyển.</p>
+          <a href="/videos/" class="card-link text-gold text-sm font-semibold mt-3 inline-block hover:text-gold-light">Xem video →</a>
+        </div>
+        <!-- events -->
+        <div class="feature-card fade-up fade-up-delay-3">
+          <div class="feature-icon bg-rose-50 text-rose-600">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-navy mb-2">Sự Kiện Sắp Tới</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Ghi trước đám cưới, sinh nhật, Tết. Moni trừ trước vào số tiền còn lại của tháng để bạn không bị bất ngờ.</p>
+        </div>
+        <!-- calendar -->
+        <div class="feature-card fade-up fade-up-delay-1">
+          <div class="feature-icon bg-amber-50 text-amber-600">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5M8.25 12.75h.008v.008H8.25v-.008zm3.75 0h.008v.008H12v-.008zm3.75 0h.008v.008h-.008v-.008zM8.25 16.5h.008v.008H8.25V16.5zm3.75 0h.008v.008H12V16.5z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-navy mb-2">Lịch Chi Tiêu</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Xem chi tiêu từng ngày trong tháng dạng lịch. Ngày chi nhiều được tô đậm hơn, bấm vào ngày để xem các khoản chi.</p>
+        </div>
+        <!-- map -->
+        <div class="feature-card fade-up fade-up-delay-2">
+          <div class="feature-icon bg-teal-50 text-teal-600">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-navy mb-2">Bản Đồ Chi Tiêu</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Xem mình hay chi tiền ở đâu trên bản đồ, từ vị trí được lưu kèm mỗi khoản chi (iPhone).</p>
+        </div>
+        <!-- web -->
+        <div class="feature-card fade-up fade-up-delay-3">
+          <div class="feature-icon bg-sky-50 text-sky-600">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-navy mb-2">Moni Trên Web</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Dùng Moni trên máy tính tại app.moni.live, dữ liệu đồng bộ với điện thoại.</p>
+          <a href="https://app.moni.live" class="card-link text-gold text-sm font-semibold mt-3 inline-block hover:text-gold-light">Mở Moni web →</a>
         </div>
       </div>
     </div>
